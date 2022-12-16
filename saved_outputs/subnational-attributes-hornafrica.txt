@@ -1,0 +1,1283 @@
+adm2
+- {country: Ethiopia, iso3: ETH, pcode: ET050699, name: Aba Korow}
+- {country: Ethiopia, iso3: ETH, pcode: ET020203, name: Abaala}
+- {country: Ethiopia, iso3: ETH, pcode: ET020209, name: Abaala town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041904, name: Ababo}
+- {country: Ethiopia, iso3: ETH, pcode: ET130109, name: Abadir}
+- {country: Ethiopia, iso3: ETH, pcode: ET041905, name: Abay Chomen}
+- {country: Ethiopia, iso3: ETH, pcode: ET041513, name: Abaya}
+- {country: Ethiopia, iso3: ETH, pcode: ET041910, name: Abe Dongoro}
+- {country: Ethiopia, iso3: ETH, pcode: ET070621, name: Abela Abaya}
+- {country: Ethiopia, iso3: ETH, pcode: ET030805, name: Abergele (AM)}
+- {country: Ethiopia, iso3: ETH, pcode: ET010210, name: Abergele (TG)}
+- {country: Ethiopia, iso3: ETH, pcode: ET070102, name: Abeshege}
+- {country: Ethiopia, iso3: ETH, pcode: ET010211, name: Abi Adi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040609, name: Abichugna Gnea}
+- {country: Ethiopia, iso3: ETH, pcode: ET120201, name: Abobo}
+- {country: Ethiopia, iso3: ETH, pcode: ET130108, name: Aboker}
+- {country: Ethiopia, iso3: ETH, pcode: ET040516, name: Abuna Ginde Beret}
+- {country: Ethiopia, iso3: ETH, pcode: ET040706, name: Adaa}
+- {country: Ethiopia, iso3: ETH, pcode: ET041710, name: Adaba}
+- {country: Ethiopia, iso3: ETH, pcode: ET050602, name: Adadle}
+- {country: Ethiopia, iso3: ETH, pcode: ET031205, name: Adagn Ager Chaqo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040703, name: Adama}
+- {country: Ethiopia, iso3: ETH, pcode: ET040708, name: Adama Tulu Jido Kombolcha}
+- {country: Ethiopia, iso3: ETH, pcode: ET040714, name: Adama town}
+- {country: Ethiopia, iso3: ETH, pcode: ET020109, name: Adar}
+- {country: Ethiopia, iso3: ETH, pcode: ET040513, name: Adda Berga}
+- {country: Ethiopia, iso3: ETH, pcode: ET030101, name: Addi Arekay}
+- {country: Ethiopia, iso3: ETH, pcode: ET140108, name: Addis Ketema}
+- {country: Ethiopia, iso3: ETH, pcode: ET150109, name: Addis Ketema (DD)}
+- {country: Ethiopia, iso3: ETH, pcode: ET010207, name: Adet}
+- {country: Ethiopia, iso3: ETH, pcode: ET030799, name: Adete town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010111, name: Adi Daero}
+- {country: Ethiopia, iso3: ETH, pcode: ET010112, name: Adi Hageray}
+- {country: Ethiopia, iso3: ETH, pcode: ET010308, name: Adigrat town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010607, name: Adigudom}
+- {country: Ethiopia, iso3: ETH, pcode: ET070309, name: Adilo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030910, name: Adiss Kidame town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030299, name: Adiss Zemen town}
+- {country: Ethiopia, iso3: ETH, pcode: ET110205, name: Adiyio}
+- {country: Ethiopia, iso3: ETH, pcode: ET041403, name: Adola}
+- {country: Ethiopia, iso3: ETH, pcode: ET041492, name: Adola town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010204, name: Adwa}
+- {country: Ethiopia, iso3: ETH, pcode: ET010212, name: Adwa town}
+- {country: Ethiopia, iso3: ETH, pcode: ET020104, name: Afambo}
+- {country: Ethiopia, iso3: ETH, pcode: ET050105, name: Afdem}
+- {country: Ethiopia, iso3: ETH, pcode: ET020207, name: Afdera}
+- {country: Ethiopia, iso3: ETH, pcode: ET041482, name: Aga Wayu}
+- {country: Ethiopia, iso3: ETH, pcode: ET041104, name: Agarfa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040417, name: Agaro town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030909, name: Agew Gimija Bet}
+- {country: Ethiopia, iso3: ETH, pcode: ET010316, name: Agulae}
+- {country: Ethiopia, iso3: ETH, pcode: ET010202, name: Aheferom}
+- {country: Ethiopia, iso3: ETH, pcode: ET010215, name: Ahsea}
+- {country: Ethiopia, iso3: ETH, pcode: ET042012, name: Akaki}
+- {country: Ethiopia, iso3: ETH, pcode: ET140101, name: Akaki Kality}
+- {country: Ethiopia, iso3: ETH, pcode: ET030427, name: Akeseta town}
+- {country: Ethiopia, iso3: ETH, pcode: ET120101, name: Akobo}
+- {country: Ethiopia, iso3: ETH, pcode: ET010411, name: Alamata town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030408, name: Albuko}
+- {country: Ethiopia, iso3: ETH, pcode: ET040311, name: Ale}
+- {country: Ethiopia, iso3: ETH, pcode: ET031115, name: Alefa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040617, name: Aleltu}
+- {country: Ethiopia, iso3: ETH, pcode: ET030599, name: Aleme Ketma town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160016, name: Aleta Chuko}
+- {country: Ethiopia, iso3: ETH, pcode: ET160005, name: Aleta Wendo}
+- {country: Ethiopia, iso3: ETH, pcode: ET160021, name: Aleta Wondo town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040302, name: Alge Sachi}
+- {country: Ethiopia, iso3: ETH, pcode: ET072001, name: Alicho Woriro}
+- {country: Ethiopia, iso3: ETH, pcode: ET071205, name: Alle Special}
+- {country: Ethiopia, iso3: ETH, pcode: ET030618, name: Amanuel town}
+- {country: Ethiopia, iso3: ETH, pcode: ET072102, name: Amaro}
+- {country: Ethiopia, iso3: ETH, pcode: ET031103, name: Amba Giorgis town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030404, name: Ambasel}
+- {country: Ethiopia, iso3: ETH, pcode: ET040503, name: Ambo Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET040515, name: Ambo town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030809, name: Amde Work town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070215, name: Ameka}
+- {country: Ethiopia, iso3: ETH, pcode: ET041301, name: Ameya}
+- {country: Ethiopia, iso3: ETH, pcode: ET020301, name: Amibara}
+- {country: Ethiopia, iso3: ETH, pcode: ET040810, name: Amigna}
+- {country: Ethiopia, iso3: ETH, pcode: ET130107, name: Amir Nur}
+- {country: Ethiopia, iso3: ETH, pcode: ET041909, name: Amuru}
+- {country: Ethiopia, iso3: ETH, pcode: ET041411, name: Ana Sora}
+- {country: Ethiopia, iso3: ETH, pcode: ET070208, name: Analemmo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040906, name: Anchar}
+- {country: Ethiopia, iso3: ETH, pcode: ET030211, name: Andabet/ West Esite}
+- {country: Ethiopia, iso3: ETH, pcode: ET110101, name: Anderacha}
+- {country: Ethiopia, iso3: ETH, pcode: ET030617, name: Aneded}
+- {country: Ethiopia, iso3: ETH, pcode: ET041807, name: Anfilo}
+- {country: Ethiopia, iso3: ETH, pcode: ET070302, name: Angacha}
+- {country: Ethiopia, iso3: ETH, pcode: ET030513, name: Angolelana Tera}
+- {country: Ethiopia, iso3: ETH, pcode: ET030313, name: Angot}
+- {country: Ethiopia, iso3: ETH, pcode: ET030903, name: Ankasha}
+- {country: Ethiopia, iso3: ETH, pcode: ET030515, name: Ankober}
+- {country: Ethiopia, iso3: ETH, pcode: ET030507, name: Antsokiya}
+- {country: Ethiopia, iso3: ETH, pcode: ET140109, name: Arada}
+- {country: Ethiopia, iso3: ETH, pcode: ET050395, name: Ararso}
+- {country: Ethiopia, iso3: ETH, pcode: ET071015, name: Arba Minch Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET071021, name: Arba Minch town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160003, name: Arbegona}
+- {country: Ethiopia, iso3: ETH, pcode: ET041409, name: Arda Jila}
+- {country: Ethiopia, iso3: ETH, pcode: ET070614, name: Areka town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041208, name: Arero}
+- {country: Ethiopia, iso3: ETH, pcode: ET030525, name: Arerti town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030401, name: Argoba}
+- {country: Ethiopia, iso3: ETH, pcode: ET020306, name: Arguba}
+- {country: Ethiopia, iso3: ETH, pcode: ET160009, name: Aroresa}
+- {country: Ethiopia, iso3: ETH, pcode: ET041703, name: Arsi Negele}
+- {country: Ethiopia, iso3: ETH, pcode: ET041799, name: Arsi Negele town}
+- {country: Ethiopia, iso3: ETH, pcode: ET031004, name: Artuma Fursi}
+- {country: Ethiopia, iso3: ETH, pcode: ET020103, name: Asayita}
+- {country: Ethiopia, iso3: ETH, pcode: ET020111, name: Asayita town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040802, name: Aseko}
+- {country: Ethiopia, iso3: ETH, pcode: ET040825, name: Asela town}
+- {country: Ethiopia, iso3: ETH, pcode: ET150201, name: Aseliso}
+- {country: Ethiopia, iso3: ETH, pcode: ET010105, name: Asgede}
+- {country: Ethiopia, iso3: ETH, pcode: ET030514, name: Assagirt}
+- {country: Ethiopia, iso3: ETH, pcode: ET060303, name: Assosa}
+- {country: Ethiopia, iso3: ETH, pcode: ET060309, name: Assosa town Administration}
+- {country: Ethiopia, iso3: ETH, pcode: ET030598, name: Ataye town}
+- {country: Ethiopia, iso3: ETH, pcode: ET071403, name: Atote Ulo}
+- {country: Ethiopia, iso3: ETH, pcode: ET010307, name: Atsbi}
+- {country: Ethiopia, iso3: ETH, pcode: ET010315, name: Atsbi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050205, name: Aw Bare}
+- {country: Ethiopia, iso3: ETH, pcode: ET030612, name: Awabel}
+- {country: Ethiopia, iso3: ETH, pcode: ET050303, name: Aware}
+- {country: Ethiopia, iso3: ETH, pcode: ET020302, name: Awash}
+- {country: Ethiopia, iso3: ETH, pcode: ET020396, name: Awash town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041099, name: Aweday town}
+- {country: Ethiopia, iso3: ETH, pcode: ET020401, name: Awra (AF)}
+- {country: Ethiopia, iso3: ETH, pcode: ET010507, name: Awra (TG)}
+- {country: Ethiopia, iso3: ETH, pcode: ET010213, name: Axum town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030908, name: Ayehu Guwagusa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040107, name: Ayira}
+- {country: Ethiopia, iso3: ETH, pcode: ET050101, name: Ayisha}
+- {country: Ethiopia, iso3: ETH, pcode: ET031199, name: Aykel town}
+- {country: Ethiopia, iso3: ETH, pcode: ET051001, name: Ayun}
+- {country: Ethiopia, iso3: ETH, pcode: ET041004, name: Babile (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET050203, name: Babile (SM)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041000, name: Babile town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040111, name: Babo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030712, name: Bahir Dar town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030702, name: Bahirdar Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET040506, name: Bako Tibe}
+- {country: Ethiopia, iso3: ETH, pcode: ET060305, name: Bambasi}
+- {country: Ethiopia, iso3: ETH, pcode: ET030902, name: Banja}
+- {country: Ethiopia, iso3: ETH, pcode: ET050807, name: Barey}
+- {country: Ethiopia, iso3: ETH, pcode: ET071601, name: Basketo SP Woreda}
+- {country: Ethiopia, iso3: ETH, pcode: ET030611, name: Baso Liben}
+- {country: Ethiopia, iso3: ETH, pcode: ET030519, name: Basona Worena}
+- {country: Ethiopia, iso3: ETH, pcode: ET031002, name: Bati}
+- {country: Ethiopia, iso3: ETH, pcode: ET031099, name: Bati Town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070622, name: Bayera Koisha}
+- {country: Ethiopia, iso3: ETH, pcode: ET030699, name: Bechena Town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040314, name: Becho (Ilu Aba Bora)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041309, name: Becho (SW Shewa)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041622, name: Bedele Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET041621, name: Bedele town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041013, name: Bedeno}
+- {country: Ethiopia, iso3: ETH, pcode: ET040914, name: Bedesa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040116, name: Begi}
+- {country: Ethiopia, iso3: ETH, pcode: ET040894, name: Bekoji town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040823, name: Bele Gesgar}
+- {country: Ethiopia, iso3: ETH, pcode: ET070705, name: Bena Tsemay}
+- {country: Ethiopia, iso3: ETH, pcode: ET160008, name: Bensa}
+- {country: Ethiopia, iso3: ETH, pcode: ET020205, name: Berahile}
+- {country: Ethiopia, iso3: ETH, pcode: ET041114, name: Berbere}
+- {country: Ethiopia, iso3: ETH, pcode: ET042011, name: Bereh}
+- {country: Ethiopia, iso3: ETH, pcode: ET030517, name: Berehet}
+- {country: Ethiopia, iso3: ETH, pcode: ET110505, name: Bero}
+- {country: Ethiopia, iso3: ETH, pcode: ET050608, name: Berocano}
+- {country: Ethiopia, iso3: ETH, pcode: ET030102, name: Beyeda}
+- {country: Ethiopia, iso3: ETH, pcode: ET030601, name: Bibugn}
+- {country: Ethiopia, iso3: ETH, pcode: ET020208, name: Bidu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040207, name: Bila Seyo}
+- {country: Ethiopia, iso3: ETH, pcode: ET160032, name: Bilate Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET050306, name: Bilcil Bur}
+- {country: Ethiopia, iso3: ETH, pcode: ET060306, name: Bilidigilu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040315, name: Bilo Nopha}
+- {country: Ethiopia, iso3: ETH, pcode: ET041596, name: Birbirsa Kojowa}
+- {country: Ethiopia, iso3: ETH, pcode: ET041798, name: Bishan Guracha}
+- {country: Ethiopia, iso3: ETH, pcode: ET040709, name: Bishoftu town}
+- {country: Ethiopia, iso3: ETH, pcode: ET110210, name: Bita}
+- {country: Ethiopia, iso3: ETH, pcode: ET150208, name: Biyoawale}
+- {country: Ethiopia, iso3: ETH, pcode: ET010310, name: Bizet}
+- {country: Ethiopia, iso3: ETH, pcode: ET050599, name: Bodaley}
+- {country: Ethiopia, iso3: ETH, pcode: ET070615, name: Boditi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040110, name: Boji Chekorsa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040106, name: Boji Dirmeji}
+- {country: Ethiopia, iso3: ETH, pcode: ET040910, name: Boke}
+- {country: Ethiopia, iso3: ETH, pcode: ET050702, name: Bokh}
+- {country: Ethiopia, iso3: ETH, pcode: ET070710, name: Boko Dawula}
+- {country: Ethiopia, iso3: ETH, pcode: ET050999, name: Bokolmayo}
+- {country: Ethiopia, iso3: ETH, pcode: ET140104, name: Bole}
+- {country: Ethiopia, iso3: ETH, pcode: ET070608, name: Boloso Bombe}
+- {country: Ethiopia, iso3: ETH, pcode: ET070601, name: Boloso Sore}
+- {country: Ethiopia, iso3: ETH, pcode: ET160017, name: Bona Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET040205, name: Boneya Boshe}
+- {country: Ethiopia, iso3: ETH, pcode: ET110211, name: Bonga town}
+- {country: Ethiopia, iso3: ETH, pcode: ET071014, name: Bonke}
+- {country: Ethiopia, iso3: ETH, pcode: ET040710, name: Bora (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET010402, name: Bora (TG)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041402, name: Bore}
+- {country: Ethiopia, iso3: ETH, pcode: ET041607, name: Borecha}
+- {country: Ethiopia, iso3: ETH, pcode: ET071004, name: Boreda}
+- {country: Ethiopia, iso3: ETH, pcode: ET030412, name: Borena /Debresina}
+- {country: Ethiopia, iso3: ETH, pcode: ET160010, name: Boricha}
+- {country: Ethiopia, iso3: ETH, pcode: ET040702, name: Boset}
+- {country: Ethiopia, iso3: ETH, pcode: ET040495, name: Botor Tolay}
+- {country: Ethiopia, iso3: ETH, pcode: ET030301, name: Bugna}
+- {country: Ethiopia, iso3: ETH, pcode: ET070117, name: Bui town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070504, name: Bule}
+- {country: Ethiopia, iso3: ETH, pcode: ET041501, name: Bule Hora}
+- {country: Ethiopia, iso3: ETH, pcode: ET041587, name: Bule Hora town}
+- {country: Ethiopia, iso3: ETH, pcode: ET060207, name: Bulen}
+- {country: Ethiopia, iso3: ETH, pcode: ET071508, name: Bulike town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160024, name: Bura}
+- {country: Ethiopia, iso3: ETH, pcode: ET042001, name: Burayu}
+- {country: Ethiopia, iso3: ETH, pcode: ET030710, name: Bure (AM)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040312, name: Bure (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET030798, name: Bure town}
+- {country: Ethiopia, iso3: ETH, pcode: ET072203, name: Burji Special}
+- {country: Ethiopia, iso3: ETH, pcode: ET050394, name: Burqod}
+- {country: Ethiopia, iso3: ETH, pcode: ET040998, name: Burqua Dhintu}
+- {country: Ethiopia, iso3: ETH, pcode: ET160015, name: Bursa}
+- {country: Ethiopia, iso3: ETH, pcode: ET070115, name: Butajira town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160029, name: Chabe Gambeltu}
+- {country: Ethiopia, iso3: ETH, pcode: ET030999, name: Chagni town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050802, name: Charati}
+- {country: Ethiopia, iso3: ETH, pcode: ET031007, name: Chef Robit town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070110, name: Cheha}
+- {country: Ethiopia, iso3: ETH, pcode: ET070508, name: Chelelektu town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040505, name: Cheliya}
+- {country: Ethiopia, iso3: ETH, pcode: ET110209, name: Chena}
+- {country: Ethiopia, iso3: ETH, pcode: ET071010, name: Chencha}
+- {country: Ethiopia, iso3: ETH, pcode: ET071006, name: Chencha Zuriya}
+- {country: Ethiopia, iso3: ETH, pcode: ET010414, name: Chercher}
+- {country: Ethiopia, iso3: ETH, pcode: ET110207, name: Cheta}
+- {country: Ethiopia, iso3: ETH, pcode: ET020106, name: Chifra}
+- {country: Ethiopia, iso3: ETH, pcode: ET010201, name: Chila}
+- {country: Ethiopia, iso3: ETH, pcode: ET031106, name: Chilga 1}
+- {country: Ethiopia, iso3: ETH, pcode: ET031112, name: Chilga 2}
+- {country: Ethiopia, iso3: ETH, pcode: ET041015, name: Chinaksen}
+- {country: Ethiopia, iso3: ETH, pcode: ET160014, name: Chire}
+- {country: Ethiopia, iso3: ETH, pcode: ET040913, name: Chiro Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET040905, name: Chiro town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160027, name: Chirone}
+- {country: Ethiopia, iso3: ETH, pcode: ET040809, name: Chole}
+- {country: Ethiopia, iso3: ETH, pcode: ET041911, name: Choman Guduru}
+- {country: Ethiopia, iso3: ETH, pcode: ET041603, name: Chora (Buno Bedele)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040415, name: Chora (Jimma)}
+- {country: Ethiopia, iso3: ETH, pcode: ET160035, name: Chuko town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070510, name: Churso}
+- {country: Ethiopia, iso3: ETH, pcode: ET041623, name: Chwaka}
+- {country: Ethiopia, iso3: ETH, pcode: ET040592, name: Cobi}
+- {country: Ethiopia, iso3: ETH, pcode: ET030105, name: Dabat}
+- {country: Ethiopia, iso3: ETH, pcode: ET030106, name: Dabat town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041605, name: Dabo Hana}
+- {country: Ethiopia, iso3: ETH, pcode: ET160034, name: Daella}
+- {country: Ethiopia, iso3: ETH, pcode: ET160004, name: Dale}
+- {country: Ethiopia, iso3: ETH, pcode: ET041808, name: Dale Sadi}
+- {country: Ethiopia, iso3: ETH, pcode: ET041803, name: Dale Wabera}
+- {country: Ethiopia, iso3: ETH, pcode: ET020504, name: Dalefage}
+- {country: Ethiopia, iso3: ETH, pcode: ET072005, name: Dalocha}
+- {country: Ethiopia, iso3: ETH, pcode: ET020206, name: Dalol}
+- {country: Ethiopia, iso3: ETH, pcode: ET041408, name: Dama}
+- {country: Ethiopia, iso3: ETH, pcode: ET070307, name: Damboya}
+- {country: Ethiopia, iso3: ETH, pcode: ET070602, name: Damot Gale}
+- {country: Ethiopia, iso3: ETH, pcode: ET070611, name: Damot Pullasa}
+- {country: Ethiopia, iso3: ETH, pcode: ET070609, name: Damot Sore}
+- {country: Ethiopia, iso3: ETH, pcode: ET070603, name: Damot Woide}
+- {country: Ethiopia, iso3: ETH, pcode: ET050603, name: Danan}
+- {country: Ethiopia, iso3: ETH, pcode: ET030901, name: Dangila}
+- {country: Ethiopia, iso3: ETH, pcode: ET030998, name: Dangila town}
+- {country: Ethiopia, iso3: ETH, pcode: ET060201, name: Dangur}
+- {country: Ethiopia, iso3: ETH, pcode: ET040507, name: Dano}
+- {country: Ethiopia, iso3: ETH, pcode: ET050701, name: Danod}
+- {country: Ethiopia, iso3: ETH, pcode: ET010506, name: Dansha town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160006, name: Dara}
+- {country: Ethiopia, iso3: ETH, pcode: ET160025, name: Dara Otilicho}
+- {country: Ethiopia, iso3: ETH, pcode: ET071009, name: Daramalo}
+- {country: Ethiopia, iso3: ETH, pcode: ET160033, name: Darara}
+- {country: Ethiopia, iso3: ETH, pcode: ET050788, name: Daratole}
+- {country: Ethiopia, iso3: ETH, pcode: ET040301, name: Darimu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040909, name: Daro Lebu}
+- {country: Ethiopia, iso3: ETH, pcode: ET050392, name: Daror}
+- {country: Ethiopia, iso3: ETH, pcode: ET070706, name: Dasenech /Kuraz}
+- {country: Ethiopia, iso3: ETH, pcode: ET020503, name: Dawe}
+- {country: Ethiopia, iso3: ETH, pcode: ET042106, name: Dawe Ketchen}
+- {country: Ethiopia, iso3: ETH, pcode: ET041304, name: Dawo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030311, name: Dawunt}
+- {country: Ethiopia, iso3: ETH, pcode: ET160030, name: Daye town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030104, name: Debark}
+- {country: Ethiopia, iso3: ETH, pcode: ET030198, name: Debark town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030607, name: Debay Telatgen}
+- {country: Ethiopia, iso3: ETH, pcode: ET050504, name: Debeweyin}
+- {country: Ethiopia, iso3: ETH, pcode: ET030520, name: Debre Berhan town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030608, name: Debre Elias}
+- {country: Ethiopia, iso3: ETH, pcode: ET040607, name: Debre Libanos}
+- {country: Ethiopia, iso3: ETH, pcode: ET030615, name: Debre Markos town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030527, name: Debre Sina town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030210, name: Debre Tabor town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030621, name: Debrework town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030713, name: Debub Achefer}
+- {country: Ethiopia, iso3: ETH, pcode: ET110303, name: Debub Bench}
+- {country: Ethiopia, iso3: ETH, pcode: ET030715, name: Debub Mecha}
+- {country: Ethiopia, iso3: ETH, pcode: ET070119, name: Debub Sodo}
+- {country: Ethiopia, iso3: ETH, pcode: ET110208, name: Decha}
+- {country: Ethiopia, iso3: ETH, pcode: ET150111, name: Dechatu}
+- {country: Ethiopia, iso3: ETH, pcode: ET041011, name: Deder}
+- {country: Ethiopia, iso3: ETH, pcode: ET041097, name: Deder town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041608, name: Dedesa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040410, name: Dedo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041604, name: Dega}
+- {country: Ethiopia, iso3: ETH, pcode: ET030707, name: Dega Damot}
+- {country: Ethiopia, iso3: ETH, pcode: ET050307, name: Degahabur town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050302, name: Degehabur}
+- {country: Ethiopia, iso3: ETH, pcode: ET050301, name: Degehamedo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040815, name: Degeluna Tijo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040605, name: Degem}
+- {country: Ethiopia, iso3: ETH, pcode: ET030425, name: Degolo town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010604, name: Degua Temben}
+- {country: Ethiopia, iso3: ETH, pcode: ET030803, name: Dehana}
+- {country: Ethiopia, iso3: ETH, pcode: ET030613, name: Dejen}
+- {country: Ethiopia, iso3: ETH, pcode: ET030698, name: Dejen town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050991, name: Deka Suftu}
+- {country: Ethiopia, iso3: ETH, pcode: ET030406, name: Delanta}
+- {country: Ethiopia, iso3: ETH, pcode: ET060404, name: Dembe}
+- {country: Ethiopia, iso3: ETH, pcode: ET030708, name: Dembecha}
+- {country: Ethiopia, iso3: ETH, pcode: ET050102, name: Dembel}
+- {country: Ethiopia, iso3: ETH, pcode: ET071502, name: Denba Gofa}
+- {country: Ethiopia, iso3: ETH, pcode: ET030717, name: Denbecha town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041806, name: Denbi Dollo town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040510, name: Dendi}
+- {country: Ethiopia, iso3: ETH, pcode: ET030209, name: Dera (AM)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040602, name: Dera (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET072304, name: Derashe Special}
+- {country: Ethiopia, iso3: ETH, pcode: ET030409, name: Dessie Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET030418, name: Dessie town}
+- {country: Ethiopia, iso3: ETH, pcode: ET031001, name: Dewa Cheffa}
+- {country: Ethiopia, iso3: ETH, pcode: ET031005, name: Dewa Harewa}
+- {country: Ethiopia, iso3: ETH, pcode: ET041220, name: Dhas}
+- {country: Ethiopia, iso3: ETH, pcode: ET060205, name: Dibate}
+- {country: Ethiopia, iso3: ETH, pcode: ET040317, name: Didu}
+- {country: Ethiopia, iso3: ETH, pcode: ET050399, name: Dig}
+- {country: Ethiopia, iso3: ETH, pcode: ET040210, name: Diga}
+- {country: Ethiopia, iso3: ETH, pcode: ET051006, name: Dihun}
+- {country: Ethiopia, iso3: ETH, pcode: ET040822, name: Diksis}
+- {country: Ethiopia, iso3: ETH, pcode: ET070505, name: Dila Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET070507, name: Dila town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041219, name: Dilo}
+- {country: Ethiopia, iso3: ETH, pcode: ET120205, name: Dima (GM)}
+- {country: Ethiopia, iso3: ETH, pcode: ET010115, name: Dima (TG)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041122, name: Dinsho}
+- {country: Ethiopia, iso3: ETH, pcode: ET041211, name: Dire}
+- {country: Ethiopia, iso3: ETH, pcode: ET130106, name: Dire Teyara}
+- {country: Ethiopia, iso3: ETH, pcode: ET110409, name: Disa}
+- {country: Ethiopia, iso3: ETH, pcode: ET071008, name: Dita}
+- {country: Ethiopia, iso3: ETH, pcode: ET040902, name: Doba}
+- {country: Ethiopia, iso3: ETH, pcode: ET041707, name: Dodola}
+- {country: Ethiopia, iso3: ETH, pcode: ET041700, name: Dodola town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040805, name: Dodota}
+- {country: Ethiopia, iso3: ETH, pcode: ET050902, name: Dolo Ado}
+- {country: Ethiopia, iso3: ETH, pcode: ET050808, name: Dolobay}
+- {country: Ethiopia, iso3: ETH, pcode: ET040324, name: Dorani}
+- {country: Ethiopia, iso3: ETH, pcode: ET070306, name: Doyogena}
+- {country: Ethiopia, iso3: ETH, pcode: ET041291, name: Dubluk}
+- {country: Ethiopia, iso3: ETH, pcode: ET020101, name: Dubti}
+- {country: Ethiopia, iso3: ETH, pcode: ET020107, name: Dubti town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040707, name: Dugda}
+- {country: Ethiopia, iso3: ETH, pcode: ET041515, name: Dugda Dawa}
+- {country: Ethiopia, iso3: ETH, pcode: ET070612, name: Duguna Fango}
+- {country: Ethiopia, iso3: ETH, pcode: ET042008, name: Dukem}
+- {country: Ethiopia, iso3: ETH, pcode: ET020304, name: Dulecha}
+- {country: Ethiopia, iso3: ETH, pcode: ET070207, name: Duna}
+- {country: Ethiopia, iso3: ETH, pcode: ET070308, name: Durame town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030719, name: Dure Bete}
+- {country: Ethiopia, iso3: ETH, pcode: ET031117, name: East Belesa}
+- {country: Ethiopia, iso3: ETH, pcode: ET031111, name: East Dembia}
+- {country: Ethiopia, iso3: ETH, pcode: ET030208, name: East Esite}
+- {country: Ethiopia, iso3: ETH, pcode: ET050601, name: East Imi}
+- {country: Ethiopia, iso3: ETH, pcode: ET030201, name: Ebenat}
+- {country: Ethiopia, iso3: ETH, pcode: ET030217, name: Ebenat town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010311, name: Edaga Hamus town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010203, name: Edaga arbi}
+- {country: Ethiopia, iso3: ETH, pcode: ET030508, name: Eferatana Gidem}
+- {country: Ethiopia, iso3: ETH, pcode: ET010216, name: Egela}
+- {country: Ethiopia, iso3: ETH, pcode: ET040511, name: Ejere /Addis Alem}
+- {country: Ethiopia, iso3: ETH, pcode: ET040590, name: Ejersa Lafo}
+- {country: Ethiopia, iso3: ETH, pcode: ET050598, name: El Ogaden}
+- {country: Ethiopia, iso3: ETH, pcode: ET050698, name: Elale}
+- {country: Ethiopia, iso3: ETH, pcode: ET020102, name: Elidar}
+- {country: Ethiopia, iso3: ETH, pcode: ET050804, name: Elkare /Serer}
+- {country: Ethiopia, iso3: ETH, pcode: ET041295, name: Elwaya}
+- {country: Ethiopia, iso3: ETH, pcode: ET051002, name: Elwayne}
+- {country: Ethiopia, iso3: ETH, pcode: ET010404, name: Emba Alaje}
+- {country: Ethiopia, iso3: ETH, pcode: ET010219, name: Emba Sieneti}
+- {country: Ethiopia, iso3: ETH, pcode: ET070116, name: Emdebir town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030605, name: Enarj Enawga}
+- {country: Ethiopia, iso3: ETH, pcode: ET010114, name: Endabaguna town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010218, name: Endafelasi}
+- {country: Ethiopia, iso3: ETH, pcode: ET010405, name: Endamehoni}
+- {country: Ethiopia, iso3: ETH, pcode: ET010602, name: Enderta}
+- {country: Ethiopia, iso3: ETH, pcode: ET070108, name: Endiguagn}
+- {country: Ethiopia, iso3: ETH, pcode: ET030604, name: Enebse Sarmder}
+- {country: Ethiopia, iso3: ETH, pcode: ET030606, name: Enemay}
+- {country: Ethiopia, iso3: ETH, pcode: ET070111, name: Enemor Ener}
+- {country: Ethiopia, iso3: ETH, pcode: ET070120, name: Enor Ener}
+- {country: Ethiopia, iso3: ETH, pcode: ET030503, name: Ensaro}
+- {country: Ethiopia, iso3: ETH, pcode: ET010220, name: Enticho town}
+- {country: Ethiopia, iso3: ETH, pcode: ET020201, name: Erebti}
+- {country: Ethiopia, iso3: ETH, pcode: ET130105, name: Erer (HR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET050104, name: Erer (SM)}
+- {country: Ethiopia, iso3: ETH, pcode: ET010302, name: Erob}
+- {country: Ethiopia, iso3: ETH, pcode: ET020402, name: Euwa}
+- {country: Ethiopia, iso3: ETH, pcode: ET070103, name: Ezha}
+- {country: Ethiopia, iso3: ETH, pcode: ET071007, name: Ezo /Kogota}
+- {country: Ethiopia, iso3: ETH, pcode: ET030905, name: Fagta Lakoma}
+- {country: Ethiopia, iso3: ETH, pcode: ET030204, name: Farta}
+- {country: Ethiopia, iso3: ETH, pcode: ET041005, name: Fedis}
+- {country: Ethiopia, iso3: ETH, pcode: ET030912, name: Fendika town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040701, name: Fentale}
+- {country: Ethiopia, iso3: ETH, pcode: ET050607, name: Ferfer}
+- {country: Ethiopia, iso3: ETH, pcode: ET040613, name: Fiche town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050402, name: Fik}
+- {country: Ethiopia, iso3: ETH, pcode: ET030314, name: Filakit town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050901, name: Filtu}
+- {country: Ethiopia, iso3: ETH, pcode: ET030714, name: Finote Selam town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030203, name: Fogera}
+- {country: Ethiopia, iso3: ETH, pcode: ET010313, name: Freweyni town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050199, name: Gablalu}
+- {country: Ethiopia, iso3: ETH, pcode: ET110501, name: Gachit}
+- {country: Ethiopia, iso3: ETH, pcode: ET071016, name: Gacho Baba}
+- {country: Ethiopia, iso3: ETH, pcode: ET040113, name: Gaji}
+- {country: Ethiopia, iso3: ETH, pcode: ET050703, name: Galadi}
+- {country: Ethiopia, iso3: ETH, pcode: ET050799, name: Galhamur}
+- {country: Ethiopia, iso3: ETH, pcode: ET120200, name: Gambela National Park}
+- {country: Ethiopia, iso3: ETH, pcode: ET120202, name: Gambela Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET120206, name: Gambela town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010304, name: Ganta Afeshum}
+- {country: Ethiopia, iso3: ETH, pcode: ET051003, name: Garbo}
+- {country: Ethiopia, iso3: ETH, pcode: ET071018, name: Garda Marta}
+- {country: Ethiopia, iso3: ETH, pcode: ET041106, name: Gasera}
+- {country: Ethiopia, iso3: ETH, pcode: ET050304, name: Gashamo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030315, name: Gashena town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041804, name: Gawo Kebe}
+- {country: Ethiopia, iso3: ETH, pcode: ET030804, name: Gaz Gibla}
+- {country: Ethiopia, iso3: ETH, pcode: ET030312, name: Gazo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041606, name: Gechi}
+- {country: Ethiopia, iso3: ETH, pcode: ET070506, name: Gedeb}
+- {country: Ethiopia, iso3: ETH, pcode: ET041706, name: Gedeb Asasa}
+- {country: Ethiopia, iso3: ETH, pcode: ET070511, name: Gedeb town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070104, name: Gedebano Gutazer Welene}
+- {country: Ethiopia, iso3: ETH, pcode: ET020305, name: Gelalu}
+- {country: Ethiopia, iso3: ETH, pcode: ET042098, name: Gelana (Finfine)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041517, name: Gelana (West Guji)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040912, name: Gemechis}
+- {country: Ethiopia, iso3: ETH, pcode: ET110404, name: Gena}
+- {country: Ethiopia, iso3: ETH, pcode: ET031292, name: Gendawuha town}
+- {country: Ethiopia, iso3: ETH, pcode: ET150110, name: Gende Kore}
+- {country: Ethiopia, iso3: ETH, pcode: ET040408, name: Gera}
+- {country: Ethiopia, iso3: ETH, pcode: ET010317, name: Geraleta}
+- {country: Ethiopia, iso3: ETH, pcode: ET020110, name: Gerani}
+- {country: Ethiopia, iso3: ETH, pcode: ET040606, name: Gerar Jarso}
+- {country: Ethiopia, iso3: ETH, pcode: ET071013, name: Gerese}
+- {country: Ethiopia, iso3: ETH, pcode: ET110412, name: Gesa town}
+- {country: Ethiopia, iso3: ETH, pcode: ET110202, name: Gesha}
+- {country: Ethiopia, iso3: ETH, pcode: ET070617, name: Gesuba town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070113, name: Geta}
+- {country: Ethiopia, iso3: ETH, pcode: ET020303, name: Gewane}
+- {country: Ethiopia, iso3: ETH, pcode: ET110203, name: Gewata}
+- {country: Ethiopia, iso3: ETH, pcode: ET071505, name: Gezei Gofa}
+- {country: Ethiopia, iso3: ETH, pcode: ET070210, name: Gibe}
+- {country: Ethiopia, iso3: ETH, pcode: ET040203, name: Gida Ayana}
+- {country: Ethiopia, iso3: ETH, pcode: ET041809, name: Gidami}
+- {country: Ethiopia, iso3: ETH, pcode: ET030303, name: Gidan}
+- {country: Ethiopia, iso3: ETH, pcode: ET110306, name: Gidi Bench}
+- {country: Ethiopia, iso3: ETH, pcode: ET060200, name: Gilgel Beles town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040103, name: Gimbi}
+- {country: Ethiopia, iso3: ETH, pcode: ET040193, name: Gimbi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040705, name: Gimbichu}
+- {country: Ethiopia, iso3: ETH, pcode: ET070213, name: Gimbichu town}
+- {country: Ethiopia, iso3: ETH, pcode: ET110204, name: Gimbo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040501, name: Ginde Beret}
+- {country: Ethiopia, iso3: ETH, pcode: ET042103, name: Ginir}
+- {country: Ethiopia, iso3: ETH, pcode: ET042107, name: Ginir town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041016, name: Girawa}
+- {country: Ethiopia, iso3: ETH, pcode: ET041410, name: Girja /Harenfema}
+- {country: Ethiopia, iso3: ETH, pcode: ET030506, name: Gishe Rabel}
+- {country: Ethiopia, iso3: ETH, pcode: ET041110, name: Goba (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET110212, name: Goba (SP)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040907, name: Goba Koricha}
+- {country: Ethiopia, iso3: ETH, pcode: ET041120, name: Goba town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040208, name: Gobu Seyo}
+- {country: Ethiopia, iso3: ETH, pcode: ET050899, name: God God}
+- {country: Ethiopia, iso3: ETH, pcode: ET050604, name: Gode}
+- {country: Ethiopia, iso3: ETH, pcode: ET120301, name: Godere}
+- {country: Ethiopia, iso3: ETH, pcode: ET050696, name: Godey town}
+- {country: Ethiopia, iso3: ETH, pcode: ET120203, name: Gog}
+- {country: Ethiopia, iso3: ETH, pcode: ET050595, name: Goglo}
+- {country: Ethiopia, iso3: ETH, pcode: ET050290, name: Goljano}
+- {country: Ethiopia, iso3: ETH, pcode: ET041017, name: Golo Oda}
+- {country: Ethiopia, iso3: ETH, pcode: ET040803, name: Golocha}
+- {country: Ethiopia, iso3: ETH, pcode: ET042101, name: Gololcha Bale}
+- {country: Ethiopia, iso3: ETH, pcode: ET040407, name: Goma}
+- {country: Ethiopia, iso3: ETH, pcode: ET070202, name: Gombora}
+- {country: Ethiopia, iso3: ETH, pcode: ET041223, name: Gomole}
+- {country: Ethiopia, iso3: ETH, pcode: ET030603, name: Goncha Siso Enebse}
+- {country: Ethiopia, iso3: ETH, pcode: ET031118, name: Gondar town}
+- {country: Ethiopia, iso3: ETH, pcode: ET031110, name: Gonder Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET030718, name: Gonje}
+- {country: Ethiopia, iso3: ETH, pcode: ET041413, name: Gora Dola}
+- {country: Ethiopia, iso3: ETH, pcode: ET160011, name: Gorche}
+- {country: Ethiopia, iso3: ETH, pcode: ET110503, name: Gori Gesha}
+- {country: Ethiopia, iso3: ETH, pcode: ET041116, name: Goro (Bale)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041312, name: Goro (SW Shewa)}
+- {country: Ethiopia, iso3: ETH, pcode: ET050903, name: Goro Baqaqsa}
+- {country: Ethiopia, iso3: ETH, pcode: ET041010, name: Goro Gutu}
+- {country: Ethiopia, iso3: ETH, pcode: ET041089, name: Goro Muti}
+- {country: Ethiopia, iso3: ETH, pcode: ET050198, name: Gota Biki}
+- {country: Ethiopia, iso3: ETH, pcode: ET030907, name: Guagusa Shikudad}
+- {country: Ethiopia, iso3: ETH, pcode: ET030904, name: Guangua}
+- {country: Ethiopia, iso3: ETH, pcode: ET060202, name: Guba}
+- {country: Ethiopia, iso3: ETH, pcode: ET030307, name: Guba Lafto}
+- {country: Ethiopia, iso3: ETH, pcode: ET041290, name: Guchi}
+- {country: Ethiopia, iso3: ETH, pcode: ET040109, name: Gudetu Kondole}
+- {country: Ethiopia, iso3: ETH, pcode: ET041903, name: Guduru}
+- {country: Ethiopia, iso3: ETH, pcode: ET140110, name: Gulele}
+- {country: Ethiopia, iso3: ETH, pcode: ET020405, name: Gulina}
+- {country: Ethiopia, iso3: ETH, pcode: ET040119, name: Guliso}
+- {country: Ethiopia, iso3: ETH, pcode: ET010301, name: Gulo Mekeda}
+- {country: Ethiopia, iso3: ETH, pcode: ET040416, name: Gumay}
+- {country: Ethiopia, iso3: ETH, pcode: ET040991, name: Gumbi Bordede}
+- {country: Ethiopia, iso3: ETH, pcode: ET070109, name: Gumer}
+- {country: Ethiopia, iso3: ETH, pcode: ET041497, name: Gumi Idalo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040819, name: Guna}
+- {country: Ethiopia, iso3: ETH, pcode: ET030212, name: Guna Begemider}
+- {country: Ethiopia, iso3: ETH, pcode: ET050305, name: Gunagado}
+- {country: Ethiopia, iso3: ETH, pcode: ET030620, name: Gundwoin town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070618, name: Gununo Hamus town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041115, name: Gura Damole}
+- {country: Ethiopia, iso3: ETH, pcode: ET050904, name: Guradamole}
+- {country: Ethiopia, iso3: ETH, pcode: ET110302, name: Gurafereda}
+- {country: Ethiopia, iso3: ETH, pcode: ET041003, name: Gursum (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET050202, name: Gursum (SM)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040213, name: Guto Gida}
+- {country: Ethiopia, iso3: ETH, pcode: ET030610, name: Guzamn}
+- {country: Ethiopia, iso3: ETH, pcode: ET040908, name: Habro}
+- {country: Ethiopia, iso3: ETH, pcode: ET030308, name: Habru}
+- {country: Ethiopia, iso3: ETH, pcode: ET020505, name: Hadelela}
+- {country: Ethiopia, iso3: ETH, pcode: ET070305, name: Hadero Tunto}
+- {country: Ethiopia, iso3: ETH, pcode: ET070312, name: Hadero town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050106, name: Hadhagala}
+- {country: Ethiopia, iso3: ETH, pcode: ET150112, name: Hafat Issa}
+- {country: Ethiopia, iso3: ETH, pcode: ET030516, name: Hagere Mariam}
+- {country: Ethiopia, iso3: ETH, pcode: ET010605, name: Hagere Selam town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010217, name: Hahayle}
+- {country: Ethiopia, iso3: ETH, pcode: ET130104, name: Hakim}
+- {country: Ethiopia, iso3: ETH, pcode: ET040319, name: Halu /Huka}
+- {country: Ethiopia, iso3: ETH, pcode: ET041509, name: Hambela Wamena}
+- {country: Ethiopia, iso3: ETH, pcode: ET070704, name: Hamer}
+- {country: Ethiopia, iso3: ETH, pcode: ET050404, name: Hamero}
+- {country: Ethiopia, iso3: ETH, pcode: ET030218, name: Hamusit town}
+- {country: Ethiopia, iso3: ETH, pcode: ET020307, name: Hanruka}
+- {country: Ethiopia, iso3: ETH, pcode: ET030306, name: Hara town}
+- {country: Ethiopia, iso3: ETH, pcode: ET051096, name: Hararey}
+- {country: Ethiopia, iso3: ETH, pcode: ET050299, name: Harawo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030429, name: Harbu town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041111, name: Harena Buluk}
+- {country: Ethiopia, iso3: ETH, pcode: ET050806, name: Hargele}
+- {country: Ethiopia, iso3: ETH, pcode: ET040204, name: Haro Limu}
+- {country: Ethiopia, iso3: ETH, pcode: ET041006, name: Haro Maya}
+- {country: Ethiopia, iso3: ETH, pcode: ET041490, name: Haro Walabu}
+- {country: Ethiopia, iso3: ETH, pcode: ET041019, name: Haromaya town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050298, name: Haroreys}
+- {country: Ethiopia, iso3: ETH, pcode: ET050207, name: Harshin}
+- {country: Ethiopia, iso3: ETH, pcode: ET040114, name: Haru}
+- {country: Ethiopia, iso3: ETH, pcode: ET041801, name: Hawa Galan}
+- {country: Ethiopia, iso3: ETH, pcode: ET160018, name: Hawasa town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160002, name: Hawassa Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET160023, name: Hawela}
+- {country: Ethiopia, iso3: ETH, pcode: ET040915, name: Hawi Gudina}
+- {country: Ethiopia, iso3: ETH, pcode: ET010305, name: Hawzen}
+- {country: Ethiopia, iso3: ETH, pcode: ET010312, name: Hawzen town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041783, name: Heban Arsi}
+- {country: Ethiopia, iso3: ETH, pcode: ET040603, name: Hidabu Abote}
+- {country: Ethiopia, iso3: ETH, pcode: ET050597, name: Higloley}
+- {country: Ethiopia, iso3: ETH, pcode: ET030499, name: Hike town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010603, name: Hintalo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040807, name: Hitosa}
+- {country: Ethiopia, iso3: ETH, pcode: ET070619, name: Hobicha Abaya}
+- {country: Ethiopia, iso3: ETH, pcode: ET160031, name: Hokko}
+- {country: Ethiopia, iso3: ETH, pcode: ET042020, name: Holeta town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040117, name: Homa}
+- {country: Ethiopia, iso3: ETH, pcode: ET060307, name: Homosha}
+- {country: Ethiopia, iso3: ETH, pcode: ET041901, name: Horo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041912, name: Horo Buluk}
+- {country: Ethiopia, iso3: ETH, pcode: ET051095, name: Horshagah}
+- {country: Ethiopia, iso3: ETH, pcode: ET070211, name: Hosaena town}
+- {country: Ethiopia, iso3: ETH, pcode: ET051104, name: Hudet}
+- {country: Ethiopia, iso3: ETH, pcode: ET030602, name: Hulet Ej Enese}
+- {country: Ethiopia, iso3: ETH, pcode: ET160007, name: Hulla}
+- {country: Ethiopia, iso3: ETH, pcode: ET070604, name: Humbo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040316, name: Hurumu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040202, name: Ibantu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040519, name: Ifata}
+- {country: Ethiopia, iso3: ETH, pcode: ET040500, name: Illu Galan}
+- {country: Ethiopia, iso3: ETH, pcode: ET041305, name: Ilu}
+- {country: Ethiopia, iso3: ETH, pcode: ET010108, name: Indasilassie town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030996, name: Injibara town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040824, name: Inkolo Wabe}
+- {country: Ethiopia, iso3: ETH, pcode: ET110405, name: Isara}
+- {country: Ethiopia, iso3: ETH, pcode: ET120407, name: Itang}
+- {country: Ethiopia, iso3: ETH, pcode: ET030709, name: Jabi Tehnan}
+- {country: Ethiopia, iso3: ETH, pcode: ET070214, name: Jajura town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030414, name: Jama}
+- {country: Ethiopia, iso3: ETH, pcode: ET030103, name: Janamora}
+- {country: Ethiopia, iso3: ETH, pcode: ET041002, name: Jarso (East Hararghe)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040108, name: Jarso (West Wellega)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041908, name: Jarte Jardega}
+- {country: Ethiopia, iso3: ETH, pcode: ET030906, name: Jawi}
+- {country: Ethiopia, iso3: ETH, pcode: ET040804, name: Jeju}
+- {country: Ethiopia, iso3: ETH, pcode: ET150206, name: Jeldessa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040502, name: Jeldu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040518, name: Jibat}
+- {country: Ethiopia, iso3: ETH, pcode: ET040615, name: Jida}
+- {country: Ethiopia, iso3: ETH, pcode: ET030720, name: Jiga town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050293, name: Jigjiga town}
+- {country: Ethiopia, iso3: ETH, pcode: ET120103, name: Jikawo}
+- {country: Ethiopia, iso3: ETH, pcode: ET031003, name: Jilye Tumuga}
+- {country: Ethiopia, iso3: ETH, pcode: ET040214, name: Jimma Arjo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041906, name: Jimma Genete}
+- {country: Ethiopia, iso3: ETH, pcode: ET041810, name: Jimma Horo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041907, name: Jimma Rare}
+- {country: Ethiopia, iso3: ETH, pcode: ET040418, name: Jimma town}
+- {country: Ethiopia, iso3: ETH, pcode: ET130103, name: Jinela}
+- {country: Ethiopia, iso3: ETH, pcode: ET070709, name: Jinka town}
+- {country: Ethiopia, iso3: ETH, pcode: ET120204, name: Jore}
+- {country: Ethiopia, iso3: ETH, pcode: ET070304, name: Kacha Bira}
+- {country: Ethiopia, iso3: ETH, pcode: ET110406, name: Kachi}
+- {country: Ethiopia, iso3: ETH, pcode: ET010501, name: Kafta Humera}
+- {country: Ethiopia, iso3: ETH, pcode: ET030407, name: Kalu}
+- {country: Ethiopia, iso3: ETH, pcode: ET060403, name: Kamashi}
+- {country: Ethiopia, iso3: ETH, pcode: ET060400, name: Kamashi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET071303, name: Karat Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET071301, name: Karat town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070620, name: Kawo Koisha}
+- {country: Ethiopia, iso3: ETH, pcode: ET150113, name: Kazira}
+- {country: Ethiopia, iso3: ETH, pcode: ET070101, name: Kebena}
+- {country: Ethiopia, iso3: ETH, pcode: ET050296, name: Kebribayah town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050206, name: Kebribeyah}
+- {country: Ethiopia, iso3: ETH, pcode: ET050502, name: Kebridehar}
+- {country: Ethiopia, iso3: ETH, pcode: ET050592, name: Kebridehar town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070303, name: Kediada Gambela}
+- {country: Ethiopia, iso3: ETH, pcode: ET050605, name: Kelafo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030426, name: Kelala town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030413, name: Kelela}
+- {country: Ethiopia, iso3: ETH, pcode: ET010306, name: Kelete Awelallo}
+- {country: Ethiopia, iso3: ETH, pcode: ET071011, name: Kemba}
+- {country: Ethiopia, iso3: ETH, pcode: ET071012, name: Kemba town}
+- {country: Ethiopia, iso3: ETH, pcode: ET031006, name: Kemisie town}
+- {country: Ethiopia, iso3: ETH, pcode: ET071304, name: Kena}
+- {country: Ethiopia, iso3: ETH, pcode: ET041502, name: Kercha}
+- {country: Ethiopia, iso3: ETH, pcode: ET041008, name: Kersa (East Hararge)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040405, name: Kersa (Jimma)}
+- {country: Ethiopia, iso3: ETH, pcode: ET041307, name: Kersana Malima}
+- {country: Ethiopia, iso3: ETH, pcode: ET030512, name: Kewet}
+- {country: Ethiopia, iso3: ETH, pcode: ET010221, name: Keyhe tekli}
+- {country: Ethiopia, iso3: ETH, pcode: ET072011, name: Kibet town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040105, name: Kiltu Kara}
+- {country: Ethiopia, iso3: ETH, pcode: ET040610, name: Kimbibit}
+- {country: Ethiopia, iso3: ETH, pcode: ET070610, name: Kindo Daddaye}
+- {country: Ethiopia, iso3: ETH, pcode: ET070606, name: Kindo Koyesha}
+- {country: Ethiopia, iso3: ETH, pcode: ET031122, name: Kinfaz Begela}
+- {country: Ethiopia, iso3: ETH, pcode: ET040217, name: Kiremu}
+- {country: Ethiopia, iso3: ETH, pcode: ET140106, name: Kirkos}
+- {country: Ethiopia, iso3: ETH, pcode: ET030399, name: Kobo town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070503, name: Kochere}
+- {country: Ethiopia, iso3: ETH, pcode: ET041704, name: Kofele}
+- {country: Ethiopia, iso3: ETH, pcode: ET050898, name: Kohle /Qoxle}
+- {country: Ethiopia, iso3: ETH, pcode: ET041708, name: Kokosa}
+- {country: Ethiopia, iso3: ETH, pcode: ET010208, name: Kola Temben}
+- {country: Ethiopia, iso3: ETH, pcode: ET140103, name: Kolfe Keraniyo}
+- {country: Ethiopia, iso3: ETH, pcode: ET031105, name: Kolla Debba town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041001, name: Kombolcha}
+- {country: Ethiopia, iso3: ETH, pcode: ET030417, name: Kombolcha town}
+- {country: Ethiopia, iso3: ETH, pcode: ET110601, name: Konta}
+- {country: Ethiopia, iso3: ETH, pcode: ET050297, name: Koran /Mulla}
+- {country: Ethiopia, iso3: ETH, pcode: ET010508, name: Korarit}
+- {country: Ethiopia, iso3: ETH, pcode: ET041705, name: Kore}
+- {country: Ethiopia, iso3: ETH, pcode: ET010410, name: Korem town}
+- {country: Ethiopia, iso3: ETH, pcode: ET020108, name: Kori}
+- {country: Ethiopia, iso3: ETH, pcode: ET071019, name: Kucha}
+- {country: Ethiopia, iso3: ETH, pcode: ET071017, name: Kucha Alpha}
+- {country: Ethiopia, iso3: ETH, pcode: ET071401, name: Kulito town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041098, name: Kumbi}
+- {country: Ethiopia, iso3: ETH, pcode: ET040911, name: Kuni /Oda Bultum}
+- {country: Ethiopia, iso3: ETH, pcode: ET020202, name: Kunneba}
+- {country: Ethiopia, iso3: ETH, pcode: ET041007, name: Kurfa Chele}
+- {country: Ethiopia, iso3: ETH, pcode: ET060302, name: Kurmuk}
+- {country: Ethiopia, iso3: ETH, pcode: ET030403, name: Kutaber}
+- {country: Ethiopia, iso3: ETH, pcode: ET040604, name: Kuyu}
+- {country: Ethiopia, iso3: ETH, pcode: ET010102, name: Laelay Adiabo}
+- {country: Ethiopia, iso3: ETH, pcode: ET010205, name: Laelay Maychew}
+- {country: Ethiopia, iso3: ETH, pcode: ET050407, name: Lagahida}
+- {country: Ethiopia, iso3: ETH, pcode: ET030398, name: Lalibela town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040104, name: Lalo Asabi}
+- {country: Ethiopia, iso3: ETH, pcode: ET041811, name: Lalo Kile}
+- {country: Ethiopia, iso3: ETH, pcode: ET072003, name: Lanfero}
+- {country: Ethiopia, iso3: ETH, pcode: ET120102, name: Lare}
+- {country: Ethiopia, iso3: ETH, pcode: ET050596, name: Lasdhankayre}
+- {country: Ethiopia, iso3: ETH, pcode: ET030310, name: Lasta}
+- {country: Ethiopia, iso3: ETH, pcode: ET031108, name: Lay Armacho}
+- {country: Ethiopia, iso3: ETH, pcode: ET030205, name: Lay Gayint}
+- {country: Ethiopia, iso3: ETH, pcode: ET030410, name: Legambo}
+- {country: Ethiopia, iso3: ETH, pcode: ET042102, name: Lege Hida}
+- {country: Ethiopia, iso3: ETH, pcode: ET042004, name: Lege Tafo Lege Dadi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET150105, name: Legehare}
+- {country: Ethiopia, iso3: ETH, pcode: ET030420, name: Legehida}
+- {country: Ethiopia, iso3: ETH, pcode: ET050798, name: Lehel Yucub}
+- {country: Ethiopia, iso3: ETH, pcode: ET040212, name: Leka Dulecha}
+- {country: Ethiopia, iso3: ETH, pcode: ET160022, name: Leku town}
+- {country: Ethiopia, iso3: ETH, pcode: ET140111, name: Lemi Kura}
+- {country: Ethiopia, iso3: ETH, pcode: ET070203, name: Lemmo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040197, name: Leta Sibu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040597, name: Liban Jawi}
+- {country: Ethiopia, iso3: ETH, pcode: ET041407, name: Liben}
+- {country: Ethiopia, iso3: ETH, pcode: ET040711, name: Liben Chukala}
+- {country: Ethiopia, iso3: ETH, pcode: ET030202, name: Libokemekem}
+- {country: Ethiopia, iso3: ETH, pcode: ET140105, name: Lideta}
+- {country: Ethiopia, iso3: ETH, pcode: ET040201, name: Limu (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040818, name: Limu Bilbilo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040402, name: Limu Kosa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040401, name: Limu Seka}
+- {country: Ethiopia, iso3: ETH, pcode: ET160037, name: Loka Abaya}
+- {country: Ethiopia, iso3: ETH, pcode: ET110403, name: Loma}
+- {country: Ethiopia, iso3: ETH, pcode: ET040704, name: Lome (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040821, name: Lude Hitosa}
+- {country: Ethiopia, iso3: ETH, pcode: ET030622, name: Lumame town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010409, name: Maichew town}
+- {country: Ethiopia, iso3: ETH, pcode: ET110507, name: Maji}
+- {country: Ethiopia, iso3: ETH, pcode: ET120105, name: Makuey}
+- {country: Ethiopia, iso3: ETH, pcode: ET160012, name: Malga}
+- {country: Ethiopia, iso3: ETH, pcode: ET070707, name: Malie}
+- {country: Ethiopia, iso3: ETH, pcode: ET150104, name: Malka Jabti /M.Jebdu)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040101, name: Mana Sibu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040490, name: Mancho}
+- {country: Ethiopia, iso3: ETH, pcode: ET060204, name: Mandura}
+- {country: Ethiopia, iso3: ETH, pcode: ET060508, name: Maokomo Special}
+- {country: Ethiopia, iso3: ETH, pcode: ET110402, name: Mareka}
+- {country: Ethiopia, iso3: ETH, pcode: ET070107, name: Mareko}
+- {country: Ethiopia, iso3: ETH, pcode: ET110408, name: Mari Mansa}
+- {country: Ethiopia, iso3: ETH, pcode: ET050586, name: Marsin}
+- {country: Ethiopia, iso3: ETH, pcode: ET031119, name: Masero Denb /Central Armacho}
+- {country: Ethiopia, iso3: ETH, pcode: ET110102, name: Masha}
+- {country: Ethiopia, iso3: ETH, pcode: ET110105, name: Masha town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010509, name: May Gaba}
+- {country: Ethiopia, iso3: ETH, pcode: ET010505, name: May Kadra}
+- {country: Ethiopia, iso3: ETH, pcode: ET010116, name: May Tsebri town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030704, name: Mecha}
+- {country: Ethiopia, iso3: ETH, pcode: ET041113, name: Meda Welabu}
+- {country: Ethiopia, iso3: ETH, pcode: ET020204, name: Megale}
+- {country: Ethiopia, iso3: ETH, pcode: ET030419, name: Mehal Sayint}
+- {country: Ethiopia, iso3: ETH, pcode: ET030597, name: Mehale Meda town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030298, name: Mekan Eyesuse}
+- {country: Ethiopia, iso3: ETH, pcode: ET030498, name: Mekane Selame}
+- {country: Ethiopia, iso3: ETH, pcode: ET030421, name: Mekdela}
+- {country: Ethiopia, iso3: ETH, pcode: ET010701, name: Mekelle}
+- {country: Ethiopia, iso3: ETH, pcode: ET030304, name: Meket}
+- {country: Ethiopia, iso3: ETH, pcode: ET010412, name: Mekhoni town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041618, name: Meko}
+- {country: Ethiopia, iso3: ETH, pcode: ET071501, name: Melekoza}
+- {country: Ethiopia, iso3: ETH, pcode: ET041012, name: Melka Balo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041518, name: Melka Soda}
+- {country: Ethiopia, iso3: ETH, pcode: ET071509, name: Melo Gada}
+- {country: Ethiopia, iso3: ETH, pcode: ET041112, name: Mena (Bale)}
+- {country: Ethiopia, iso3: ETH, pcode: ET040406, name: Mena (Jimma)}
+- {country: Ethiopia, iso3: ETH, pcode: ET030213, name: Mena Meketewa}
+- {country: Ethiopia, iso3: ETH, pcode: ET040198, name: Mendi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET060301, name: Menge}
+- {country: Ethiopia, iso3: ETH, pcode: ET120308, name: Mengesh}
+- {country: Ethiopia, iso3: ETH, pcode: ET110502, name: Menit Goldiye}
+- {country: Ethiopia, iso3: ETH, pcode: ET110504, name: Menit Shasha}
+- {country: Ethiopia, iso3: ETH, pcode: ET030505, name: Menze Gera Midir}
+- {country: Ethiopia, iso3: ETH, pcode: ET030521, name: Menze Keya Gabriel}
+- {country: Ethiopia, iso3: ETH, pcode: ET030522, name: Menze Lalo Midir}
+- {country: Ethiopia, iso3: ETH, pcode: ET030509, name: Menze Mama Midir}
+- {country: Ethiopia, iso3: ETH, pcode: ET030797, name: Merawi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030502, name: Merhabete}
+- {country: Ethiopia, iso3: ETH, pcode: ET030397, name: Mersa town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040801, name: Merti}
+- {country: Ethiopia, iso3: ETH, pcode: ET030623, name: Merto Lemariyam town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040904, name: Mesela}
+- {country: Ethiopia, iso3: ETH, pcode: ET070106, name: Meskan}
+- {country: Ethiopia, iso3: ETH, pcode: ET041009, name: Meta}
+- {country: Ethiopia, iso3: ETH, pcode: ET040514, name: Meta Robi}
+- {country: Ethiopia, iso3: ETH, pcode: ET040594, name: Meta Walkite}
+- {country: Ethiopia, iso3: ETH, pcode: ET040799, name: Metehara town}
+- {country: Ethiopia, iso3: ETH, pcode: ET031213, name: Metema}
+- {country: Ethiopia, iso3: ETH, pcode: ET031224, name: Metema Yohanes town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040310, name: Metu Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET040320, name: Metu town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041018, name: Meyu Muleke}
+- {country: Ethiopia, iso3: ETH, pcode: ET050408, name: Meyumuluka}
+- {country: Ethiopia, iso3: ETH, pcode: ET030609, name: Michakel}
+- {country: Ethiopia, iso3: ETH, pcode: ET040504, name: Mida Kegn}
+- {country: Ethiopia, iso3: ETH, pcode: ET030501, name: Mida Woremo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041014, name: Midhaga Tola}
+- {country: Ethiopia, iso3: ETH, pcode: ET031223, name: Midre Genet}
+- {country: Ethiopia, iso3: ETH, pcode: ET072004, name: Mierab Azenet Berbere}
+- {country: Ethiopia, iso3: ETH, pcode: ET040901, name: Mieso}
+- {country: Ethiopia, iso3: ETH, pcode: ET050107, name: Miesso}
+- {country: Ethiopia, iso3: ETH, pcode: ET020105, name: Mile}
+- {country: Ethiopia, iso3: ETH, pcode: ET030518, name: Minjar Shenkora}
+- {country: Ethiopia, iso3: ETH, pcode: ET071005, name: Mirab Abaya}
+- {country: Ethiopia, iso3: ETH, pcode: ET031206, name: Mirab Armacho}
+- {country: Ethiopia, iso3: ETH, pcode: ET070209, name: Mirab Badowach}
+- {country: Ethiopia, iso3: ETH, pcode: ET070217, name: Mirab Soro}
+- {country: Ethiopia, iso3: ETH, pcode: ET070201, name: Misha}
+- {country: Ethiopia, iso3: ETH, pcode: ET072007, name: Misrak Azenet Berbere}
+- {country: Ethiopia, iso3: ETH, pcode: ET070205, name: Misrak Badawacho}
+- {country: Ethiopia, iso3: ETH, pcode: ET070118, name: Misrak Meskan}
+- {country: Ethiopia, iso3: ETH, pcode: ET072013, name: Misrak Siltie}
+- {country: Ethiopia, iso3: ETH, pcode: ET072012, name: Mito}
+- {country: Ethiopia, iso3: ETH, pcode: ET041216, name: Miyo}
+- {country: Ethiopia, iso3: ETH, pcode: ET110307, name: Mizan Aman town}
+- {country: Ethiopia, iso3: ETH, pcode: ET060405, name: Mizyiga}
+- {country: Ethiopia, iso3: ETH, pcode: ET030511, name: Mojan Wedera}
+- {country: Ethiopia, iso3: ETH, pcode: ET040797, name: Mojo Town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030526, name: Molale town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030504, name: Moretna Jiru}
+- {country: Ethiopia, iso3: ETH, pcode: ET030694, name: Mota Town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041210, name: Moyale (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET051103, name: Moyale (SM)}
+- {country: Ethiopia, iso3: ETH, pcode: ET051187, name: Mubarek}
+- {country: Ethiopia, iso3: ETH, pcode: ET070112, name: Muhur Na Aklil}
+- {country: Ethiopia, iso3: ETH, pcode: ET042016, name: Mulo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040817, name: Munessa}
+- {country: Ethiopia, iso3: ETH, pcode: ET050606, name: Mustahil}
+- {country: Ethiopia, iso3: ETH, pcode: ET010209, name: Naeder}
+- {country: Ethiopia, iso3: ETH, pcode: ET030215, name: Nefas Mewicha town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041414, name: Negele town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040102, name: Nejo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040199, name: Nejo town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040297, name: Nekemte town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041709, name: Nenesebo}
+- {country: Ethiopia, iso3: ETH, pcode: ET010403, name: Neqsege}
+- {country: Ethiopia, iso3: ETH, pcode: ET140102, name: Nifas Silk Lafto}
+- {country: Ethiopia, iso3: ETH, pcode: ET040115, name: Nole Kaba}
+- {country: Ethiopia, iso3: ETH, pcode: ET040508, name: Nono}
+- {country: Ethiopia, iso3: ETH, pcode: ET040499, name: Nono Benja}
+- {country: Ethiopia, iso3: ETH, pcode: ET070703, name: North Ari}
+- {country: Ethiopia, iso3: ETH, pcode: ET040215, name: Nunu Kumba}
+- {country: Ethiopia, iso3: ETH, pcode: ET070708, name: Nyngatom}
+- {country: Ethiopia, iso3: ETH, pcode: ET041405, name: Odo Shakiso}
+- {country: Ethiopia, iso3: ETH, pcode: ET070607, name: Ofa}
+- {country: Ethiopia, iso3: ETH, pcode: ET010408, name: Ofla}
+- {country: Ethiopia, iso3: ETH, pcode: ET040491, name: Omo Beyam}
+- {country: Ethiopia, iso3: ETH, pcode: ET040411, name: Omo Nada}
+- {country: Ethiopia, iso3: ETH, pcode: ET071506, name: Oyida}
+- {country: Ethiopia, iso3: ETH, pcode: ET060206, name: Pawe}
+- {country: Ethiopia, iso3: ETH, pcode: ET150114, name: Police Maret}
+- {country: Ethiopia, iso3: ETH, pcode: ET051198, name: Qada Duma}
+- {country: Ethiopia, iso3: ETH, pcode: ET031214, name: Quara}
+- {country: Ethiopia, iso3: ETH, pcode: ET030706, name: Quarit}
+- {country: Ethiopia, iso3: ETH, pcode: ET050497, name: Qubi}
+- {country: Ethiopia, iso3: ETH, pcode: ET010214, name: Rama}
+- {country: Ethiopia, iso3: ETH, pcode: ET070509, name: Rape}
+- {country: Ethiopia, iso3: ETH, pcode: ET050809, name: Raso}
+- {country: Ethiopia, iso3: ETH, pcode: ET010407, name: Raya Alamata}
+- {country: Ethiopia, iso3: ETH, pcode: ET010406, name: Raya Azebo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030302, name: Raya Kobo}
+- {country: Ethiopia, iso3: ETH, pcode: ET042104, name: Rayitu}
+- {country: Ethiopia, iso3: ETH, pcode: ET040812, name: Robe}
+- {country: Ethiopia, iso3: ETH, pcode: ET041119, name: Robe Town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041412, name: Saba Boru}
+- {country: Ethiopia, iso3: ETH, pcode: ET150103, name: Sabian}
+- {country: Ethiopia, iso3: ETH, pcode: ET010303, name: Saesie}
+- {country: Ethiopia, iso3: ETH, pcode: ET051005, name: Sagag}
+- {country: Ethiopia, iso3: ETH, pcode: ET010601, name: Saharti}
+- {country: Ethiopia, iso3: ETH, pcode: ET030806, name: Sahila}
+- {country: Ethiopia, iso3: ETH, pcode: ET050403, name: Salahad}
+- {country: Ethiopia, iso3: ETH, pcode: ET070701, name: Salamago}
+- {country: Ethiopia, iso3: ETH, pcode: ET040313, name: Sale Nono}
+- {country: Ethiopia, iso3: ETH, pcode: ET020198, name: Samera Logiya town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010606, name: Samre}
+- {country: Ethiopia, iso3: ETH, pcode: ET020502, name: Samurobi}
+- {country: Ethiopia, iso3: ETH, pcode: ET072006, name: Sankura}
+- {country: Ethiopia, iso3: ETH, pcode: ET040211, name: Sasiga}
+- {country: Ethiopia, iso3: ETH, pcode: ET071507, name: Sawla town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030411, name: Sayint}
+- {country: Ethiopia, iso3: ETH, pcode: ET110201, name: Saylem}
+- {country: Ethiopia, iso3: ETH, pcode: ET041805, name: Sayo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040118, name: Sayo Nole}
+- {country: Ethiopia, iso3: ETH, pcode: ET042006, name: Sebeta Hawas}
+- {country: Ethiopia, iso3: ETH, pcode: ET042009, name: Sebeta town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030619, name: Sedae}
+- {country: Ethiopia, iso3: ETH, pcode: ET060402, name: Sedal}
+- {country: Ethiopia, iso3: ETH, pcode: ET030214, name: Sede Muja}
+- {country: Ethiopia, iso3: ETH, pcode: ET041310, name: Seden Sodo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041812, name: Sedi Chenka}
+- {country: Ethiopia, iso3: ETH, pcode: ET071302, name: Segen Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET040409, name: Seka Chekorsa}
+- {country: Ethiopia, iso3: ETH, pcode: ET030705, name: Sekela}
+- {country: Ethiopia, iso3: ETH, pcode: ET040403, name: Sekoru}
+- {country: Ethiopia, iso3: ETH, pcode: ET030802, name: Sekota}
+- {country: Ethiopia, iso3: ETH, pcode: ET030807, name: Sekota town}
+- {country: Ethiopia, iso3: ETH, pcode: ET071003, name: Selamber town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010109, name: Selekleka}
+- {country: Ethiopia, iso3: ETH, pcode: ET010401, name: Selewa}
+- {country: Ethiopia, iso3: ETH, pcode: ET030207, name: Semada}
+- {country: Ethiopia, iso3: ETH, pcode: ET030701, name: Semen Achefer}
+- {country: Ethiopia, iso3: ETH, pcode: ET110305, name: Semen Bench}
+- {country: Ethiopia, iso3: ETH, pcode: ET030616, name: Senan}
+- {country: Ethiopia, iso3: ETH, pcode: ET031008, name: Senbete town}
+- {country: Ethiopia, iso3: ETH, pcode: ET042018, name: Sendafa town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040811, name: Seru}
+- {country: Ethiopia, iso3: ETH, pcode: ET040413, name: Setema}
+- {country: Ethiopia, iso3: ETH, pcode: ET010504, name: Setit Humera}
+- {country: Ethiopia, iso3: ETH, pcode: ET042105, name: Seweyna}
+- {country: Ethiopia, iso3: ETH, pcode: ET010110, name: Seyemti Adyabo}
+- {country: Ethiopia, iso3: ETH, pcode: ET050204, name: Shabeeley}
+- {country: Ethiopia, iso3: ETH, pcode: ET160028, name: Shafamo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041499, name: Shakiso town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041702, name: Shala}
+- {country: Ethiopia, iso3: ETH, pcode: ET041902, name: Shambu town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040893, name: Shanan Kolu}
+- {country: Ethiopia, iso3: ETH, pcode: ET041712, name: Shashemene Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET041711, name: Shashemene town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070204, name: Shashogo}
+- {country: Ethiopia, iso3: ETH, pcode: ET031104, name: Shawra town}
+- {country: Ethiopia, iso3: ETH, pcode: ET110304, name: Shay Bench}
+- {country: Ethiopia, iso3: ETH, pcode: ET050501, name: Shaygosh}
+- {country: Ethiopia, iso3: ETH, pcode: ET160001, name: Shebe Dino}
+- {country: Ethiopia, iso3: ETH, pcode: ET040414, name: Shebe Sambo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030614, name: Shebel Bernta}
+- {country: Ethiopia, iso3: ETH, pcode: ET110301, name: Sheko}
+- {country: Ethiopia, iso3: ETH, pcode: ET030716, name: Shendi town}
+- {country: Ethiopia, iso3: ETH, pcode: ET130102, name: Shenkor}
+- {country: Ethiopia, iso3: ETH, pcode: ET010107, name: Sheraro town}
+- {country: Ethiopia, iso3: ETH, pcode: ET060304, name: Sherkole}
+- {country: Ethiopia, iso3: ETH, pcode: ET050503, name: Shilabo}
+- {country: Ethiopia, iso3: ETH, pcode: ET050103, name: Shinile}
+- {country: Ethiopia, iso3: ETH, pcode: ET070310, name: Shinshincho town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040814, name: Shirka}
+- {country: Ethiopia, iso3: ETH, pcode: ET110213, name: Shisho Ande}
+- {country: Ethiopia, iso3: ETH, pcode: ET030595, name: Shoa Robit}
+- {country: Ethiopia, iso3: ETH, pcode: ET070212, name: Shone Town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040209, name: Sibu Sire}
+- {country: Ethiopia, iso3: ETH, pcode: ET040412, name: Sigmo}
+- {country: Ethiopia, iso3: ETH, pcode: ET072002, name: Siltie}
+- {country: Ethiopia, iso3: ETH, pcode: ET041109, name: Sinana}
+- {country: Ethiopia, iso3: ETH, pcode: ET041701, name: Siraro}
+- {country: Ethiopia, iso3: ETH, pcode: ET070216, name: Siraro Badawacho}
+- {country: Ethiopia, iso3: ETH, pcode: ET040820, name: Sire}
+- {country: Ethiopia, iso3: ETH, pcode: ET030523, name: Siya Debirna Wayu}
+- {country: Ethiopia, iso3: ETH, pcode: ET110308, name: Size town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070105, name: Sodo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041314, name: Sodo Daci}
+- {country: Ethiopia, iso3: ETH, pcode: ET070613, name: Sodo Town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070605, name: Sodo Zuria}
+- {country: Ethiopia, iso3: ETH, pcode: ET130101, name: Sofi}
+- {country: Ethiopia, iso3: ETH, pcode: ET070206, name: Soro}
+- {country: Ethiopia, iso3: ETH, pcode: ET070702, name: South Ari}
+- {country: Ethiopia, iso3: ETH, pcode: ET040808, name: Sude}
+- {country: Ethiopia, iso3: ETH, pcode: ET042013, name: Sululta}
+- {country: Ethiopia, iso3: ETH, pcode: ET042005, name: Sululta town}
+- {country: Ethiopia, iso3: ETH, pcode: ET110506, name: Surma}
+- {country: Ethiopia, iso3: ETH, pcode: ET041594, name: Suro Berguda}
+- {country: Ethiopia, iso3: ETH, pcode: ET031120, name: Tach Armacho}
+- {country: Ethiopia, iso3: ETH, pcode: ET030206, name: Tach Gayint}
+- {country: Ethiopia, iso3: ETH, pcode: ET010101, name: Tahtay Adiyabo}
+- {country: Ethiopia, iso3: ETH, pcode: ET010104, name: Tahtay Koraro}
+- {country: Ethiopia, iso3: ETH, pcode: ET010206, name: Tahtay Mayechew}
+- {country: Ethiopia, iso3: ETH, pcode: ET031121, name: Takusa}
+- {country: Ethiopia, iso3: ETH, pcode: ET010222, name: Tanqua Melashe}
+- {country: Ethiopia, iso3: ETH, pcode: ET030510, name: Tarema Ber}
+- {country: Ethiopia, iso3: ETH, pcode: ET070616, name: Tebela town}
+- {country: Ethiopia, iso3: ETH, pcode: ET031107, name: Tegede}
+- {country: Ethiopia, iso3: ETH, pcode: ET020501, name: Telalek}
+- {country: Ethiopia, iso3: ETH, pcode: ET030119, name: Telemt}
+- {country: Ethiopia, iso3: ETH, pcode: ET041212, name: Teltale}
+- {country: Ethiopia, iso3: ETH, pcode: ET070301, name: Tembaro}
+- {country: Ethiopia, iso3: ETH, pcode: ET040813, name: Tena}
+- {country: Ethiopia, iso3: ETH, pcode: ET030402, name: Tenta}
+- {country: Ethiopia, iso3: ETH, pcode: ET110104, name: Tepi}
+- {country: Ethiopia, iso3: ETH, pcode: ET110407, name: Tercha Zuriya}
+- {country: Ethiopia, iso3: ETH, pcode: ET110411, name: Tercha town}
+- {country: Ethiopia, iso3: ETH, pcode: ET020403, name: Teru}
+- {country: Ethiopia, iso3: ETH, pcode: ET160026, name: Teticha}
+- {country: Ethiopia, iso3: ETH, pcode: ET030405, name: Thehulederie}
+- {country: Ethiopia, iso3: ETH, pcode: ET040509, name: Tikur Enchini}
+- {country: Ethiopia, iso3: ETH, pcode: ET030911, name: Tilili town}
+- {country: Ethiopia, iso3: ETH, pcode: ET040404, name: Tiro Afeta}
+- {country: Ethiopia, iso3: ETH, pcode: ET040816, name: Tiyo}
+- {country: Ethiopia, iso3: ETH, pcode: ET110401, name: Tocha}
+- {country: Ethiopia, iso3: ETH, pcode: ET040517, name: Toke Kutaye}
+- {country: Ethiopia, iso3: ETH, pcode: ET041308, name: Tole}
+- {country: Ethiopia, iso3: ETH, pcode: ET072009, name: Tora town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010314, name: Tsaeda Emba}
+- {country: Ethiopia, iso3: ETH, pcode: ET030808, name: Tsagbeji}
+- {country: Ethiopia, iso3: ETH, pcode: ET010503, name: Tsegede (TG)}
+- {country: Ethiopia, iso3: ETH, pcode: ET010106, name: Tselemti}
+- {country: Ethiopia, iso3: ETH, pcode: ET010113, name: Tsimbla}
+- {country: Ethiopia, iso3: ETH, pcode: ET030524, name: Tulefa town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050283, name: Tuliguled}
+- {country: Ethiopia, iso3: ETH, pcode: ET110206, name: Tullo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040903, name: Tulo (OR)}
+- {country: Ethiopia, iso3: ETH, pcode: ET030428, name: Tulu Awlia}
+- {country: Ethiopia, iso3: ETH, pcode: ET071504, name: Uba Debre Tsehay}
+- {country: Ethiopia, iso3: ETH, pcode: ET060308, name: Undulu}
+- {country: Ethiopia, iso3: ETH, pcode: ET041401, name: Uraga}
+- {country: Ethiopia, iso3: ETH, pcode: ET110214, name: Wacha}
+- {country: Ethiopia, iso3: ETH, pcode: ET041298, name: Wachile}
+- {country: Ethiopia, iso3: ETH, pcode: ET041404, name: Wadera}
+- {country: Ethiopia, iso3: ETH, pcode: ET030305, name: Wadla}
+- {country: Ethiopia, iso3: ETH, pcode: ET150207, name: Wahil}
+- {country: Ethiopia, iso3: ETH, pcode: ET050295, name: Wajale town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010608, name: Wajirat}
+- {country: Ethiopia, iso3: ETH, pcode: ET041303, name: Waliso}
+- {country: Ethiopia, iso3: ETH, pcode: ET040216, name: Wama Hagalo}
+- {country: Ethiopia, iso3: ETH, pcode: ET050499, name: Wangey}
+- {country: Ethiopia, iso3: ETH, pcode: ET120104, name: Wantawo}
+- {country: Ethiopia, iso3: ETH, pcode: ET040601, name: Wara Jarso}
+- {country: Ethiopia, iso3: ETH, pcode: ET050704, name: Warder}
+- {country: Ethiopia, iso3: ETH, pcode: ET040206, name: Wayu Tuka}
+- {country: Ethiopia, iso3: ETH, pcode: ET030416, name: Wegde}
+- {country: Ethiopia, iso3: ETH, pcode: ET030216, name: Wegeda town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030424, name: Wegel tena town}
+- {country: Ethiopia, iso3: ETH, pcode: ET031109, name: Wegera}
+- {country: Ethiopia, iso3: ETH, pcode: ET010502, name: Welkait}
+- {country: Ethiopia, iso3: ETH, pcode: ET070114, name: Welkite town}
+- {country: Ethiopia, iso3: ETH, pcode: ET042014, name: Welmera}
+- {country: Ethiopia, iso3: ETH, pcode: ET060203, name: Wembera}
+- {country: Ethiopia, iso3: ETH, pcode: ET030711, name: Wemberma}
+- {country: Ethiopia, iso3: ETH, pcode: ET070501, name: Wenago}
+- {country: Ethiopia, iso3: ETH, pcode: ET041302, name: Wenchi}
+- {country: Ethiopia, iso3: ETH, pcode: ET071402, name: Wera}
+- {country: Ethiopia, iso3: ETH, pcode: ET071404, name: Wera Djo}
+- {country: Ethiopia, iso3: ETH, pcode: ET030415, name: Were Ilu}
+- {country: Ethiopia, iso3: ETH, pcode: ET030423, name: Wereilu town}
+- {country: Ethiopia, iso3: ETH, pcode: ET031116, name: West Belesa}
+- {country: Ethiopia, iso3: ETH, pcode: ET031125, name: West Dembiya}
+- {country: Ethiopia, iso3: ETH, pcode: ET050805, name: West Imi}
+- {country: Ethiopia, iso3: ETH, pcode: ET030309, name: Woldiya town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041311, name: Woliso town}
+- {country: Ethiopia, iso3: ETH, pcode: ET041797, name: Wondo}
+- {country: Ethiopia, iso3: ETH, pcode: ET160019, name: Wondo Genet}
+- {country: Ethiopia, iso3: ETH, pcode: ET160036, name: Wondo Genet town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160013, name: Wonosho}
+- {country: Ethiopia, iso3: ETH, pcode: ET072010, name: Worabe town}
+- {country: Ethiopia, iso3: ETH, pcode: ET030422, name: Worebabu}
+- {country: Ethiopia, iso3: ETH, pcode: ET030293, name: Woreta town}
+- {country: Ethiopia, iso3: ETH, pcode: ET070711, name: Wub Ari}
+- {country: Ethiopia, iso3: ETH, pcode: ET040608, name: Wuchale}
+- {country: Ethiopia, iso3: ETH, pcode: ET010309, name: Wukro town}
+- {country: Ethiopia, iso3: ETH, pcode: ET072008, name: Wulbareg}
+- {country: Ethiopia, iso3: ETH, pcode: ET041207, name: Yabelo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041296, name: Yabelo town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050498, name: Yahob}
+- {country: Ethiopia, iso3: ETH, pcode: ET020404, name: Yalo}
+- {country: Ethiopia, iso3: ETH, pcode: ET041802, name: Yama Logi Welel}
+- {country: Ethiopia, iso3: ETH, pcode: ET040614, name: Yaya Gulele}
+- {country: Ethiopia, iso3: ETH, pcode: ET040309, name: Yayu}
+- {country: Ethiopia, iso3: ETH, pcode: ET140107, name: Yeka}
+- {country: Ethiopia, iso3: ETH, pcode: ET110103, name: Yeki}
+- {country: Ethiopia, iso3: ETH, pcode: ET072401, name: Yem SP Woreda}
+- {country: Ethiopia, iso3: ETH, pcode: ET030703, name: Yilmana Densa}
+- {country: Ethiopia, iso3: ETH, pcode: ET070502, name: Yirgachefe}
+- {country: Ethiopia, iso3: ETH, pcode: ET070512, name: Yirgachefe town}
+- {country: Ethiopia, iso3: ETH, pcode: ET160020, name: Yirgalem town}
+- {country: Ethiopia, iso3: ETH, pcode: ET050382, name: Yocale}
+- {country: Ethiopia, iso3: ETH, pcode: ET040112, name: Yubdo}
+- {country: Ethiopia, iso3: ETH, pcode: ET110410, name: Zabagazo}
+- {country: Ethiopia, iso3: ETH, pcode: ET071503, name: Zala}
+- {country: Ethiopia, iso3: ETH, pcode: ET010318, name: Zala Anbesa town}
+- {country: Ethiopia, iso3: ETH, pcode: ET010103, name: Zana}
+- {country: Ethiopia, iso3: ETH, pcode: ET010413, name: Zata}
+- {country: Ethiopia, iso3: ETH, pcode: ET060401, name: Zayi}
+- {country: Ethiopia, iso3: ETH, pcode: ET030801, name: Zequala}
+- {country: Ethiopia, iso3: ETH, pcode: ET030997, name: Zigem}
+- {country: Ethiopia, iso3: ETH, pcode: ET040806, name: Ziway Dugda}
+- {country: Kenya, iso3: KEN, pcode: KE030, name: Baringo}
+- {country: Kenya, iso3: KEN, pcode: KE036, name: Bomet}
+- {country: Kenya, iso3: KEN, pcode: KE039, name: Bungoma}
+- {country: Kenya, iso3: KEN, pcode: KE040, name: Busia}
+- {country: Kenya, iso3: KEN, pcode: KE028, name: Elgeyo Marakwet}
+- {country: Kenya, iso3: KEN, pcode: KE014, name: Embu}
+- {country: Kenya, iso3: KEN, pcode: KE007, name: Garissa}
+- {country: Kenya, iso3: KEN, pcode: KE043, name: Homa Bay}
+- {country: Kenya, iso3: KEN, pcode: KE011, name: Isiolo}
+- {country: Kenya, iso3: KEN, pcode: KE034, name: Kajiado}
+- {country: Kenya, iso3: KEN, pcode: KE037, name: Kakamega}
+- {country: Kenya, iso3: KEN, pcode: KE035, name: Kericho}
+- {country: Kenya, iso3: KEN, pcode: KE022, name: Kiambu}
+- {country: Kenya, iso3: KEN, pcode: KE003, name: Kilifi}
+- {country: Kenya, iso3: KEN, pcode: KE020, name: Kirinyaga}
+- {country: Kenya, iso3: KEN, pcode: KE045, name: Kisii}
+- {country: Kenya, iso3: KEN, pcode: KE042, name: Kisumu}
+- {country: Kenya, iso3: KEN, pcode: KE015, name: Kitui}
+- {country: Kenya, iso3: KEN, pcode: KE002, name: Kwale}
+- {country: Kenya, iso3: KEN, pcode: KE031, name: Laikipia}
+- {country: Kenya, iso3: KEN, pcode: KE005, name: Lamu}
+- {country: Kenya, iso3: KEN, pcode: KE016, name: Machakos}
+- {country: Kenya, iso3: KEN, pcode: KE017, name: Makueni}
+- {country: Kenya, iso3: KEN, pcode: KE009, name: Mandera}
+- {country: Kenya, iso3: KEN, pcode: KE010, name: Marsabit}
+- {country: Kenya, iso3: KEN, pcode: KE012, name: Meru}
+- {country: Kenya, iso3: KEN, pcode: KE044, name: Migori}
+- {country: Kenya, iso3: KEN, pcode: KE001, name: Mombasa}
+- {country: Kenya, iso3: KEN, pcode: KE021, name: Muranga}
+- {country: Kenya, iso3: KEN, pcode: KE047, name: Nairobi}
+- {country: Kenya, iso3: KEN, pcode: KE032, name: Nakuru}
+- {country: Kenya, iso3: KEN, pcode: KE029, name: Nandi}
+- {country: Kenya, iso3: KEN, pcode: KE033, name: Narok}
+- {country: Kenya, iso3: KEN, pcode: KE046, name: Nyamira}
+- {country: Kenya, iso3: KEN, pcode: KE018, name: Nyandarua}
+- {country: Kenya, iso3: KEN, pcode: KE019, name: Nyeri}
+- {country: Kenya, iso3: KEN, pcode: KE025, name: Samburu}
+- {country: Kenya, iso3: KEN, pcode: KE041, name: Siaya}
+- {country: Kenya, iso3: KEN, pcode: KE006, name: Taita Taveta}
+- {country: Kenya, iso3: KEN, pcode: KE004, name: Tana River}
+- {country: Kenya, iso3: KEN, pcode: KE013, name: Tharaka Nithi}
+- {country: Kenya, iso3: KEN, pcode: KE026, name: Trans Nzoia}
+- {country: Kenya, iso3: KEN, pcode: KE023, name: Turkana}
+- {country: Kenya, iso3: KEN, pcode: KE027, name: Uasin Gishu}
+- {country: Kenya, iso3: KEN, pcode: KE038, name: Vihiga}
+- {country: Kenya, iso3: KEN, pcode: KE008, name: Wajir}
+- {country: Kenya, iso3: KEN, pcode: KE024, name: West Pokot}
+- {country: Somalia, iso3: SOM, pcode: SO2102, name: Adan Yabaal}
+- {country: Somalia, iso3: SOM, pcode: SO2302, name: Afgooye}
+- {country: Somalia, iso3: SOM, pcode: SO2802, name: Afmadow}
+- {country: Somalia, iso3: SOM, pcode: SO2602, name: Baardheere}
+- {country: Somalia, iso3: SOM, pcode: SO2803, name: Badhaadhe}
+- {country: Somalia, iso3: SOM, pcode: SO1102, name: Baki}
+- {country: Somalia, iso3: SOM, pcode: SO2103, name: Balcad}
+- {country: Somalia, iso3: SOM, pcode: SO2201, name: Banadir}
+- {country: Somalia, iso3: SOM, pcode: SO1602, name: Bandarbeyla}
+- {country: Somalia, iso3: SOM, pcode: SO2303, name: Baraawe}
+- {country: Somalia, iso3: SOM, pcode: SO2401, name: Baydhaba}
+- {country: Somalia, iso3: SOM, pcode: SO2001, name: Belet Weyne}
+- {country: Somalia, iso3: SOM, pcode: SO2603, name: Belet Xaawo}
+- {country: Somalia, iso3: SOM, pcode: SO1202, name: Berbera}
+- {country: Somalia, iso3: SOM, pcode: SO1101, name: Borama}
+- {country: Somalia, iso3: SOM, pcode: SO1601, name: Bossaso}
+- {country: Somalia, iso3: SOM, pcode: SO2701, name: Buaale}
+- {country: Somalia, iso3: SOM, pcode: SO2002, name: Bulo Burto}
+- {country: Somalia, iso3: SOM, pcode: SO1301, name: Burco}
+- {country: Somalia, iso3: SOM, pcode: SO1702, name: Burtinle}
+- {country: Somalia, iso3: SOM, pcode: SO1302, name: Buuhoodle}
+- {country: Somalia, iso3: SOM, pcode: SO2402, name: Buur Hakaba}
+- {country: Somalia, iso3: SOM, pcode: SO1902, name: Cabudwaaq}
+- {country: Somalia, iso3: SOM, pcode: SO1903, name: Cadaado}
+- {country: Somalia, iso3: SOM, pcode: SO2104, name: Cadale}
+- {country: Somalia, iso3: SOM, pcode: SO1603, name: Caluula}
+- {country: Somalia, iso3: SOM, pcode: SO1402, name: Caynabo}
+- {country: Somalia, iso3: SOM, pcode: SO1502, name: Ceel Afweyn}
+- {country: Somalia, iso3: SOM, pcode: SO2502, name: Ceel Barde}
+- {country: Somalia, iso3: SOM, pcode: SO1904, name: Ceel Buur}
+- {country: Somalia, iso3: SOM, pcode: SO1905, name: Ceel Dheer}
+- {country: Somalia, iso3: SOM, pcode: SO2604, name: Ceel Waaq}
+- {country: Somalia, iso3: SOM, pcode: SO1501, name: Ceerigaabo}
+- {country: Somalia, iso3: SOM, pcode: SO1901, name: Dhuusamarreeb}
+- {country: Somalia, iso3: SOM, pcode: SO2403, name: Diinsoor}
+- {country: Somalia, iso3: SOM, pcode: SO2605, name: Doolow}
+- {country: Somalia, iso3: SOM, pcode: SO1703, name: Eyl}
+- {country: Somalia, iso3: SOM, pcode: SO1801, name: Gaalkacyo}
+- {country: Somalia, iso3: SOM, pcode: SO1802, name: Galdogob}
+- {country: Somalia, iso3: SOM, pcode: SO2601, name: Garbahaarey}
+- {country: Somalia, iso3: SOM, pcode: SO1701, name: Garoowe}
+- {country: Somalia, iso3: SOM, pcode: SO1203, name: Gebiley}
+- {country: Somalia, iso3: SOM, pcode: SO1201, name: Hargeysa}
+- {country: Somalia, iso3: SOM, pcode: SO1803, name: Hobyo}
+- {country: Somalia, iso3: SOM, pcode: SO1604, name: Iskushuban}
+- {country: Somalia, iso3: SOM, pcode: SO2003, name: Jalalaqsi}
+- {country: Somalia, iso3: SOM, pcode: SO2804, name: Jamaame}
+- {country: Somalia, iso3: SOM, pcode: SO1804, name: Jariiban}
+- {country: Somalia, iso3: SOM, pcode: SO2702, name: Jilib}
+- {country: Somalia, iso3: SOM, pcode: SO2101, name: Jowhar}
+- {country: Somalia, iso3: SOM, pcode: SO2801, name: Kismaayo}
+- {country: Somalia, iso3: SOM, pcode: SO2304, name: Kurtunwaarey}
+- {country: Somalia, iso3: SOM, pcode: SO1401, name: Laas Caanood}
+- {country: Somalia, iso3: SOM, pcode: SO1503, name: Laasqoray}
+- {country: Somalia, iso3: SOM, pcode: SO1103, name: Lughaye}
+- {country: Somalia, iso3: SOM, pcode: SO2606, name: Luuq}
+- {country: Somalia, iso3: SOM, pcode: SO2301, name: Marka}
+- {country: Somalia, iso3: SOM, pcode: SO1303, name: Owdweyne}
+- {country: Somalia, iso3: SOM, pcode: SO1605, name: Qandala}
+- {country: Somalia, iso3: SOM, pcode: SO2404, name: Qansax Dheere}
+- {country: Somalia, iso3: SOM, pcode: SO1606, name: Qardho}
+- {country: Somalia, iso3: SOM, pcode: SO2305, name: Qoryooley}
+- {country: Somalia, iso3: SOM, pcode: SO2505, name: Rab Dhuure}
+- {country: Somalia, iso3: SOM, pcode: SO2703, name: Saakow}
+- {country: Somalia, iso3: SOM, pcode: SO2306, name: Sablaale}
+- {country: Somalia, iso3: SOM, pcode: SO1304, name: Sheikh}
+- {country: Somalia, iso3: SOM, pcode: SO1403, name: Taleex}
+- {country: Somalia, iso3: SOM, pcode: SO2503, name: Tayeeglow}
+- {country: Somalia, iso3: SOM, pcode: SO2504, name: Waajid}
+- {country: Somalia, iso3: SOM, pcode: SO2307, name: Wanla Weyn}
+- {country: Somalia, iso3: SOM, pcode: SO1805, name: Xarardheere}
+- {country: Somalia, iso3: SOM, pcode: SO1404, name: Xudun}
+- {country: Somalia, iso3: SOM, pcode: SO2501, name: Xudur}
+- {country: Somalia, iso3: SOM, pcode: SO1104, name: Zeylac}
+adm1
+- {country: Ethiopia, iso3: ETH, pcode: ET14, name: Addis Ababa}
+- {country: Ethiopia, iso3: ETH, pcode: ET02, name: Afar}
+- {country: Ethiopia, iso3: ETH, pcode: ET03, name: Amhara}
+- {country: Ethiopia, iso3: ETH, pcode: ET06, name: Benishangul Gumz}
+- {country: Ethiopia, iso3: ETH, pcode: ET15, name: Dire Dawa}
+- {country: Ethiopia, iso3: ETH, pcode: ET12, name: Gambela}
+- {country: Ethiopia, iso3: ETH, pcode: ET13, name: Harari}
+- {country: Ethiopia, iso3: ETH, pcode: ET04, name: Oromia}
+- {country: Ethiopia, iso3: ETH, pcode: ET07, name: SNNP}
+- {country: Ethiopia, iso3: ETH, pcode: ET16, name: Sidama}
+- {country: Ethiopia, iso3: ETH, pcode: ET05, name: Somali}
+- {country: Ethiopia, iso3: ETH, pcode: ET11, name: South West Ethiopia}
+- {country: Ethiopia, iso3: ETH, pcode: ET01, name: Tigray}
+- {country: Kenya, iso3: KEN, pcode: KE030, name: Baringo}
+- {country: Kenya, iso3: KEN, pcode: KE036, name: Bomet}
+- {country: Kenya, iso3: KEN, pcode: KE039, name: Bungoma}
+- {country: Kenya, iso3: KEN, pcode: KE040, name: Busia}
+- {country: Kenya, iso3: KEN, pcode: KE028, name: Elgeyo Marakwet}
+- {country: Kenya, iso3: KEN, pcode: KE014, name: Embu}
+- {country: Kenya, iso3: KEN, pcode: KE007, name: Garissa}
+- {country: Kenya, iso3: KEN, pcode: KE043, name: Homa Bay}
+- {country: Kenya, iso3: KEN, pcode: KE011, name: Isiolo}
+- {country: Kenya, iso3: KEN, pcode: KE034, name: Kajiado}
+- {country: Kenya, iso3: KEN, pcode: KE037, name: Kakamega}
+- {country: Kenya, iso3: KEN, pcode: KE035, name: Kericho}
+- {country: Kenya, iso3: KEN, pcode: KE022, name: Kiambu}
+- {country: Kenya, iso3: KEN, pcode: KE003, name: Kilifi}
+- {country: Kenya, iso3: KEN, pcode: KE020, name: Kirinyaga}
+- {country: Kenya, iso3: KEN, pcode: KE045, name: Kisii}
+- {country: Kenya, iso3: KEN, pcode: KE042, name: Kisumu}
+- {country: Kenya, iso3: KEN, pcode: KE015, name: Kitui}
+- {country: Kenya, iso3: KEN, pcode: KE002, name: Kwale}
+- {country: Kenya, iso3: KEN, pcode: KE031, name: Laikipia}
+- {country: Kenya, iso3: KEN, pcode: KE005, name: Lamu}
+- {country: Kenya, iso3: KEN, pcode: KE016, name: Machakos}
+- {country: Kenya, iso3: KEN, pcode: KE017, name: Makueni}
+- {country: Kenya, iso3: KEN, pcode: KE009, name: Mandera}
+- {country: Kenya, iso3: KEN, pcode: KE010, name: Marsabit}
+- {country: Kenya, iso3: KEN, pcode: KE012, name: Meru}
+- {country: Kenya, iso3: KEN, pcode: KE044, name: Migori}
+- {country: Kenya, iso3: KEN, pcode: KE001, name: Mombasa}
+- {country: Kenya, iso3: KEN, pcode: KE021, name: Muranga}
+- {country: Kenya, iso3: KEN, pcode: KE047, name: Nairobi}
+- {country: Kenya, iso3: KEN, pcode: KE032, name: Nakuru}
+- {country: Kenya, iso3: KEN, pcode: KE029, name: Nandi}
+- {country: Kenya, iso3: KEN, pcode: KE033, name: Narok}
+- {country: Kenya, iso3: KEN, pcode: KE046, name: Nyamira}
+- {country: Kenya, iso3: KEN, pcode: KE018, name: Nyandarua}
+- {country: Kenya, iso3: KEN, pcode: KE019, name: Nyeri}
+- {country: Kenya, iso3: KEN, pcode: KE025, name: Samburu}
+- {country: Kenya, iso3: KEN, pcode: KE041, name: Siaya}
+- {country: Kenya, iso3: KEN, pcode: KE006, name: Taita Taveta}
+- {country: Kenya, iso3: KEN, pcode: KE004, name: Tana River}
+- {country: Kenya, iso3: KEN, pcode: KE013, name: Tharaka Nithi}
+- {country: Kenya, iso3: KEN, pcode: KE026, name: Trans Nzoia}
+- {country: Kenya, iso3: KEN, pcode: KE023, name: Turkana}
+- {country: Kenya, iso3: KEN, pcode: KE027, name: Uasin Gishu}
+- {country: Kenya, iso3: KEN, pcode: KE038, name: Vihiga}
+- {country: Kenya, iso3: KEN, pcode: KE008, name: Wajir}
+- {country: Kenya, iso3: KEN, pcode: KE024, name: West Pokot}
+- {country: Somalia, iso3: SOM, pcode: SO11, name: Awdal}
+- {country: Somalia, iso3: SOM, pcode: SO25, name: Bakool}
+- {country: Somalia, iso3: SOM, pcode: SO22, name: Banadir}
+- {country: Somalia, iso3: SOM, pcode: SO16, name: Bari}
+- {country: Somalia, iso3: SOM, pcode: SO24, name: Bay}
+- {country: Somalia, iso3: SOM, pcode: SO19, name: Galgaduud}
+- {country: Somalia, iso3: SOM, pcode: SO26, name: Gedo}
+- {country: Somalia, iso3: SOM, pcode: SO20, name: Hiraan}
+- {country: Somalia, iso3: SOM, pcode: SO28, name: Lower Juba}
+- {country: Somalia, iso3: SOM, pcode: SO23, name: Lower Shabelle}
+- {country: Somalia, iso3: SOM, pcode: SO27, name: Middle Juba}
+- {country: Somalia, iso3: SOM, pcode: SO21, name: Middle Shabelle}
+- {country: Somalia, iso3: SOM, pcode: SO18, name: Mudug}
+- {country: Somalia, iso3: SOM, pcode: SO17, name: Nugaal}
+- {country: Somalia, iso3: SOM, pcode: SO15, name: Sanaag}
+- {country: Somalia, iso3: SOM, pcode: SO14, name: Sool}
+- {country: Somalia, iso3: SOM, pcode: SO13, name: Togdheer}
+- {country: Somalia, iso3: SOM, pcode: SO12, name: Woqooyi Galbeed}

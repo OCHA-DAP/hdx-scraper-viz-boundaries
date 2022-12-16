@@ -1,0 +1,325 @@
+hdx_inputs:
+  dataset: "unmap-international-boundaries-geojson"
+  dataset_exceptions:
+    MMR: "mimu-geonode-myanmar-state-and-region-boundaries-mimu"
+    JOR: "geoboundaries-admin-boundaries-for-jordan"
+  resource_exceptions:
+    HND: "hnd_adm_sinit_20161005_SHP.zip"
+    LBN: "lbn_adm_cdr_20200810.zip"
+    MMR: "Myanmar State and Region Boundaries MIMU v9.3 shapefile"
+    MOZ: "moz_adm_20190607b_SHP.zip"
+    SYR: "SYR Administrative Divisions Shapefiles.zip"
+  do_not_process:
+    - BHR
+    - UKR
+
+mapbox:
+  global:
+    polbndp_adm1: "cl2qdtxar0hwd29tkct32yp5a"
+    polbndp_adm2: "cl7ru4jxk06up27qib82bkyt6"
+    polbndp_adm3: "cl930lpcp25n927on407y2pvq"
+    polbnda_int_1m: "cl2qdreq4003128mppop3aidz"
+    polbnda_int_15m: "cl44eo2xg770229pkcsdvo9ko"
+    polbndl_int: "cl2qdzz3p093827mm46l6ojzx"
+    polbndp_int: "cl2qdugrr5e1r27t85am5vsgr"
+    lake: "cl2qcnlcg002v28lnpi69l0rs"
+  covid:
+    polbnda_subn:
+      mapid: "humdata.b1o0ci53"
+      name: "hrps_polbnda_adm1ish_simplifi-5zbg3c"
+    polbndp_subn:
+      mapid: "humdata.63k3lb2z"
+      name: "hrps_centroid_adm1ish_simplif-3sb5to"
+    polbnda_int:
+      mapid: "humdata.5qlwwz0l"
+      name: "polbnda_int_uncs-6zgtye"
+    polbndl_int:
+      mapid: "humdata.bkhifgb5"
+      name: "polbndl_int_uncs-1hvbzf"
+    polbndp_int:
+      mapid: "humdata.4w8b1b7g"
+      name: "centroid_int_uncs-avvnhr"
+  arableague:
+    polbnda_subn:
+      mapid: "humdata.attm70id"
+      name: "arab_states_polbnda_adm1_1m_u-17b61m"
+    polbndp_subn:
+      mapid: "humdata.8pyb1abd"
+      name: "arab_states_centroid_adm1_1m_-4nnaer"
+    polbnda_int:
+      mapid: "humdata.aioadufm"
+      name: "arab-states-adm0-polbnda"
+    polbndl_int:
+      mapid: "humdata.bzo5ss37"
+      name: "arab_states_polbndl_int_1m_un-b74b2t"
+    polbndp_int:
+      mapid: "humdata.d4ywfeza"
+      name: "arab_states_centroid_int_1m_u-9kgyhy"
+  ukraine:
+    polbnda_subn:
+      mapid: "humdata.7mw1qwu2"
+      name: "ukr_polbnda_adm1_uncs-bg6hqp"
+    polbndl_subn:
+      mapid: "humdata.afes2yub"
+      name: "ukr_polbndl_adm1_uncs-9oa22d"
+    polbndp_adm1:
+      mapid: "humdata.b2dsq510"
+      name: "ukr_centroid_adm1_uncs-9bv7sv"
+    polbnda_int:
+      mapid: "humdata.090db5y9"
+      name: "ee_polbnda_int_15m_uncs-81dn3v"
+    polbndl_int:
+      mapid: "humdata.8lxpktpe"
+      name: "ee_polbndl_int_uncs-1loovm"
+    polbndp_int:
+      mapid: "humdata.av64hwpt"
+      name: "ee_centroid_int_15m_uncs-2w4rn4"
+  hornafrica:
+    polbnda_subn:
+      mapid: "humdata.8j9ay0ba"
+      name: "hornafrica_polbnda_subnationa-2rkvd2"
+    polbndp_subn:
+      mapid: "humdata.cywtvjt9"
+      name: "hornafrica_polbndp_subnationa-a7lq5r"
+    polbnda_int:
+      mapid: "humdata.4p7qgaya"
+      name: "hornafrica_polbnda_int_uncs-9e96cy"
+    polbndl_int:
+      mapid: "humdata.d6fpfzk8"
+      name: "hornafrica_polbndl_int_uncs-8iaq93"
+    polbndp_int:
+      mapid: "humdata.01v49eax"
+      name: "hornafrica_polbndp_int_uncs-arxx3e"
+
+countries:
+  covid:
+    adm1:
+      - AFG
+      - BDI
+      - BFA
+      - CAF
+      - CMR
+      - COD
+      - COL
+      - ETH
+      - GTM
+      - HND
+      - HTI
+      - IRQ
+      - LBY
+      - MLI
+      - MMR
+      - MOZ
+      - NER
+      - NGA
+      - PSE
+      - SDN
+      - SLV
+      - SOM
+      - SSD
+      - SYR
+      - TCD
+      - UKR
+      - VEN
+      - YEM
+    adm0:
+      - ABW
+      - AFG
+      - AGO
+      - ARG
+      - BDI
+      - BFA
+      - BGD
+      - BOL
+      - BRA
+      - CAF
+      - CHL
+      - CMR
+      - COD
+      - COG
+      - COL
+      - CRI
+      - CUW
+      - DJI
+      - DOM
+      - ECU
+      - EGY
+      - ETH
+      - GTM
+      - GUY
+      - HND
+      - HTI
+      - IRN
+      - IRQ
+      - JOR
+      - KEN
+      - LBN
+      - LBY
+      - MDG
+      - MEX
+      - MLI
+      - MMR
+      - MOZ
+      - NER
+      - NGA
+      - PAK
+      - PAN
+      - PER
+      - PRY
+      - PSE
+      - RWA
+      - SDN
+      - SLV
+      - SOM
+      - SSD
+      - SYR
+      - TCD
+      - TJK
+      - TKM
+      - TTO
+      - TUR
+      - TZA
+      - UGA
+      - UKR
+      - URY
+      - UZB
+      - VEN
+      - YEM
+      - ZMB
+  arableague:
+    adm1:
+      - ARE
+      - BHR
+      - COM
+      - DJI
+      - DZA
+      - EGY
+      - IRQ
+      - JOR
+      - KWT
+      - LBN
+      - LBY
+      - MAR
+      - MRT
+      - OMN
+      - PSE
+      - QAT
+      - SAU
+      - SDN
+      - SOM
+      - SYR
+      - TUN
+      - YEM
+    adm0:
+      - ARE
+      - BHR
+      - COM
+      - DJI
+      - DZA
+      - EGY
+      - IRQ
+      - JOR
+      - KWT
+      - LBN
+      - LBY
+      - MAR
+      - MRT
+      - OMN
+      - PSE
+      - QAT
+      - SAU
+      - SDN
+      - SOM
+      - SYR
+      - TUN
+      - YEM
+  ukraine:
+    adm1:
+      - UKR
+    adm0:
+      - BLR
+      - HUN
+      - MDA
+      - POL
+      - ROU
+      - SVK
+      - UKR
+  hornafrica:
+    adm3:
+      - ETH
+    adm2:
+      - SOM
+    adm1:
+      - ETH
+      - KEN
+      - SOM
+    adm0:
+      - ETH
+      - KEN
+      - SOM
+
+HRPs:
+  - AFG
+  - BDI
+  - BFA
+  - CAF
+  - CMR
+  - COD
+  - COL
+  - ETH
+  - GTM
+  - HND
+  - HTI
+  - IRQ
+  - LBY
+  - MLI
+  - MMR
+  - MOZ
+  - NER
+  - NGA
+  - PSE
+  - SDN
+  - SLV
+  - SOM
+  - SSD
+  - SYR
+  - TCD
+  - UKR
+  - VEN
+  - YEM
+
+shapefile_attribute_mappings:
+  pcode:
+    adm1:
+      - "ADM1_PCODE"
+      - "ADMIN1PCOD"
+      - "ST_PCODE"
+    adm2:
+      - "ADM2_PCODE"
+      - "ADM2_ID"
+      - "ADMIN2PCOD"
+  name:
+    adm1:
+      - "ADM1_NAME"
+      - "ADM1_EN"
+      - "ADM1_ES"
+      - "ADM1_FR"
+      - "ADM1_PT"
+      - "ADMIN1NAME"
+      - "NAME_1"
+      - "ST"
+      - "SHAPENAME"
+    adm2:
+      - "ADM2_NAME"
+      - "ADM2_EN"
+      - "ADM2_ES"
+      - "ADM2_FR"
+      - "ADM2_PT"
+      - "ADMIN2NAME"
+      - "NAME_2"
+
+regional:
+  dataset: "unocha-office-locations"
+  format: "xlsx"
+  iso3_header: "ISO3"
+  region_header: "Regional_office"
