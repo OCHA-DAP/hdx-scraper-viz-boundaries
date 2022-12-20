@@ -9,12 +9,12 @@ from os import remove
 from os.path import join
 from pandas import concat, merge
 from pandas.api.types import is_numeric_dtype
-from shapely.geometry import box, MultiPolygon
+from shapely.geometry import MultiPolygon, box
 from shapely.validation import make_valid
 from time import sleep
 from topojson import Topology
 from unicodedata import normalize
-from zipfile import ZipFile, BadZipFile
+from zipfile import BadZipFile, ZipFile
 
 from hdx.data.dataset import Dataset
 from hdx.data.hdxobject import HDXError
@@ -25,15 +25,6 @@ from hdx.utilities.uuid import get_uuid
 logger = logging.getLogger()
 
 
-def replace_json(new_data, data_path):
-    try:
-        remove(data_path)
-    except FileNotFoundError:
-        logger.info("File does not exist - creating!")
-    with open(data_path, "w") as f_open:
-        dump(new_data, f_open)
-
-
 def drop_fields(df, keep_fields):
     df = df.drop(
         [f for f in df.columns if f not in keep_fields and f.lower() != "geometry"],
@@ -42,26 +33,18 @@ def drop_fields(df, keep_fields):
     return df
 
 
-def replace_mapbox_tileset(mapid, mapbox_auth, name, path_to_upload=None, json_to_upload=None, temp_folder=None):
+def replace_mapbox_tileset(
+    mapid, mapbox_auth, name, json_to_upload, temp_folder
+):
     service = Uploader(access_token=mapbox_auth)
-    saved_file = None
-    if not isinstance(path_to_upload, type(None)):
-        saved_file = path_to_upload
-    if not isinstance(json_to_upload, type(None)):
-        if temp_folder is None:
-            logger.error("Need to provide temp folder path")
-            return None
-        saved_file = join(temp_folder, "file_to_upload.geojson")
-        json_to_upload.to_file(saved_file, driver="GeoJSON")
-    if not saved_file:
-        logger.error("No saved file to upload!")
-        return None
-    with open(saved_file, 'rb') as src:
+    saved_file = join(temp_folder, "file_to_upload.geojson")
+    json_to_upload.to_file(saved_file, driver="GeoJSON")
+    with open(saved_file, "rb") as src:
         upload_resp = service.upload(src, mapid, name=name)
     if upload_resp.status_code == 422:
         for i in range(5):
             sleep(5)
-            with open(saved_file, 'rb') as src:
+            with open(saved_file, "rb") as src:
                 upload_resp = service.upload(src, mapid, name=name)
             if upload_resp.status_code != 422:
                 break
@@ -72,12 +55,16 @@ def replace_mapbox_tileset(mapid, mapbox_auth, name, path_to_upload=None, json_t
 
 
 class Boundaries:
-    def __init__(self, configuration, downloader, all_boundaries, mapbox_auth, temp_folder):
+    def __init__(
+        self, configuration, downloader, all_boundaries, mapbox_auth, temp_folder
+    ):
         self.downloader = downloader
         self.boundaries = all_boundaries
         self.temp_folder = temp_folder
-        self.exceptions = {"dataset": configuration["hdx_inputs"].get("dataset_exceptions", {}),
-                           "resource": configuration["hdx_inputs"].get("resource_exceptions", {})}
+        self.exceptions = {
+            "dataset": configuration["hdx_inputs"].get("dataset_exceptions", {}),
+            "resource": configuration["hdx_inputs"].get("resource_exceptions", {}),
+        }
         self.headers = configuration["shapefile_attribute_mappings"]
         self.mapbox = configuration["mapbox"]
         self.mapbox_auth = mapbox_auth
@@ -95,10 +82,10 @@ class Boundaries:
 
             for iso in countries[level]:
                 if iso in do_not_process:
-                    logger.warning(f"Not processing {iso} for now")
+                    logger.warning(f"{iso}: Not processing for now")
                     continue
 
-                logger.info(f"Processing {level} boundaries for {iso}")
+                logger.info(f"{iso}: Processing {level} boundaries")
 
                 # select single country boundary (including disputed areas), cut out water, and dissolve
                 country_adm0 = self.boundaries["polbnda_int_1m"].copy(deep=True)
@@ -118,12 +105,16 @@ class Boundaries:
                 if not dataset:
                     dataset = Dataset.read_from_hdx(f"cod-ab-{iso}")
                 if not dataset:
-                    logger.error(f"Could not find boundary dataset for {iso}")
+                    logger.error(f"{iso}: Could not find boundary dataset")
                     continue
 
                 resource_name = self.exceptions["resource"].get(iso, "adm")
-                boundary_resource = [r for r in dataset.get_resources() if r.get_file_type() == "shp" and
-                                     bool(re.match(f".*{resource_name}.*", r["name"], re.IGNORECASE))]
+                boundary_resource = [
+                    r
+                    for r in dataset.get_resources()
+                    if r.get_file_type() == "shp"
+                    and bool(re.match(f".*{resource_name}.*", r["name"], re.IGNORECASE))
+                ]
                 if len(boundary_resource) > 1:
                     name_match = [
                         bool(re.match(f".*adm(in)?(\s)?(0)?{level[-1]}.*", r["name"], re.IGNORECASE))
@@ -136,14 +127,14 @@ class Boundaries:
                     ]
 
                     if len(boundary_resource) != 1:
-                        logger.error(f"Could not distinguish between resources for {iso}")
+                        logger.error(f"{iso}: Could not distinguish between resources")
                         continue
 
                 # find the correct admin boundary shapefile in the downloaded zip
                 try:
                     _, resource_file = boundary_resource[0].download(folder=self.temp_folder)
                 except DownloadError:
-                    logger.error(f"Could not download resource")
+                    logger.error(f"{iso}: Could not download resource")
                     return None
 
                 temp_folder = join(self.temp_folder, get_uuid())
@@ -151,12 +142,12 @@ class Boundaries:
                     with ZipFile(resource_file, "r") as z:
                         z.extractall(temp_folder)
                 except BadZipFile:
-                    logger.error("Could not unzip file - it might not be a zip!")
+                    logger.error(f"{iso}: Could not unzip file - it might not be a zip!")
                     continue
                 boundary_shp = glob(join(temp_folder, "**", "*.shp"), recursive=True)
 
                 if len(boundary_shp) == 0:
-                    logger.error(f"Did not find the file!")
+                    logger.error(f"{iso}: Did not find the file!")
                     continue
 
                 if len(boundary_shp) > 1:
@@ -188,7 +179,7 @@ class Boundaries:
                 boundary_lyr["ADM0_PCODE"] = Country.get_iso2_from_iso3(iso)
 
                 fields = boundary_lyr.columns
-                for l in range(1, int(level[-1])+1):
+                for l in range(1, int(level[-1]) + 1):
                     pcode_field = None
                     name_field = None
                     if f"ADM{l}_PCODE" in fields:
@@ -204,7 +195,7 @@ class Boundaries:
                                 name_field = field
 
                     if not name_field:
-                        logger.error(f"Could not map name field for {iso}")
+                        logger.error(f"{iso}: Could not map name field")
                         continue
 
                     # calculate text pcodes
@@ -226,7 +217,7 @@ class Boundaries:
 
                 # assign pcodes to highest level if they're missing
                 if not pcode_field:
-                    logger.error(f"Could not map pcodes at highest level - assigning randomly!")
+                    logger.error(f"{iso}: Could not map pcodes at {level} - assigning randomly!")
                     numrows = len(str(len(boundary_lyr.index)))
                     for i, _ in boundary_lyr.iterrows():
                         boundary_lyr.loc[i, f"ADM{level[-1]}_PCODE"] = boundary_lyr.loc[
@@ -235,7 +226,7 @@ class Boundaries:
 
                 na_count = boundary_lyr[f"ADM{level[-1]}_REF"].isna().sum()
                 if na_count > 0:
-                    logger.warning(f"Found {na_count} null values in {iso} boundary at {level}")
+                    logger.warning(f"{iso}: Found {na_count} null values at {level}")
 
                 # simplify geometry of boundaries
                 boundary_topo = Topology(boundary_lyr)
@@ -259,7 +250,7 @@ class Boundaries:
                             if part.geometryType() in ["Polygon", "MultiPolygon"]:
                                 new_geom.append(part)
                         if len(new_geom) == 0:
-                            logger.error(f"Boundary found with no geometry in {iso}")
+                            logger.error(f"{iso}: Boundary found with no geometry")
                         if len(new_geom) == 1:
                             new_geom = new_geom[0]
                         else:
@@ -269,10 +260,12 @@ class Boundaries:
                 # clip international boundary to UN admin0 country boundary
                 boundary_lyr = boundary_lyr.clip(mask=country_adm0, keep_geom_type=True)
 
-                self.boundaries["polbnda_adm"][level] = self.boundaries[level][self.boundaries[level]["alpha_3"] != iso]
+                self.boundaries["polbnda_adm"][level] = self.boundaries[level][
+                    self.boundaries[level]["alpha_3"] != iso
+                ]
                 self.boundaries["polbnda_adm"][level] = self.boundaries[level].append(boundary_lyr)
                 self.boundaries["polbnda_adm"][level].sort_values(by=[f"ADM{level[-1]}_PCODE"], inplace=True)
-                logger.info(f"Finished processing {level} boundaries for {iso}")
+                logger.info(f"{iso}: Finished processing {level} boundaries")
 
             # convert polygon boundaries to point
             centroid = GeoDataFrame(self.boundaries[level].representative_point())
@@ -289,11 +282,19 @@ class Boundaries:
             centroid_file = join(self.temp_folder, f"polbndp_{level}_1m_ocha.geojson")
             self.boundaries["polbndp_adm"][level].to_file(centroid_file, driver="GeoJSON")
 
-            resource_a = [r for r in dataset.get_resources() if r.get_file_type() == "geojson" and
-                          bool(re.match(f".*polbnda_{level}.*", r["name"], re.IGNORECASE))][0]
+            resource_a = [
+                r
+                for r in dataset.get_resources()
+                if r.get_file_type() == "geojson"
+                and bool(re.match(f".*polbnda_{level}.*", r["name"], re.IGNORECASE))
+            ][0]
             resource_a.set_file_to_upload(polbnda_file)
-            resource_p = [r for r in dataset.get_resources() if r.get_file_type() == "geojson" and
-                          bool(re.match(f".*polbndp_{level}.*", r["name"], re.IGNORECASE))][0]
+            resource_p = [
+                r
+                for r in dataset.get_resources()
+                if r.get_file_type() == "geojson"
+                and bool(re.match(f".*polbndp_{level}.*", r["name"], re.IGNORECASE))
+            ][0]
             resource_p.set_file_to_upload(centroid_file)
 
             try:
@@ -308,8 +309,13 @@ class Boundaries:
     def merge_subn_boundaries(self, visualization):
         levels = [key for key in self.countries[visualization] if not key == "adm0"]
         merged_boundaries = dict()
-        merged_boundaries["a"] = {level: self.boundaries[level].copy(deep=True) for level in levels}
-        merged_boundaries["p"] = {level: self.boundaries[f"polbndp_{level}"].copy(deep=True) for level in levels}
+        merged_boundaries["a"] = {
+            level: self.boundaries[level].copy(deep=True) for level in levels
+        }
+        merged_boundaries["p"] = {
+            level: self.boundaries[f"polbndp_{level}"].copy(deep=True)
+            for level in levels
+        }
         for t in merged_boundaries:
             for level in levels:
                 merged_boundaries[t][level] = merged_boundaries[t][level][
@@ -343,15 +349,15 @@ class Boundaries:
                 self.mapbox[visualization]["polbnda_subn"]["mapid"],
                 self.mapbox_auth,
                 self.mapbox[visualization]["polbnda_subn"]["name"],
-                json_to_upload=polygon_to_upload,
-                temp_folder=self.temp_folder,
+                polygon_to_upload,
+                self.temp_folder,
             )
             replace_mapbox_tileset(
                 self.mapbox[visualization]["polbndp_subn"]["mapid"],
                 self.mapbox_auth,
                 self.mapbox[visualization]["polbndp_subn"]["name"],
-                json_to_upload=point_to_upload,
-                temp_folder=self.temp_folder,
+                point_to_upload,
+                self.temp_folder,
             )
             # admin0 boundaries should include disputed areas and be dissolved to single features
             adm0_key = "polbnda_int_1m"
@@ -372,29 +378,27 @@ class Boundaries:
                 self.mapbox[visualization]["polbnda_int"]["mapid"],
                 self.mapbox_auth,
                 self.mapbox[visualization]["polbnda_int"]["name"],
-                json_to_upload=to_upload,
-                temp_folder=self.temp_folder,
+                to_upload,
+                self.temp_folder,
             )
             replace_mapbox_tileset(
                 self.mapbox[visualization]["polbndl_int"]["mapid"],
                 self.mapbox_auth,
                 self.mapbox[visualization]["polbndl_int"]["name"],
-                json_to_upload=self.boundaries["polbndl_int"][
+                self.boundaries["polbndl_int"][
                     (self.boundaries["polbndl_int"]["BDY_CNT01"].isin(self.countries[visualization]["adm0"]))
-                    | (
-                        self.boundaries["polbndl_int"]["BDY_CNT02"].isin(
-                            self.countries[visualization]["adm0"]
-                        ))],
-                temp_folder=self.temp_folder,
+                    | (self.boundaries["polbndl_int"]["BDY_CNT02"].isin(self.countries[visualization]["adm0"]))
+                ],
+                self.temp_folder,
             )
             replace_mapbox_tileset(
                 self.mapbox[visualization]["polbndp_int"]["mapid"],
                 self.mapbox_auth,
                 self.mapbox[visualization]["polbndp_int"]["name"],
-                json_to_upload=self.boundaries["polbndp_int"][
+                self.boundaries["polbndp_int"][
                     self.boundaries["polbndp_int"]["ISO_3"].isin(self.countries[visualization]["adm0"])
                 ],
-                temp_folder=self.temp_folder,
+                self.temp_folder,
             )
 
     def update_lookups(self, visualizations, save=True):
@@ -404,22 +408,17 @@ class Boundaries:
             attributes = dict()
             for _, row in subn_boundaries.iterrows():
                 level = row["ADM_LEVEL"]
-                new_name = (
-                    row["ADM_REF"]
-                    .replace("-", " ")
-                    .replace("`", "")
-                    .replace("'", "")
-                )
+                new_name = (row["ADM_REF"].replace("-", " ").replace("`", "").replace("'", ""))
                 new_name = (
                     normalize("NFKD", new_name)
                     .encode("ascii", "ignore")
                     .decode("ascii")
                 )
                 attribute = {
-                            "country": row["ADM0_REF"],
-                            "iso3": row["alpha_3"],
-                            "pcode": row["ADM_PCODE"],
-                            "name": new_name,
+                    "country": row["ADM0_REF"],
+                    "iso3": row["alpha_3"],
+                    "pcode": row["ADM_PCODE"],
+                    "name": new_name,
                 }
                 if level not in attributes:
                     attributes[level] = list()
@@ -429,9 +428,7 @@ class Boundaries:
 
             self.lookups[visualization] = attributes
             if save:
-                with open(
-                    join("saved_outputs", f"subnational-attributes-{visualization}.txt"), "w"
-                ) as f:
+                with open(join("saved_outputs", f"subnational-attributes-{visualization}.txt"), "w") as f:
                     for level in attributes:
                         f.write(f"adm{level}\n")
                         for row in attributes[level]:
@@ -455,13 +452,18 @@ class Boundaries:
             adm0_region["All"] = "All"
             adm0_region.loc[adm0_region["ISO_3"].isin(HRPs), "HRPs"] = "HRPs"
             dataset = Dataset.read_from_hdx(self.regional_info["dataset"])
-            resource = [r for r in dataset.get_resources() if r.get_file_type() == self.regional_info["format"]]
+            resource = [
+                r
+                for r in dataset.get_resources()
+                if r.get_file_type() == self.regional_info["format"]
+            ]
             _, iterator = self.downloader.get_tabular_rows(
                 resource[0]["url"], dict_form=True
             )
             for row in iterator:
                 adm0_region.loc[
-                    adm0_region["ISO_3"] == row[self.regional_info["iso3_header"]], "region"
+                    adm0_region["ISO_3"] == row[self.regional_info["iso3_header"]],
+                    "region",
                 ] = row[self.regional_info["region_header"]]
             # dissolve boundaries by region and HRP
             adm0_dissolve = adm0_region.dissolve(by="region")
@@ -502,6 +504,11 @@ class Boundaries:
             }
             self.bboxes[visualization] = adm0_region
             if save:
-                replace_json(adm0_region, regional_file)
+                try:
+                    remove(regional_file)
+                except FileNotFoundError:
+                    logger.info("File does not exist - creating!")
+                with open(regional_file, "w") as f_open:
+                    dump(adm0_region, f_open)
 
         logger.info("Updated regional bbox jsons")
