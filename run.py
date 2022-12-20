@@ -4,7 +4,6 @@ import warnings
 from geopandas import read_file
 from os import getenv
 from os.path import expanduser, join
-from pandas import concat
 from shapely.errors import ShapelyDeprecationWarning
 
 from hdx.api.configuration import Configuration
@@ -13,7 +12,6 @@ from hdx.facades.keyword_arguments import facade
 from hdx.utilities.downloader import Download
 from hdx.utilities.easy_logging import setup_logging
 from hdx.utilities.path import temp_dir
-
 from boundaries import Boundaries
 
 setup_logging()
@@ -92,9 +90,10 @@ def main(
                 temp_folder,
             )
             if update_subn_bounds:
-                bounds.update_subnational_boundaries(countries_to_process,
-                                                     configuration["boundaries"].get("do_not_process", []),
-                                                     )
+                bounds.update_subnational_boundaries(
+                    countries_to_process,
+                    configuration["boundaries"].get("do_not_process", []),
+                )
                 bounds.update_subnational_resources(dataset, levels)
             if update_tilesets:
                 bounds.update_mapbox_tilesets(visualizations)
