@@ -485,14 +485,14 @@ class Boundaries:
                 )
             ]
             adm0_dissolve = GeoDataFrame(adm0_dissolve["geometry"])
-            adm0_dissolve["tbl_regcov_2020_ocha_Field3"] = adm0_dissolve.index
+            adm0_dissolve["region"] = adm0_dissolve.index
             adm0_region = adm0_dissolve.to_json(show_bbox=True, drop_id=True)
             adm0_region = loads(adm0_region)
             # remove any "NO_COVERAGE" regions
             for i in reversed(range(len(adm0_region["features"]))):
                 if (
                     adm0_region["features"][i]["properties"][
-                        "tbl_regcov_2020_ocha_Field3"
+                        "region"
                     ]
                     == "NO COVERAGE"
                 ):
