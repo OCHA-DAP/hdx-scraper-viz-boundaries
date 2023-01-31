@@ -188,27 +188,10 @@ countries:
       - ZMB
   arableague:
     adm1:
-      - ARE
-      - BHR
-      - COM
-      - DJI
-      - DZA
-      - EGY
-      - IRQ
-      - JOR
-      - KWT
-      - LBN
-      - LBY
-      - MAR
-      - MRT
-      - OMN
       - PSE
-      - QAT
-      - SAU
       - SDN
       - SOM
       - SYR
-      - TUN
       - YEM
     adm0:
       - ARE
