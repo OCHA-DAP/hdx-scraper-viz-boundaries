@@ -260,27 +260,27 @@ class Boundaries:
                 # clip international boundary to UN admin0 country boundary
                 boundary_lyr = boundary_lyr.clip(mask=country_adm0, keep_geom_type=True)
 
-                self.boundaries["polbnda_adm"][level] = self.boundaries[level][
-                    self.boundaries[level]["alpha_3"] != iso
+                self.boundaries[f"polbnda_{level}"] = self.boundaries[f"polbnda_{level}"][
+                    self.boundaries[f"polbnda_{level}"]["alpha_3"] != iso
                 ]
-                self.boundaries["polbnda_adm"][level] = self.boundaries[level].append(boundary_lyr)
-                self.boundaries["polbnda_adm"][level].sort_values(by=[f"ADM{level[-1]}_PCODE"], inplace=True)
+                self.boundaries[f"polbnda_{level}"] = self.boundaries[f"polbnda_{level}"].append(boundary_lyr)
+                self.boundaries[f"polbnda_{level}"].sort_values(by=[f"ADM{level[-1]}_PCODE"], inplace=True)
                 logger.info(f"{iso}: Finished processing {level} boundaries")
 
             # convert polygon boundaries to point
-            centroid = GeoDataFrame(self.boundaries[level].representative_point())
+            centroid = GeoDataFrame(self.boundaries[f"polbndp_{level}"].representative_point())
             centroid.rename(columns={0: "geometry"}, inplace=True)
-            centroid[req_fields] = self.boundaries[level][req_fields]
+            centroid[req_fields] = self.boundaries[f"polbndp_{level}"][req_fields]
             centroid = centroid.set_geometry("geometry")
-            self.boundaries["polbndp_adm"][level] = centroid
+            self.boundaries[f"polbndp_{level}"] = centroid
 
     def update_subnational_resources(self, dataset, levels):
         for level in levels:
             logger.info(f"Updating HDX datasets at {level}")
             polbnda_file = join(self.temp_folder, f"polbnda_{level}_1m_ocha.geojson")
-            self.boundaries["polbnda_adm"][level].to_file(polbnda_file, driver="GeoJSON")
+            self.boundaries[f"polbnda_{level}"].to_file(polbnda_file, driver="GeoJSON")
             centroid_file = join(self.temp_folder, f"polbndp_{level}_1m_ocha.geojson")
-            self.boundaries["polbndp_adm"][level].to_file(centroid_file, driver="GeoJSON")
+            self.boundaries[f"polbndp_{level}"].to_file(centroid_file, driver="GeoJSON")
 
             resource_a = [
                 r
@@ -310,7 +310,7 @@ class Boundaries:
         levels = [key for key in self.countries[visualization] if not key == "adm0"]
         merged_boundaries = dict()
         merged_boundaries["a"] = {
-            level: self.boundaries[level].copy(deep=True) for level in levels
+            level: self.boundaries[f"polbnda_{level}"].copy(deep=True) for level in levels
         }
         merged_boundaries["p"] = {
             level: self.boundaries[f"polbndp_{level}"].copy(deep=True)
@@ -360,10 +360,10 @@ class Boundaries:
                 self.temp_folder,
             )
             # admin0 boundaries should include disputed areas and be dissolved to single features
-            adm0_key = "polbnda_int_1m"
+            res = "1m"
             if len(self.countries[visualization]["adm0"]) > 25:
-                adm0_key = "polbnda_int_15m"
-            to_upload = self.boundaries[adm0_key].copy(deep=True)
+                res = "15m"
+            to_upload = self.boundaries[f"polbnda_int_{res}"].copy(deep=True)
             to_upload = to_upload[to_upload["ISO_3"].isin(self.countries[visualization]["adm0"])]
             to_upload = to_upload.dissolve(by="ISO_3")
             to_upload["ISO_3"] = to_upload.index
@@ -371,7 +371,7 @@ class Boundaries:
             to_upload = drop_fields(to_upload, ["ISO_3"])
             to_upload = merge(
                 to_upload,
-                self.boundaries[adm0_key][["ISO_3", "STATUS", "Color_Code", "Terr_ID", "Terr_Name"]],
+                self.boundaries[f"polbnda_int_{res}"][["ISO_3", "STATUS", "Color_Code", "Terr_ID", "Terr_Name"]],
                 on="ISO_3",
             )
             replace_mapbox_tileset(
@@ -385,9 +385,9 @@ class Boundaries:
                 self.mapbox[visualization]["polbndl_int"]["mapid"],
                 self.mapbox_auth,
                 self.mapbox[visualization]["polbndl_int"]["name"],
-                self.boundaries["polbndl_int"][
-                    (self.boundaries["polbndl_int"]["BDY_CNT01"].isin(self.countries[visualization]["adm0"]))
-                    | (self.boundaries["polbndl_int"]["BDY_CNT02"].isin(self.countries[visualization]["adm0"]))
+                self.boundaries[f"polbndl_int_{res}"][
+                    (self.boundaries[f"polbndl_int_{res}"]["BDY_CNT01"].isin(self.countries[visualization]["adm0"]))
+                    | (self.boundaries[f"polbndl_int_{res}"]["BDY_CNT02"].isin(self.countries[visualization]["adm0"]))
                 ],
                 self.temp_folder,
             )
@@ -395,8 +395,8 @@ class Boundaries:
                 self.mapbox[visualization]["polbndp_int"]["mapid"],
                 self.mapbox_auth,
                 self.mapbox[visualization]["polbndp_int"]["name"],
-                self.boundaries["polbndp_int"][
-                    self.boundaries["polbndp_int"]["ISO_3"].isin(self.countries[visualization]["adm0"])
+                self.boundaries["polbndp_int_1m"][
+                    self.boundaries["polbndp_int_1m"]["ISO_3"].isin(self.countries[visualization]["adm0"])
                 ],
                 self.temp_folder,
             )

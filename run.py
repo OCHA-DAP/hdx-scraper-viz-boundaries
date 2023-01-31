@@ -66,17 +66,18 @@ def main(
 
             # download boundaries
             logger.info("Downloading boundaries")
-            all_boundaries = {"polbnda_adm": dict(), "polbndp_adm": dict()}
-            dataset = Dataset.read_from_hdx(configuration["hdx_inputs"]["boundaries"])
+            all_boundaries = dict()
+            dataset = Dataset.read_from_hdx(configuration["hdx_inputs"]["dataset"])
             for resource in dataset.get_resources():
                 if "coastl" in resource["name"]:
                     continue
+                if resource["name"][8:12] not in countries_to_process \
+                        and ("polbnda_adm" in resource["name"] or "polbndp_adm" in resource["name"]):
+                    continue
                 _, resource_file = resource.download(folder=temp_folder)
                 lyr = read_file(resource_file)
-                if "polbnda_adm" in resource["name"]:
-                    all_boundaries["polbnda_adm"][level] = lyr
-                if "polbndp_adm" in resource["name"]:
-                    all_boundaries["polbndp_adm"][level] = lyr
+                if "polbnda_adm" in resource["name"] or "polbndp_adm" in resource["name"]:
+                    all_boundaries[resource["name"].replace("_1m_ocha.geojson", "")] = lyr
                 if "lake" in resource["name"]:
                     all_boundaries["lake"] = lyr
                 if "_int_" in resource["name"]:
@@ -99,6 +100,8 @@ def main(
                 bounds.update_mapbox_tilesets(visualizations)
             bounds.update_lookups(visualizations)
             bounds.update_bboxes(visualizations, configuration["HRPs"])
+
+            logger.info("Finished processing!")
 
 
 if __name__ == "__main__":
