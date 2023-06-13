@@ -493,8 +493,7 @@ class Boundaries:
                 by="HRPs"
             )
             adm0_dissolve_all = adm0_region.dissolve(by="All")
-            adm0_dissolve = adm0_dissolve.append(adm0_dissolve_HRPs)
-            adm0_dissolve = adm0_dissolve.append(adm0_dissolve_all)
+            adm0_dissolve = concat([adm0_dissolve, adm0_dissolve_HRPs, adm0_dissolve_all])
             # convert to bounding box
             adm0_dissolve = adm0_dissolve.bounds
             adm0_dissolve["geometry"] = [
