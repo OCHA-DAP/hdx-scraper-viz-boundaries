@@ -33,9 +33,9 @@ def parse_args():
 
 
 def main(
-    countries,
-    visualizations,
     mapbox_auth,
+    countries=None,
+    visualizations=None,
     update_tilesets=None,
     update_subn_bounds=None,
     **ignore,
@@ -60,42 +60,25 @@ def main(
             for level in levels:
                 countries_to_process[level] = list(countries_to_process[level])
 
-            # download boundaries
-            logger.info("Downloading boundaries")
-            all_boundaries = dict()
-            dataset = Dataset.read_from_hdx(configuration["hdx_inputs"]["dataset"])
-            for resource in dataset.get_resources():
-                if "coastl" in resource["name"]:
-                    continue
-                if resource["name"][8:12] not in countries_to_process \
-                        and ("polbnda_adm" in resource["name"] or "polbndp_adm" in resource["name"]):
-                    continue
-                _, resource_file = resource.download(folder=temp_folder)
-                lyr = read_file(resource_file)
-                if "polbnda_adm" in resource["name"] or "polbndp_adm" in resource["name"]:
-                    all_boundaries[resource["name"].replace("_1m_ocha.geojson", "")] = lyr
-                if "lake" in resource["name"]:
-                    all_boundaries["lake"] = lyr
-                if "_int_" in resource["name"]:
-                    all_boundaries[resource["name"].replace("wrl_", "").replace("_uncs.geojson", "")] = lyr
-
-            bounds = Boundaries(
+            boundaries = Boundaries(
                 configuration,
                 downloader,
-                all_boundaries,
                 mapbox_auth,
                 temp_folder,
             )
+
+            boundaries.download_boundary_inputs(configuration["hdx_inputs"]["dataset"], levels)
+
             if update_subn_bounds:
-                bounds.update_subnational_boundaries(
+                boundaries.update_subnational_boundaries(
                     countries_to_process,
                     configuration["boundaries"].get("do_not_process", []),
                 )
-                bounds.update_subnational_resources(dataset, levels)
+                boundaries.update_subnational_resources(configuration["hdx_inputs"]["dataset"], levels)
             if update_tilesets:
-                bounds.update_mapbox_tilesets(visualizations)
-            bounds.update_lookups(visualizations)
-            bounds.update_bboxes(visualizations, configuration["HRPs"])
+                boundaries.update_mapbox_tilesets(visualizations)
+            boundaries.update_lookups(visualizations)
+            boundaries.update_bboxes(visualizations, configuration["HRPs"])
 
             logger.info("Finished processing!")
 
@@ -104,23 +87,23 @@ if __name__ == "__main__":
     args = parse_args()
     countries = args.countries
     if countries is None:
-        countries = getenv("COUNTRIES", None)
+        countries = getenv("COUNTRIES")
     if countries:
         countries = countries.split(",")
     visualizations = args.visualizations
     if visualizations is None:
-        visualizations = getenv("VISUALIZATIONS", "all")
+        visualizations = getenv("VISUALIZATIONS")
     if visualizations:
         visualizations = visualizations.split(",")
     update_tilesets = args.update_tilesets
     if not update_tilesets:
-        update_tilesets = getenv("UPDATE_TILESETS", None)
+        update_tilesets = getenv("UPDATE_TILESETS")
     update_subn_bounds = args.update_subn_bounds
     if not update_subn_bounds:
-        update_subn_bounds = getenv("UPDATE_SUBN_BOUNDS", None)
+        update_subn_bounds = getenv("UPDATE_SUBN_BOUNDS")
     mapbox_auth = args.mapbox_auth
     if mapbox_auth is None:
-        mapbox_auth = getenv("MAPBOX_AUTH", None)
+        mapbox_auth = getenv("MAPBOX_AUTH")
     facade(
         main,
         user_agent_config_yaml=join(expanduser("~"), ".useragents.yml"),

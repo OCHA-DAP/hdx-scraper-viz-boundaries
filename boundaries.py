@@ -56,10 +56,10 @@ def replace_mapbox_tileset(
 
 class Boundaries:
     def __init__(
-        self, configuration, downloader, all_boundaries, mapbox_auth, temp_folder
+        self, configuration, downloader, mapbox_auth, temp_folder
     ):
         self.downloader = downloader
-        self.boundaries = all_boundaries
+        self.boundaries = dict()
         self.temp_folder = temp_folder
         self.exceptions = {
             "dataset": configuration["hdx_inputs"].get("dataset_exceptions", {}),
@@ -70,8 +70,29 @@ class Boundaries:
         self.mapbox_auth = mapbox_auth
         self.countries = configuration["countries"]
         self.regional_info = configuration["regional"]
-        self.bboxes = {}
-        self.lookups = {}
+        self.bboxes = dict()
+        self.lookups = dict()
+
+    def download_boundary_inputs(self, dataset_name, levels):
+        logger.info("Downloading boundaries")
+        all_boundaries = dict()
+        dataset = Dataset.read_from_hdx(dataset_name)
+        for resource in dataset.get_resources():
+            if "coastl" in resource["name"]:
+                continue
+            if resource["name"][8:12] not in levels \
+                    and ("polbnda_adm" in resource["name"] or "polbndp_adm" in resource["name"]):
+                continue
+            _, resource_file = resource.download(folder=self.temp_folder)
+            lyr = read_file(resource_file)
+            if "polbnda_adm" in resource["name"] or "polbndp_adm" in resource["name"]:
+                all_boundaries[resource["name"].replace("_1m_ocha.geojson", "")] = lyr
+            if "lake" in resource["name"]:
+                all_boundaries["lake"] = lyr
+            if "_int_" in resource["name"]:
+                all_boundaries[resource["name"].replace("wrl_", "").replace("_uncs.geojson", "")] = lyr
+
+        self.boundaries = all_boundaries
 
     def update_subnational_boundaries(self, countries, do_not_process):
         for level in countries:
@@ -274,7 +295,8 @@ class Boundaries:
             centroid = centroid.set_geometry("geometry")
             self.boundaries[f"polbndp_{level}"] = centroid
 
-    def update_subnational_resources(self, dataset, levels):
+    def update_subnational_resources(self, dataset_name, levels):
+        dataset = Dataset.read_from_hdx(dataset_name)
         for level in levels:
             logger.info(f"Updating HDX datasets at {level}")
             polbnda_file = join(self.temp_folder, f"polbnda_{level}_1m_ocha.geojson")
