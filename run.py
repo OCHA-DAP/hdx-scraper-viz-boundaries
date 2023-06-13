@@ -1,13 +1,11 @@
 import argparse
 import logging
 import warnings
-from geopandas import read_file
 from os import getenv
 from os.path import expanduser, join
 from shapely.errors import ShapelyDeprecationWarning
 
 from hdx.api.configuration import Configuration
-from hdx.data.dataset import Dataset
 from hdx.facades.keyword_arguments import facade
 from hdx.utilities.downloader import Download
 from hdx.utilities.easy_logging import setup_logging
