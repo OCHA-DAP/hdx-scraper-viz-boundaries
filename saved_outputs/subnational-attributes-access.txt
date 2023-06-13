@@ -1,0 +1,75 @@
+adm2
+- {country: Somalia, iso3: SOM, pcode: SO2102, name: Adan Yabaal}
+- {country: Somalia, iso3: SOM, pcode: SO2302, name: Afgooye}
+- {country: Somalia, iso3: SOM, pcode: SO2802, name: Afmadow}
+- {country: Somalia, iso3: SOM, pcode: SO2602, name: Baardheere}
+- {country: Somalia, iso3: SOM, pcode: SO2803, name: Badhaadhe}
+- {country: Somalia, iso3: SOM, pcode: SO1102, name: Baki}
+- {country: Somalia, iso3: SOM, pcode: SO2103, name: Balcad}
+- {country: Somalia, iso3: SOM, pcode: SO2201, name: Banadir}
+- {country: Somalia, iso3: SOM, pcode: SO1602, name: Bandarbeyla}
+- {country: Somalia, iso3: SOM, pcode: SO2303, name: Baraawe}
+- {country: Somalia, iso3: SOM, pcode: SO2401, name: Baydhaba}
+- {country: Somalia, iso3: SOM, pcode: SO2001, name: Belet Weyne}
+- {country: Somalia, iso3: SOM, pcode: SO2603, name: Belet Xaawo}
+- {country: Somalia, iso3: SOM, pcode: SO1202, name: Berbera}
+- {country: Somalia, iso3: SOM, pcode: SO1101, name: Borama}
+- {country: Somalia, iso3: SOM, pcode: SO1601, name: Bossaso}
+- {country: Somalia, iso3: SOM, pcode: SO2701, name: Buaale}
+- {country: Somalia, iso3: SOM, pcode: SO2002, name: Bulo Burto}
+- {country: Somalia, iso3: SOM, pcode: SO1301, name: Burco}
+- {country: Somalia, iso3: SOM, pcode: SO1702, name: Burtinle}
+- {country: Somalia, iso3: SOM, pcode: SO1302, name: Buuhoodle}
+- {country: Somalia, iso3: SOM, pcode: SO2402, name: Buur Hakaba}
+- {country: Somalia, iso3: SOM, pcode: SO1902, name: Cabudwaaq}
+- {country: Somalia, iso3: SOM, pcode: SO1903, name: Cadaado}
+- {country: Somalia, iso3: SOM, pcode: SO2104, name: Cadale}
+- {country: Somalia, iso3: SOM, pcode: SO1603, name: Caluula}
+- {country: Somalia, iso3: SOM, pcode: SO1402, name: Caynabo}
+- {country: Somalia, iso3: SOM, pcode: SO1502, name: Ceel Afweyn}
+- {country: Somalia, iso3: SOM, pcode: SO2502, name: Ceel Barde}
+- {country: Somalia, iso3: SOM, pcode: SO1904, name: Ceel Buur}
+- {country: Somalia, iso3: SOM, pcode: SO1905, name: Ceel Dheer}
+- {country: Somalia, iso3: SOM, pcode: SO2604, name: Ceel Waaq}
+- {country: Somalia, iso3: SOM, pcode: SO1501, name: Ceerigaabo}
+- {country: Somalia, iso3: SOM, pcode: SO1901, name: Dhuusamarreeb}
+- {country: Somalia, iso3: SOM, pcode: SO2403, name: Diinsoor}
+- {country: Somalia, iso3: SOM, pcode: SO2605, name: Doolow}
+- {country: Somalia, iso3: SOM, pcode: SO1703, name: Eyl}
+- {country: Somalia, iso3: SOM, pcode: SO1801, name: Gaalkacyo}
+- {country: Somalia, iso3: SOM, pcode: SO1802, name: Galdogob}
+- {country: Somalia, iso3: SOM, pcode: SO2601, name: Garbahaarey}
+- {country: Somalia, iso3: SOM, pcode: SO1701, name: Garoowe}
+- {country: Somalia, iso3: SOM, pcode: SO1203, name: Gebiley}
+- {country: Somalia, iso3: SOM, pcode: SO1201, name: Hargeysa}
+- {country: Somalia, iso3: SOM, pcode: SO1803, name: Hobyo}
+- {country: Somalia, iso3: SOM, pcode: SO1604, name: Iskushuban}
+- {country: Somalia, iso3: SOM, pcode: SO2003, name: Jalalaqsi}
+- {country: Somalia, iso3: SOM, pcode: SO2804, name: Jamaame}
+- {country: Somalia, iso3: SOM, pcode: SO1804, name: Jariiban}
+- {country: Somalia, iso3: SOM, pcode: SO2702, name: Jilib}
+- {country: Somalia, iso3: SOM, pcode: SO2101, name: Jowhar}
+- {country: Somalia, iso3: SOM, pcode: SO2801, name: Kismaayo}
+- {country: Somalia, iso3: SOM, pcode: SO2304, name: Kurtunwaarey}
+- {country: Somalia, iso3: SOM, pcode: SO1401, name: Laas Caanood}
+- {country: Somalia, iso3: SOM, pcode: SO1503, name: Laasqoray}
+- {country: Somalia, iso3: SOM, pcode: SO1103, name: Lughaye}
+- {country: Somalia, iso3: SOM, pcode: SO2606, name: Luuq}
+- {country: Somalia, iso3: SOM, pcode: SO2301, name: Marka}
+- {country: Somalia, iso3: SOM, pcode: SO1303, name: Owdweyne}
+- {country: Somalia, iso3: SOM, pcode: SO1605, name: Qandala}
+- {country: Somalia, iso3: SOM, pcode: SO2404, name: Qansax Dheere}
+- {country: Somalia, iso3: SOM, pcode: SO1606, name: Qardho}
+- {country: Somalia, iso3: SOM, pcode: SO2305, name: Qoryooley}
+- {country: Somalia, iso3: SOM, pcode: SO2505, name: Rab Dhuure}
+- {country: Somalia, iso3: SOM, pcode: SO2703, name: Saakow}
+- {country: Somalia, iso3: SOM, pcode: SO2306, name: Sablaale}
+- {country: Somalia, iso3: SOM, pcode: SO1304, name: Sheikh}
+- {country: Somalia, iso3: SOM, pcode: SO1403, name: Taleex}
+- {country: Somalia, iso3: SOM, pcode: SO2503, name: Tayeeglow}
+- {country: Somalia, iso3: SOM, pcode: SO2504, name: Waajid}
+- {country: Somalia, iso3: SOM, pcode: SO2307, name: Wanla Weyn}
+- {country: Somalia, iso3: SOM, pcode: SO1805, name: Xarardheere}
+- {country: Somalia, iso3: SOM, pcode: SO1404, name: Xudun}
+- {country: Somalia, iso3: SOM, pcode: SO2501, name: Xudur}
+- {country: Somalia, iso3: SOM, pcode: SO1104, name: Zeylac}
