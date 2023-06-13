@@ -90,6 +90,22 @@ mapbox:
     polbndp_int:
       mapid: "humdata.01v49eax"
       name: "hornafrica_polbndp_int_uncs-arxx3e"
+  access:
+    polbnda_subn:
+      mapid: "humdata.69v4osjh"
+      name: "access_polbnda_subnational-awnqao"
+    polbndp_subn:
+      mapid: "humdata.8fwurkgg"
+      name: "access_polbndp_subnational-2u17fm"
+    polbnda_int:
+      mapid: "humdata.dozf288z"
+      name: "access_polbnda_int_uncs-9mvk3r"
+    polbndl_int:
+      mapid: "humdata.dd6zo5ht"
+      name: "access_polbndl_int_uncs-cja3rr"
+    polbndp_int:
+      mapid: "humdata.atdvpzq6"
+      name: "access_polbndp_int_uncs-5rey9g"
 
 countries:
   covid:
@@ -239,6 +255,11 @@ countries:
     adm0:
       - ETH
       - KEN
+      - SOM
+  access:
+    adm2:
+      - SOM
+    adm0:
       - SOM
 
 HRPs:
