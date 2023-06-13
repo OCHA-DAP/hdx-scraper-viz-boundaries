@@ -23,10 +23,6 @@ lookup = "hdx-scraper-viz-boundaries"
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-hk", "--hdx_key", default=None, help="HDX api key")
-    parser.add_argument("-ua", "--user_agent", default=None, help="user agent")
-    parser.add_argument("-pp", "--preprefix", default=None, help="preprefix")
-    parser.add_argument("-hs", "--hdx_site", default=None, help="HDX site to use")
     parser.add_argument("-co", "--countries", default=None, help="Which countries to update")
     parser.add_argument("-vi", "--visualizations", default=None, help="Which visualizations to update")
     parser.add_argument("-ut", "--update_tilesets", default=None, help="Update mapbox tilesets")
@@ -106,18 +102,6 @@ def main(
 
 if __name__ == "__main__":
     args = parse_args()
-    hdx_key = args.hdx_key
-    if hdx_key is None:
-        hdx_key = getenv("HDX_KEY")
-    user_agent = args.user_agent
-    if user_agent is None:
-        user_agent = getenv("USER_AGENT")
-    preprefix = args.preprefix
-    if preprefix is None:
-        preprefix = getenv("PREPREFIX")
-    hdx_site = args.hdx_site
-    if hdx_site is None:
-        hdx_site = getenv("HDX_SITE", "prod")
     countries = args.countries
     if countries is None:
         countries = getenv("COUNTRIES", None)
@@ -139,12 +123,8 @@ if __name__ == "__main__":
         mapbox_auth = getenv("MAPBOX_AUTH", None)
     facade(
         main,
-        hdx_key=hdx_key,
-        user_agent=user_agent,
         user_agent_config_yaml=join(expanduser("~"), ".useragents.yml"),
         user_agent_lookup=lookup,
-        preprefix=preprefix,
-        hdx_site=hdx_site,
         project_config_yaml=join("config", "project_configuration.yml"),
         countries=countries,
         visualizations=visualizations,
