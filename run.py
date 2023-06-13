@@ -18,7 +18,7 @@ setup_logging()
 logger = logging.getLogger(__name__)
 warnings.filterwarnings("ignore", category=ShapelyDeprecationWarning)
 
-lookup = "hdx-scraper-viz-boundaries"
+lookup = "hdx-scraper-viz-inputs"
 
 
 def parse_args():
