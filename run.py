@@ -23,8 +23,8 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-co", "--countries", default=None, help="Which countries to update")
     parser.add_argument("-vi", "--visualizations", default=None, help="Which visualizations to update")
-    parser.add_argument("-ut", "--update_tilesets", default=None, help="Update mapbox tilesets")
-    parser.add_argument("-ub", "--update_subn_bounds", default=None, help="Re-adjust country boundaries")
+    parser.add_argument("-ut", "--update_tilesets", default=False, help="Update mapbox tilesets")
+    parser.add_argument("-ub", "--update_subn_bounds", default=False, help="Re-adjust country boundaries")
     parser.add_argument("-ma", "--mapbox_auth", default=None, help="Credentials for accessing MapBox data")
     args = parser.parse_args()
     return args
@@ -34,8 +34,8 @@ def main(
     mapbox_auth,
     countries=None,
     visualizations=None,
-    update_tilesets=None,
-    update_subn_bounds=None,
+    update_tilesets=False,
+    update_subn_bounds=False,
     **ignore,
 ):
     logger.info(f"##### hdx-viz-data-inputs ####")
