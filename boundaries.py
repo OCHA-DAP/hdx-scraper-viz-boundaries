@@ -124,7 +124,7 @@ class Boundaries:
                 dataset_name = self.exceptions["dataset"].get(iso, f"cod-em-{iso.lower()}")
                 dataset = Dataset.read_from_hdx(dataset_name)
                 if not dataset:
-                    dataset = Dataset.read_from_hdx(f"cod-ab-{iso}")
+                    dataset = Dataset.read_from_hdx(f"cod-ab-{iso.lower()}")
                 if not dataset:
                     logger.error(f"{iso}: Could not find boundary dataset")
                     continue
