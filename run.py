@@ -70,7 +70,7 @@ def main(
             if update_subn_bounds:
                 boundaries.update_subnational_boundaries(
                     countries_to_process,
-                    configuration["boundaries"].get("do_not_process", []),
+                    configuration["hdx_inputs"].get("do_not_process", []),
                 )
                 boundaries.update_subnational_resources(configuration["hdx_inputs"]["dataset"], levels)
             if update_tilesets:
