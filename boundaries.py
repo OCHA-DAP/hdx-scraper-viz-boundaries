@@ -15,14 +15,6 @@ from hdx.data.dataset import Dataset
 logger = logging.getLogger()
 
 
-def drop_fields(df, keep_fields):
-    df = df.drop(
-        [f for f in df.columns if f not in keep_fields and f.lower() != "geometry"],
-        axis=1,
-    )
-    return df
-
-
 def replace_mapbox_tileset(
     mapid, mapbox_auth, name, json_to_upload, temp_folder
 ):
@@ -138,7 +130,10 @@ class Boundaries:
             to_upload = to_upload.dissolve(by="ISO_3")
             to_upload["ISO_3"] = to_upload.index
             to_upload.reset_index(drop=True, inplace=True)
-            to_upload = drop_fields(to_upload, ["ISO_3"])
+            to_upload = to_upload.drop(
+                [f for f in to_upload.columns if f != "ISO_3" and f.lower() != "geometry"],
+                axis=1,
+            )
             to_upload = merge(
                 to_upload,
                 self.boundaries[f"polbnda_int_{res}"][["ISO_3", "STATUS", "Color_Code", "Terr_ID", "Terr_Name"]],
