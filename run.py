@@ -1,9 +1,7 @@
 import argparse
 import logging
-import warnings
 from os import getenv
 from os.path import expanduser, join
-from shapely.errors import ShapelyDeprecationWarning
 
 from hdx.api.configuration import Configuration
 from hdx.facades.keyword_arguments import facade
@@ -14,7 +12,6 @@ from boundaries import Boundaries
 
 setup_logging()
 logger = logging.getLogger(__name__)
-warnings.filterwarnings("ignore", category=ShapelyDeprecationWarning)
 
 lookup = "hdx-scraper-viz-inputs"
 
@@ -23,8 +20,6 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-co", "--countries", default=None, help="Which countries to update")
     parser.add_argument("-vi", "--visualizations", default=None, help="Which visualizations to update")
-    parser.add_argument("-ut", "--update_tilesets", default=False, help="Update mapbox tilesets")
-    parser.add_argument("-ub", "--update_subn_bounds", default=False, help="Re-adjust country boundaries")
     parser.add_argument("-ma", "--mapbox_auth", default=None, help="Credentials for accessing MapBox data")
     args = parser.parse_args()
     return args
@@ -34,8 +29,6 @@ def main(
     mapbox_auth,
     countries=None,
     visualizations=None,
-    update_tilesets=False,
-    update_subn_bounds=False,
     **ignore,
 ):
     logger.info(f"##### hdx-viz-data-inputs ####")
@@ -65,16 +58,8 @@ def main(
                 temp_folder,
             )
 
-            boundaries.download_boundary_inputs(configuration["hdx_inputs"]["dataset"], levels)
-
-            if update_subn_bounds:
-                boundaries.update_subnational_boundaries(
-                    countries_to_process,
-                    configuration["hdx_inputs"].get("do_not_process", []),
-                )
-                boundaries.update_subnational_resources(configuration["hdx_inputs"]["dataset"], levels)
-            if update_tilesets:
-                boundaries.update_mapbox_tilesets(visualizations)
+            boundaries.download_boundary_inputs(configuration["hdx_dataset"], levels)
+            boundaries.update_mapbox_tilesets(visualizations)
             boundaries.update_lookups(visualizations)
             boundaries.update_bboxes(visualizations, configuration["HRPs"])
 
@@ -93,12 +78,6 @@ if __name__ == "__main__":
         visualizations = getenv("VISUALIZATIONS")
     if visualizations:
         visualizations = visualizations.split(",")
-    update_tilesets = args.update_tilesets
-    if not update_tilesets:
-        update_tilesets = getenv("UPDATE_TILESETS")
-    update_subn_bounds = args.update_subn_bounds
-    if not update_subn_bounds:
-        update_subn_bounds = getenv("UPDATE_SUBN_BOUNDS")
     mapbox_auth = args.mapbox_auth
     if mapbox_auth is None:
         mapbox_auth = getenv("MAPBOX_AUTH")
@@ -109,7 +88,5 @@ if __name__ == "__main__":
         project_config_yaml=join("config", "project_configuration.yml"),
         countries=countries,
         visualizations=visualizations,
-        update_tilesets=update_tilesets,
-        update_subn_bounds=update_subn_bounds,
         mapbox_auth=mapbox_auth,
     )

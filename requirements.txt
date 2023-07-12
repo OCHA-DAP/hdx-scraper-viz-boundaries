@@ -1,5 +1,4 @@
 hdx-python-api~=5.9.9
 geopandas~=0.12.2
 geojson~=2.5.0
-topojson~=1.5
 mapbox~=0.18.1

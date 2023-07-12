@@ -1,28 +1,12 @@
-hdx_inputs:
-  dataset: "unmap-international-boundaries-geojson"
-  dataset_exceptions:
-    MMR: "mimu-geonode-myanmar-state-and-region-boundaries-mimu"
-    JOR: "geoboundaries-admin-boundaries-for-jordan"
-  resource_exceptions:
-    HND: "hnd_adm_sinit_20161005_SHP.zip"
-    LBN: "lbn_adm_cdr_20200810.zip"
-    MMR: "Myanmar State and Region Boundaries MIMU v9.3 shapefile"
-    MOZ: "moz_adm_20190607b_SHP.zip"
-    SYR: "SYR Administrative Divisions Shapefiles.zip"
-  do_not_process:
-    - BHR
-    - UKR
+hdx_dataset: "unmap-international-boundaries-geojson"
+
+regional:
+  dataset: "unocha-office-locations"
+  format: "xlsx"
+  iso3_header: "ISO3"
+  region_header: "Regional_office"
 
 mapbox:
-  global:
-    polbndp_adm1: "cl2qdtxar0hwd29tkct32yp5a"
-    polbndp_adm2: "cl7ru4jxk06up27qib82bkyt6"
-    polbndp_adm3: "cl930lpcp25n927on407y2pvq"
-    polbnda_int_1m: "cl2qdreq4003128mppop3aidz"
-    polbnda_int_15m: "cl44eo2xg770229pkcsdvo9ko"
-    polbndl_int: "cl2qdzz3p093827mm46l6ojzx"
-    polbndp_int: "cl2qdugrr5e1r27t85am5vsgr"
-    lake: "cl2qcnlcg002v28lnpi69l0rs"
   covid:
     polbnda_subn:
       mapid: "humdata.b1o0ci53"
@@ -291,39 +275,3 @@ HRPs:
   - UKR
   - VEN
   - YEM
-
-shapefile_attribute_mappings:
-  pcode:
-    adm1:
-      - "ADM1_PCODE"
-      - "ADMIN1PCOD"
-      - "ST_PCODE"
-    adm2:
-      - "ADM2_PCODE"
-      - "ADM2_ID"
-      - "ADMIN2PCOD"
-  name:
-    adm1:
-      - "ADM1_NAME"
-      - "ADM1_EN"
-      - "ADM1_ES"
-      - "ADM1_FR"
-      - "ADM1_PT"
-      - "ADMIN1NAME"
-      - "NAME_1"
-      - "ST"
-      - "SHAPENAME"
-    adm2:
-      - "ADM2_NAME"
-      - "ADM2_EN"
-      - "ADM2_ES"
-      - "ADM2_FR"
-      - "ADM2_PT"
-      - "ADMIN2NAME"
-      - "NAME_2"
-
-regional:
-  dataset: "unocha-office-locations"
-  format: "xlsx"
-  iso3_header: "ISO3"
-  region_header: "Regional_office"

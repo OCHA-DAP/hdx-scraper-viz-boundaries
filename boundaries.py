@@ -1,26 +1,16 @@
 import logging
-import re
 from geojson import loads
 from geopandas import GeoDataFrame, read_file
-from glob import glob
 from json import dump
 from mapbox import Uploader
 from os import remove
 from os.path import join
 from pandas import concat, merge
-from pandas.api.types import is_numeric_dtype
-from shapely.geometry import MultiPolygon, box
-from shapely.validation import make_valid
+from shapely.geometry import box
 from time import sleep
-from topojson import Topology
 from unicodedata import normalize
-from zipfile import BadZipFile, ZipFile
 
 from hdx.data.dataset import Dataset
-from hdx.data.hdxobject import HDXError
-from hdx.location.country import Country
-from hdx.utilities.downloader import DownloadError
-from hdx.utilities.uuid import get_uuid
 
 logger = logging.getLogger()
 
@@ -61,11 +51,6 @@ class Boundaries:
         self.downloader = downloader
         self.boundaries = dict()
         self.temp_folder = temp_folder
-        self.exceptions = {
-            "dataset": configuration["hdx_inputs"].get("dataset_exceptions", {}),
-            "resource": configuration["hdx_inputs"].get("resource_exceptions", {}),
-        }
-        self.headers = configuration["shapefile_attribute_mappings"]
         self.mapbox = configuration["mapbox"]
         self.mapbox_auth = mapbox_auth
         self.countries = configuration["countries"]
@@ -78,255 +63,18 @@ class Boundaries:
         all_boundaries = dict()
         dataset = Dataset.read_from_hdx(dataset_name)
         for resource in dataset.get_resources():
-            if "coastl" in resource["name"]:
+            if "coastl" in resource["name"] or "lake" in resource["name"]:
                 continue
-            if resource["name"][8:12] not in levels \
-                    and ("polbnda_adm" in resource["name"] or "polbndp_adm" in resource["name"]):
+            if "adm" in resource["name"] and resource["name"].split("_")[1] not in levels:
                 continue
             _, resource_file = resource.download(folder=self.temp_folder)
             lyr = read_file(resource_file)
             if "polbnda_adm" in resource["name"] or "polbndp_adm" in resource["name"]:
                 all_boundaries[resource["name"].replace("_1m_ocha.geojson", "")] = lyr
-            if "lake" in resource["name"]:
-                all_boundaries["lake"] = lyr
             if "_int_" in resource["name"]:
                 all_boundaries[resource["name"].replace("wrl_", "").replace("_uncs.geojson", "")] = lyr
 
         self.boundaries = all_boundaries
-
-    def update_subnational_boundaries(self, countries, do_not_process):
-        for level in countries:
-            req_fields = ["alpha_3"]
-            for i in range(int(level[-1]) + 1):
-                req_fields.append(f"ADM{i}_PCODE")
-                req_fields.append(f"ADM{i}_REF")
-
-            for iso in countries[level]:
-                if iso in do_not_process:
-                    logger.warning(f"{iso}: Not processing for now")
-                    continue
-
-                logger.info(f"{iso}: Processing {level} boundaries")
-
-                # select single country boundary (including disputed areas), cut out water, and dissolve
-                country_adm0 = self.boundaries["polbnda_int_1m"].copy(deep=True)
-                country_adm0 = country_adm0.loc[country_adm0["ISO_3"] == iso]
-                country_adm0 = country_adm0.overlay(self.boundaries["lake"], how="difference")
-                country_adm0 = country_adm0.dissolve()
-                country_adm0 = drop_fields(country_adm0, ["ISO_3"])
-                country_adm0["ISO_3"] = iso
-                if not country_adm0.crs:
-                    country_adm0 = country_adm0.set_crs(crs="EPSG:4326")
-                if not country_adm0["geometry"][0].is_valid:
-                    country_adm0.loc[0, "geometry"] = make_valid(country_adm0.loc[0, "geometry"])
-
-                # find the correct admin boundary dataset
-                dataset_name = self.exceptions["dataset"].get(iso, f"cod-em-{iso.lower()}")
-                dataset = Dataset.read_from_hdx(dataset_name)
-                if not dataset:
-                    dataset = Dataset.read_from_hdx(f"cod-ab-{iso.lower()}")
-                if not dataset:
-                    logger.error(f"{iso}: Could not find boundary dataset")
-                    continue
-
-                resource_name = self.exceptions["resource"].get(iso, "adm")
-                boundary_resource = [
-                    r
-                    for r in dataset.get_resources()
-                    if r.get_file_type() == "shp"
-                    and bool(re.match(f".*{resource_name}.*", r["name"], re.IGNORECASE))
-                ]
-                if len(boundary_resource) > 1:
-                    name_match = [
-                        bool(re.match(f".*adm(in)?(\s)?(0)?{level[-1]}.*", r["name"], re.IGNORECASE))
-                        for r in boundary_resource
-                    ]
-                    boundary_resource = [
-                        boundary_resource[i]
-                        for i in range(len(boundary_resource))
-                        if name_match[i]
-                    ]
-
-                    if len(boundary_resource) != 1:
-                        logger.error(f"{iso}: Could not distinguish between resources")
-                        continue
-
-                # find the correct admin boundary shapefile in the downloaded zip
-                try:
-                    _, resource_file = boundary_resource[0].download(folder=self.temp_folder)
-                except DownloadError:
-                    logger.error(f"{iso}: Could not download resource")
-                    return None
-
-                temp_folder = join(self.temp_folder, get_uuid())
-                try:
-                    with ZipFile(resource_file, "r") as z:
-                        z.extractall(temp_folder)
-                except BadZipFile:
-                    logger.error(f"{iso}: Could not unzip file - it might not be a zip!")
-                    continue
-                boundary_shp = glob(join(temp_folder, "**", "*.shp"), recursive=True)
-
-                if len(boundary_shp) == 0:
-                    logger.error(f"{iso}: Did not find the file!")
-                    continue
-
-                if len(boundary_shp) > 1:
-                    name_match = [
-                        bool(re.match(f".*admbnda.*adm(in)?(0)?{level[-1]}.*", b, re.IGNORECASE))
-                        for b in boundary_shp
-                    ]
-                    if any(name_match):
-                        boundary_shp = [boundary_shp[i] for i in range(len(boundary_shp)) if name_match[i]]
-
-                if len(boundary_shp) > 1:
-                    simp_match = [bool(re.match(".*simplified.*", b, re.IGNORECASE)) for b in boundary_shp]
-                    if any(simp_match):
-                        boundary_shp = [boundary_shp[i] for i in range(len(boundary_shp)) if not simp_match[i]]
-
-                if len(boundary_shp) != 1:
-                    logger.error(f"{iso}: Could not distinguish between downloaded shapefiles")
-                    continue
-
-                boundary_lyr = read_file(boundary_shp[0])
-                if not boundary_lyr.crs:
-                    boundary_lyr = boundary_lyr.set_crs(crs="EPSG:4326")
-                if not boundary_lyr.crs.name == "WGS 84":
-                    boundary_lyr = boundary_lyr.to_crs(crs="EPSG:4326")
-
-                # calculate fields, finding admin1 name and pcode fields from config
-                boundary_lyr["alpha_3"] = iso.upper()
-                boundary_lyr["ADM0_REF"] = Country.get_country_name_from_iso3(iso)
-                boundary_lyr["ADM0_PCODE"] = Country.get_iso2_from_iso3(iso)
-
-                fields = boundary_lyr.columns
-                for l in range(1, int(level[-1]) + 1):
-                    pcode_field = None
-                    name_field = None
-                    if f"ADM{l}_PCODE" in fields:
-                        pcode_field = f"ADM{l}_PCODE"
-                    if f"ADM{l}_EN" in fields:
-                        name_field = f"ADM{l}_EN"
-                    for field in fields:
-                        if not pcode_field:
-                            if field.upper() in self.headers["pcode"][f"adm{l}"]:
-                                pcode_field = field
-                        if not name_field:
-                            if field.upper() in self.headers["name"][f"adm{l}"]:
-                                name_field = field
-
-                    if not name_field:
-                        logger.error(f"{iso}: Could not map name field")
-                        continue
-
-                    # calculate text pcodes
-                    # if pcod is not in field name or there are no codes in the boundaries, create pcodes
-                    if not pcode_field:
-                        boundary_lyr[f"ADM{l}_PCODE"] = ""
-                    if pcode_field:
-                        if is_numeric_dtype(boundary_lyr[pcode_field]):
-                            boundary_lyr[f"ADM{l}_PCODE"] = (
-                                boundary_lyr[pcode_field].astype(int).astype(str)
-                            )
-                        else:
-                            boundary_lyr[f"ADM{l}_PCODE"] = boundary_lyr[pcode_field]
-
-                    boundary_lyr[f"ADM{l}_REF"] = boundary_lyr[name_field]
-
-                boundary_lyr = drop_fields(boundary_lyr, req_fields)
-                boundary_lyr = boundary_lyr.dissolve(by=req_fields, as_index=False)
-
-                # assign pcodes to highest level if they're missing
-                if not pcode_field:
-                    logger.error(f"{iso}: Could not map pcodes at {level} - assigning randomly!")
-                    numrows = len(str(len(boundary_lyr.index)))
-                    for i, _ in boundary_lyr.iterrows():
-                        boundary_lyr.loc[i, f"ADM{level[-1]}_PCODE"] = boundary_lyr.loc[
-                            i, "ADM0_PCODE"
-                        ] + str(i + 1).zfill(numrows)
-
-                na_count = boundary_lyr[f"ADM{level[-1]}_REF"].isna().sum()
-                if na_count > 0:
-                    logger.warning(f"{iso}: Found {na_count} null values at {level}")
-
-                # simplify geometry of boundaries
-                boundary_topo = Topology(boundary_lyr)
-                eps = 0.0075
-                if int(level[-1]) > 0:
-                    eps = eps / int(level[-1])
-                boundary_topo = boundary_topo.toposimplify(
-                    epsilon=eps,
-                    simplify_algorithm="dp",
-                    prevent_oversimplify=True,
-                )
-                boundary_lyr = boundary_topo.to_gdf(crs="EPSG:4326")
-
-                # make sure geometry is valid
-                for i, _ in boundary_lyr.iterrows():
-                    if not boundary_lyr.geometry[i].is_valid:
-                        boundary_lyr.geometry[i] = make_valid(boundary_lyr.geometry[i])
-                    if boundary_lyr.geometry[i].geometryType() == "GeometryCollection":
-                        new_geom = []
-                        for part in boundary_lyr.geometry[i]:
-                            if part.geometryType() in ["Polygon", "MultiPolygon"]:
-                                new_geom.append(part)
-                        if len(new_geom) == 0:
-                            logger.error(f"{iso}: Boundary found with no geometry")
-                        if len(new_geom) == 1:
-                            new_geom = new_geom[0]
-                        else:
-                            new_geom = MultiPolygon(new_geom)
-                        boundary_lyr.geometry[i] = new_geom
-
-                # clip international boundary to UN admin0 country boundary
-                boundary_lyr = boundary_lyr.clip(mask=country_adm0, keep_geom_type=True)
-
-                self.boundaries[f"polbnda_{level}"] = self.boundaries[f"polbnda_{level}"][
-                    self.boundaries[f"polbnda_{level}"]["alpha_3"] != iso
-                ]
-                self.boundaries[f"polbnda_{level}"] = self.boundaries[f"polbnda_{level}"].append(boundary_lyr)
-                self.boundaries[f"polbnda_{level}"].sort_values(by=[f"ADM{level[-1]}_PCODE"], inplace=True)
-                logger.info(f"{iso}: Finished processing {level} boundaries")
-
-            # convert polygon boundaries to point
-            centroid = GeoDataFrame(self.boundaries[f"polbndp_{level}"].representative_point())
-            centroid.rename(columns={0: "geometry"}, inplace=True)
-            centroid[req_fields] = self.boundaries[f"polbndp_{level}"][req_fields]
-            centroid = centroid.set_geometry("geometry")
-            self.boundaries[f"polbndp_{level}"] = centroid
-
-    def update_subnational_resources(self, dataset_name, levels):
-        dataset = Dataset.read_from_hdx(dataset_name)
-        for level in levels:
-            logger.info(f"Updating HDX datasets at {level}")
-            polbnda_file = join(self.temp_folder, f"polbnda_{level}_1m_ocha.geojson")
-            self.boundaries[f"polbnda_{level}"].to_file(polbnda_file, driver="GeoJSON")
-            centroid_file = join(self.temp_folder, f"polbndp_{level}_1m_ocha.geojson")
-            self.boundaries[f"polbndp_{level}"].to_file(centroid_file, driver="GeoJSON")
-
-            resource_a = [
-                r
-                for r in dataset.get_resources()
-                if r.get_file_type() == "geojson"
-                and bool(re.match(f".*polbnda_{level}.*", r["name"], re.IGNORECASE))
-            ][0]
-            resource_a.set_file_to_upload(polbnda_file)
-            resource_p = [
-                r
-                for r in dataset.get_resources()
-                if r.get_file_type() == "geojson"
-                and bool(re.match(f".*polbndp_{level}.*", r["name"], re.IGNORECASE))
-            ][0]
-            resource_p.set_file_to_upload(centroid_file)
-
-            try:
-                resource_a.update_in_hdx()
-            except HDXError:
-                logger.exception("Could not update polygon resource")
-            try:
-                resource_p.update_in_hdx()
-            except HDXError:
-                logger.exception("Could not update point resource")
 
     def merge_subn_boundaries(self, visualization):
         levels = [key for key in self.countries[visualization] if not key == "adm0"]
