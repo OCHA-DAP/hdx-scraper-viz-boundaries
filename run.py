@@ -18,7 +18,6 @@ lookup = "hdx-scraper-viz-inputs"
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-co", "--countries", default=None, help="Which countries to update")
     parser.add_argument("-vi", "--visualizations", default=None, help="Which visualizations to update")
     parser.add_argument("-ma", "--mapbox_auth", default=None, help="Credentials for accessing MapBox data")
     args = parser.parse_args()
@@ -27,7 +26,6 @@ def parse_args():
 
 def main(
     mapbox_auth,
-    countries=None,
     visualizations=None,
     **ignore,
 ):
@@ -40,16 +38,6 @@ def main(
                 visualizations = [key for key in configuration["countries"]]
 
             levels = [l for viz in visualizations for l in configuration["countries"][viz] if l != "adm0"]
-            countries_to_process = {level: set() for level in levels}
-            for viz in visualizations:
-                for level in configuration["countries"][viz]:
-                    if level == "adm0":
-                        continue
-                    for country in configuration["countries"][viz][level]:
-                        if not countries or country in countries:
-                            countries_to_process[level].add(country)
-            for level in levels:
-                countries_to_process[level] = list(countries_to_process[level])
 
             boundaries = Boundaries(
                 configuration,
@@ -68,11 +56,6 @@ def main(
 
 if __name__ == "__main__":
     args = parse_args()
-    countries = args.countries
-    if countries is None:
-        countries = getenv("COUNTRIES")
-    if countries:
-        countries = countries.split(",")
     visualizations = args.visualizations
     if visualizations is None:
         visualizations = getenv("VISUALIZATIONS")
@@ -86,7 +69,6 @@ if __name__ == "__main__":
         user_agent_config_yaml=join(expanduser("~"), ".useragents.yml"),
         user_agent_lookup=lookup,
         project_config_yaml=join("config", "project_configuration.yml"),
-        countries=countries,
         visualizations=visualizations,
         mapbox_auth=mapbox_auth,
     )
