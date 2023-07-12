@@ -47,7 +47,7 @@ def main(
             )
 
             boundaries.download_boundary_inputs(configuration["hdx_dataset"], levels)
-            boundaries.update_mapbox_tilesets(visualizations)
+            boundaries.update_mapbox_tilesets(visualizations, configuration["mapbox"])
             boundaries.update_lookups(visualizations)
             boundaries.update_bboxes(visualizations, configuration["HRPs"])
 

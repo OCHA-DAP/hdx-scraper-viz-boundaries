@@ -43,7 +43,6 @@ class Boundaries:
         self.downloader = downloader
         self.boundaries = dict()
         self.temp_folder = temp_folder
-        self.mapbox = configuration["mapbox"]
         self.mapbox_auth = mapbox_auth
         self.countries = configuration["countries"]
         self.regional_info = configuration["regional"]
@@ -103,21 +102,22 @@ class Boundaries:
             merged_points = concat([merged_points, excep])
         return merged_polygons, merged_points
 
-    def update_mapbox_tilesets(self, visualizations):
+    def update_mapbox_tilesets(self, visualizations, configuration):
         for visualization in visualizations:
             logger.info(f"Updating MapBox tilesets for {visualization}")
+            mapbox_config = configuration.get(visualization)
             polygon_to_upload, point_to_upload = self.merge_subn_boundaries(visualization)
             replace_mapbox_tileset(
-                self.mapbox[visualization]["polbnda_subn"]["mapid"],
+                mapbox_config["polbnda_subn"]["mapid"],
                 self.mapbox_auth,
-                self.mapbox[visualization]["polbnda_subn"]["name"],
+                mapbox_config["polbnda_subn"]["name"],
                 polygon_to_upload,
                 self.temp_folder,
             )
             replace_mapbox_tileset(
-                self.mapbox[visualization]["polbndp_subn"]["mapid"],
+                mapbox_config["polbndp_subn"]["mapid"],
                 self.mapbox_auth,
-                self.mapbox[visualization]["polbndp_subn"]["name"],
+                mapbox_config["polbndp_subn"]["name"],
                 point_to_upload,
                 self.temp_folder,
             )
@@ -140,16 +140,16 @@ class Boundaries:
                 on="ISO_3",
             )
             replace_mapbox_tileset(
-                self.mapbox[visualization]["polbnda_int"]["mapid"],
+                mapbox_config["polbnda_int"]["mapid"],
                 self.mapbox_auth,
-                self.mapbox[visualization]["polbnda_int"]["name"],
+                mapbox_config["polbnda_int"]["name"],
                 to_upload,
                 self.temp_folder,
             )
             replace_mapbox_tileset(
-                self.mapbox[visualization]["polbndl_int"]["mapid"],
+                mapbox_config["polbndl_int"]["mapid"],
                 self.mapbox_auth,
-                self.mapbox[visualization]["polbndl_int"]["name"],
+                mapbox_config["polbndl_int"]["name"],
                 self.boundaries[f"polbndl_int_{res}"][
                     (self.boundaries[f"polbndl_int_{res}"]["BDY_CNT01"].isin(self.countries[visualization]["adm0"]))
                     | (self.boundaries[f"polbndl_int_{res}"]["BDY_CNT02"].isin(self.countries[visualization]["adm0"]))
@@ -157,9 +157,9 @@ class Boundaries:
                 self.temp_folder,
             )
             replace_mapbox_tileset(
-                self.mapbox[visualization]["polbndp_int"]["mapid"],
+                mapbox_config["polbndp_int"]["mapid"],
                 self.mapbox_auth,
-                self.mapbox[visualization]["polbndp_int"]["name"],
+                mapbox_config["polbndp_int"]["name"],
                 self.boundaries["polbndp_int_1m"][
                     self.boundaries["polbndp_int_1m"]["ISO_3"].isin(self.countries[visualization]["adm0"])
                 ],
