@@ -1,4 +1,5 @@
 import logging
+from copy import deepcopy
 from geojson import loads
 from geopandas import GeoDataFrame, read_file
 from json import dump
@@ -6,11 +7,14 @@ from mapbox import Uploader
 from os import remove
 from os.path import join
 from pandas import concat, merge
+from pathlib import Path
+from ruamel.yaml import YAML
 from shapely.geometry import box
 from time import sleep
 from unicodedata import normalize
 
 from hdx.data.dataset import Dataset
+from hdx.utilities.uuid import get_uuid
 
 logger = logging.getLogger()
 
@@ -34,6 +38,30 @@ def replace_mapbox_tileset(
         logger.error(f"Could not upload {name}")
         return None
     return mapid
+
+
+def update_config(visualization):
+    yaml = YAML()
+    yaml.indent(mapping=2, sequence=2, offset=2)
+    yaml.preserve_quotes = True
+    with open(join("config", "project_configuration.yml"), encoding="utf-8") as f:
+        yamlobj = yaml.load(f.read())
+    last_elem = list(yamlobj["mapbox"].keys())[-1]
+    second_last_elem = list(yamlobj["mapbox"].keys())[-2]
+    new_element = deepcopy(yamlobj["mapbox"][last_elem])
+    updated_last_element = deepcopy(yamlobj["mapbox"][second_last_elem])
+    for elem in new_element:
+        updated_last_element[elem]["mapid"] = yamlobj["mapbox"][last_elem][elem]["mapid"]
+        updated_last_element[elem]["name"] = yamlobj["mapbox"][last_elem][elem]["name"]
+        id8 = get_uuid()[:8]
+        id6 = get_uuid()[:6]
+        new_element[elem]["mapid"] = f"humdata.{id8}"
+        new_element[elem]["name"] = f"{visualization}_{elem}-{id6}"
+    yamlobj["mapbox"][last_elem] = updated_last_element
+    yamlobj["mapbox"][visualization] = new_element
+    yaml.dump(yamlobj, Path(join("config", "project_configuration.yml")))
+
+    return new_element
 
 
 class Boundaries:
@@ -106,6 +134,8 @@ class Boundaries:
         for visualization in visualizations:
             logger.info(f"Updating MapBox tilesets for {visualization}")
             mapbox_config = configuration.get(visualization)
+            if not mapbox_config:
+                mapbox_config = update_config(visualization)
             polygon_to_upload, point_to_upload = self.merge_subn_boundaries(visualization)
             replace_mapbox_tileset(
                 mapbox_config["polbnda_subnatl"]["mapid"],
