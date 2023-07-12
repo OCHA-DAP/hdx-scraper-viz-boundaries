@@ -108,16 +108,16 @@ class Boundaries:
             mapbox_config = configuration.get(visualization)
             polygon_to_upload, point_to_upload = self.merge_subn_boundaries(visualization)
             replace_mapbox_tileset(
-                mapbox_config["polbnda_subn"]["mapid"],
+                mapbox_config["polbnda_subnatl"]["mapid"],
                 self.mapbox_auth,
-                mapbox_config["polbnda_subn"]["name"],
+                mapbox_config["polbnda_subnatl"]["name"],
                 polygon_to_upload,
                 self.temp_folder,
             )
             replace_mapbox_tileset(
-                mapbox_config["polbndp_subn"]["mapid"],
+                mapbox_config["polbndp_subnatl"]["mapid"],
                 self.mapbox_auth,
-                mapbox_config["polbndp_subn"]["name"],
+                mapbox_config["polbndp_subnatl"]["name"],
                 point_to_upload,
                 self.temp_folder,
             )

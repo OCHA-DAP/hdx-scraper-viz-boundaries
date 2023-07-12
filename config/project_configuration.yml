@@ -8,10 +8,10 @@ regional:
 
 mapbox:
   covid:
-    polbnda_subn:
+    polbnda_subnatl:
       mapid: "humdata.b1o0ci53"
       name: "hrps_polbnda_adm1ish_simplifi-5zbg3c"
-    polbndp_subn:
+    polbndp_subnatl:
       mapid: "humdata.63k3lb2z"
       name: "hrps_centroid_adm1ish_simplif-3sb5to"
     polbnda_int:
@@ -24,10 +24,10 @@ mapbox:
       mapid: "humdata.4w8b1b7g"
       name: "centroid_int_uncs-avvnhr"
   arableague:
-    polbnda_subn:
+    polbnda_subnatl:
       mapid: "humdata.attm70id"
       name: "arab_states_polbnda_adm1_1m_u-17b61m"
-    polbndp_subn:
+    polbndp_subnatl:
       mapid: "humdata.8pyb1abd"
       name: "arab_states_centroid_adm1_1m_-4nnaer"
     polbnda_int:
@@ -40,10 +40,10 @@ mapbox:
       mapid: "humdata.d4ywfeza"
       name: "arab_states_centroid_int_1m_u-9kgyhy"
   ukraine:
-    polbnda_subn:
+    polbnda_subnatl:
       mapid: "humdata.7mw1qwu2"
       name: "ukr_polbnda_adm1_uncs-bg6hqp"
-    polbndl_subn:
+    polbndl_subnatl:
       mapid: "humdata.afes2yub"
       name: "ukr_polbndl_adm1_uncs-9oa22d"
     polbndp_adm1:
@@ -59,10 +59,10 @@ mapbox:
       mapid: "humdata.av64hwpt"
       name: "ee_centroid_int_15m_uncs-2w4rn4"
   hornafrica:
-    polbnda_subn:
+    polbnda_subnatl:
       mapid: "humdata.8j9ay0ba"
       name: "hornafrica_polbnda_subnationa-2rkvd2"
-    polbndp_subn:
+    polbndp_subnatl:
       mapid: "humdata.cywtvjt9"
       name: "hornafrica_polbndp_subnationa-a7lq5r"
     polbnda_int:
@@ -75,10 +75,10 @@ mapbox:
       mapid: "humdata.01v49eax"
       name: "hornafrica_polbndp_int_uncs-arxx3e"
   access:
-    polbnda_subn:
+    polbnda_subnatl:
       mapid: "humdata.69v4osjh"
       name: "access_polbnda_subnational-awnqao"
-    polbndp_subn:
+    polbndp_subnatl:
       mapid: "humdata.8fwurkgg"
       name: "access_polbndp_subnational-2u17fm"
     polbnda_int:
