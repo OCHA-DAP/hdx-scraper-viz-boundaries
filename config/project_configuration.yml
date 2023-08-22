@@ -242,8 +242,10 @@ countries:
       - SOM
   access:
     adm2:
+      - HTI
       - SOM
     adm0:
+      - HTI
       - SOM
 
 HRPs:

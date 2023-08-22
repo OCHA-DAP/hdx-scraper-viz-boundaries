@@ -1,4 +1,144 @@
 adm2
+- {country: Haiti, iso3: HTI, pcode: HT0812, name: Abricots}
+- {country: Haiti, iso3: HTI, pcode: HT0321, name: Acul du Nord}
+- {country: Haiti, iso3: HTI, pcode: HT0523, name: Anse Rouge}
+- {country: Haiti, iso3: HTI, pcode: HT0922, name: Anse a Foleur}
+- {country: Haiti, iso3: HTI, pcode: HT0151, name: Anse a Galets}
+- {country: Haiti, iso3: HTI, pcode: HT0234, name: Anse a Pitre}
+- {country: Haiti, iso3: HTI, pcode: HT1021, name: Anse a Veau}
+- {country: Haiti, iso3: HTI, pcode: HT0821, name: Anse dHainault}
+- {country: Haiti, iso3: HTI, pcode: HT0731, name: Aquin}
+- {country: Haiti, iso3: HTI, pcode: HT0141, name: Arcahaie}
+- {country: Haiti, iso3: HTI, pcode: HT1024, name: Arnaud}
+- {country: Haiti, iso3: HTI, pcode: HT0723, name: Arniquet}
+- {country: Haiti, iso3: HTI, pcode: HT0332, name: Bahon}
+- {country: Haiti, iso3: HTI, pcode: HT0932, name: Baie de Henne}
+- {country: Haiti, iso3: HTI, pcode: HT0221, name: Bainet}
+- {country: Haiti, iso3: HTI, pcode: HT1031, name: Baraderes}
+- {country: Haiti, iso3: HTI, pcode: HT0362, name: Bas Limbe}
+- {country: Haiti, iso3: HTI, pcode: HT0913, name: Bassin Bleu}
+- {country: Haiti, iso3: HTI, pcode: HT0833, name: Beaumont}
+- {country: Haiti, iso3: HTI, pcode: HT0632, name: Belladere}
+- {country: Haiti, iso3: HTI, pcode: HT0231, name: Belle Anse}
+- {country: Haiti, iso3: HTI, pcode: HT0933, name: Bombardopolis}
+- {country: Haiti, iso3: HTI, pcode: HT0813, name: Bonbon}
+- {country: Haiti, iso3: HTI, pcode: HT0351, name: Borgne}
+- {country: Haiti, iso3: HTI, pcode: HT0623, name: Boucan Carre}
+- {country: Haiti, iso3: HTI, pcode: HT0142, name: Cabaret}
+- {country: Haiti, iso3: HTI, pcode: HT0714, name: Camp Perrin}
+- {country: Haiti, iso3: HTI, pcode: HT0311, name: Cap Haitien}
+- {country: Haiti, iso3: HTI, pcode: HT0422, name: Capotille}
+- {country: Haiti, iso3: HTI, pcode: HT0434, name: Caracol}
+- {country: Haiti, iso3: HTI, pcode: HT0442, name: Carice}
+- {country: Haiti, iso3: HTI, pcode: HT0113, name: Carrefour}
+- {country: Haiti, iso3: HTI, pcode: HT0733, name: Cavaillon}
+- {country: Haiti, iso3: HTI, pcode: HT0213, name: Cayes Jacmel}
+- {country: Haiti, iso3: HTI, pcode: HT0614, name: Cerca Carvajal}
+- {country: Haiti, iso3: HTI, pcode: HT0641, name: Cerca La Source}
+- {country: Haiti, iso3: HTI, pcode: HT0815, name: Chambellan}
+- {country: Haiti, iso3: HTI, pcode: HT0914, name: Chamsolme}
+- {country: Haiti, iso3: HTI, pcode: HT0713, name: Chantal}
+- {country: Haiti, iso3: HTI, pcode: HT0751, name: Chardonnieres}
+- {country: Haiti, iso3: HTI, pcode: HT0117, name: Cite Soleil}
+- {country: Haiti, iso3: HTI, pcode: HT0831, name: Corail}
+- {country: Haiti, iso3: HTI, pcode: HT0134, name: Cornillon / Grand Bois}
+- {country: Haiti, iso3: HTI, pcode: HT0741, name: Coteaux}
+- {country: Haiti, iso3: HTI, pcode: HT0222, name: Cotes de Fer}
+- {country: Haiti, iso3: HTI, pcode: HT0131, name: Croix Des Bouquets}
+- {country: Haiti, iso3: HTI, pcode: HT0822, name: Dame Marie}
+- {country: Haiti, iso3: HTI, pcode: HT0112, name: Delmas}
+- {country: Haiti, iso3: HTI, pcode: HT0544, name: Desdunes}
+- {country: Haiti, iso3: HTI, pcode: HT0541, name: Dessalines}
+- {country: Haiti, iso3: HTI, pcode: HT0342, name: Dondon}
+- {country: Haiti, iso3: HTI, pcode: HT0512, name: Ennery}
+- {country: Haiti, iso3: HTI, pcode: HT0412, name: Ferrier}
+- {country: Haiti, iso3: HTI, pcode: HT0135, name: Fonds Verrettes}
+- {country: Haiti, iso3: HTI, pcode: HT1013, name: Fonds des Negres}
+- {country: Haiti, iso3: HTI, pcode: HT0411, name: Fort Liberte}
+- {country: Haiti, iso3: HTI, pcode: HT0133, name: Ganthier}
+- {country: Haiti, iso3: HTI, pcode: HT0511, name: Gonaives}
+- {country: Haiti, iso3: HTI, pcode: HT1032, name: Grand Boucan}
+- {country: Haiti, iso3: HTI, pcode: HT0123, name: Grand Goave}
+- {country: Haiti, iso3: HTI, pcode: HT0232, name: Grand Gosier}
+- {country: Haiti, iso3: HTI, pcode: HT0331, name: Grande Riviere Du Nord}
+- {country: Haiti, iso3: HTI, pcode: HT0543, name: Grande Saline}
+- {country: Haiti, iso3: HTI, pcode: HT0116, name: Gressier}
+- {country: Haiti, iso3: HTI, pcode: HT0521, name: Gros Morne}
+- {country: Haiti, iso3: HTI, pcode: HT0611, name: Hinche}
+- {country: Haiti, iso3: HTI, pcode: HT0716, name: Ile a Vache}
+- {country: Haiti, iso3: HTI, pcode: HT0211, name: Jacmel}
+- {country: Haiti, iso3: HTI, pcode: HT0934, name: Jean Rabel}
+- {country: Haiti, iso3: HTI, pcode: HT0811, name: Jeremie}
+- {country: Haiti, iso3: HTI, pcode: HT0115, name: Kenscoff}
+- {country: Haiti, iso3: HTI, pcode: HT1023, name: LAsile}
+- {country: Haiti, iso3: HTI, pcode: HT0513, name: LEstere}
+- {country: Haiti, iso3: HTI, pcode: HT0533, name: La Chapelle}
+- {country: Haiti, iso3: HTI, pcode: HT0912, name: La Tortue}
+- {country: Haiti, iso3: HTI, pcode: HT0214, name: La Vallee}
+- {country: Haiti, iso3: HTI, pcode: HT0345, name: La Victoire}
+- {country: Haiti, iso3: HTI, pcode: HT0631, name: Lascahobas}
+- {country: Haiti, iso3: HTI, pcode: HT0121, name: Leogane}
+- {country: Haiti, iso3: HTI, pcode: HT0752, name: Les Anglais}
+- {country: Haiti, iso3: HTI, pcode: HT0711, name: Les Cayes}
+- {country: Haiti, iso3: HTI, pcode: HT0823, name: Les Irois}
+- {country: Haiti, iso3: HTI, pcode: HT0361, name: Limbe}
+- {country: Haiti, iso3: HTI, pcode: HT0313, name: Limonade}
+- {country: Haiti, iso3: HTI, pcode: HT0612, name: Maissade}
+- {country: Haiti, iso3: HTI, pcode: HT0715, name: Maniche}
+- {country: Haiti, iso3: HTI, pcode: HT0212, name: Marigot}
+- {country: Haiti, iso3: HTI, pcode: HT0552, name: Marmelade}
+- {country: Haiti, iso3: HTI, pcode: HT0323, name: Milot}
+- {country: Haiti, iso3: HTI, pcode: HT1011, name: Miragoane}
+- {country: Haiti, iso3: HTI, pcode: HT0621, name: Mirebalais}
+- {country: Haiti, iso3: HTI, pcode: HT0931, name: Mole Saint Nicolas}
+- {country: Haiti, iso3: HTI, pcode: HT0443, name: Mombin Crochu}
+- {country: Haiti, iso3: HTI, pcode: HT0423, name: Mont Organise}
+- {country: Haiti, iso3: HTI, pcode: HT0814, name: Moron}
+- {country: Haiti, iso3: HTI, pcode: HT0421, name: Ouanaminthe}
+- {country: Haiti, iso3: HTI, pcode: HT1014, name: Paillant}
+- {country: Haiti, iso3: HTI, pcode: HT0413, name: Perches}
+- {country: Haiti, iso3: HTI, pcode: HT0834, name: Pestel}
+- {country: Haiti, iso3: HTI, pcode: HT0114, name: Petion Ville}
+- {country: Haiti, iso3: HTI, pcode: HT0122, name: Petit Goave}
+- {country: Haiti, iso3: HTI, pcode: HT1022, name: Petit Trou de Nippes}
+- {country: Haiti, iso3: HTI, pcode: HT1012, name: Petite Riviere de Nippes}
+- {country: Haiti, iso3: HTI, pcode: HT0542, name: Petite Riviere de lArtibonite}
+- {country: Haiti, iso3: HTI, pcode: HT0344, name: Pignon}
+- {country: Haiti, iso3: HTI, pcode: HT0372, name: Pilate}
+- {country: Haiti, iso3: HTI, pcode: HT0322, name: Plaine du Nord}
+- {country: Haiti, iso3: HTI, pcode: HT0371, name: Plaisance}
+- {country: Haiti, iso3: HTI, pcode: HT1025, name: Plaisance du Sud}
+- {country: Haiti, iso3: HTI, pcode: HT0152, name: Pointe a Raquette}
+- {country: Haiti, iso3: HTI, pcode: HT0352, name: Port Margot}
+- {country: Haiti, iso3: HTI, pcode: HT0721, name: Port Salut}
+- {country: Haiti, iso3: HTI, pcode: HT0742, name: Port a Piment}
+- {country: Haiti, iso3: HTI, pcode: HT0111, name: Port au Prince}
+- {country: Haiti, iso3: HTI, pcode: HT0911, name: Port de Paix}
+- {country: Haiti, iso3: HTI, pcode: HT0312, name: Quartier Morin}
+- {country: Haiti, iso3: HTI, pcode: HT0343, name: Ranquitte}
+- {country: Haiti, iso3: HTI, pcode: HT0743, name: Roche a Bateau}
+- {country: Haiti, iso3: HTI, pcode: HT0832, name: Roseaux}
+- {country: Haiti, iso3: HTI, pcode: HT0722, name: Saint Jean du Sud}
+- {country: Haiti, iso3: HTI, pcode: HT0921, name: Saint Louis du Nord}
+- {country: Haiti, iso3: HTI, pcode: HT0732, name: Saint Louis du Sud}
+- {country: Haiti, iso3: HTI, pcode: HT0531, name: Saint Marc}
+- {country: Haiti, iso3: HTI, pcode: HT0551, name: Saint Michel de lAttalaye}
+- {country: Haiti, iso3: HTI, pcode: HT0341, name: Saint Raphael}
+- {country: Haiti, iso3: HTI, pcode: HT0432, name: Sainte Suzanne}
+- {country: Haiti, iso3: HTI, pcode: HT0622, name: Saut dEau}
+- {country: Haiti, iso3: HTI, pcode: HT0633, name: Savanette}
+- {country: Haiti, iso3: HTI, pcode: HT0118, name: Tabarre}
+- {country: Haiti, iso3: HTI, pcode: HT0522, name: Terre Neuve}
+- {country: Haiti, iso3: HTI, pcode: HT0433, name: Terrier Rouge}
+- {country: Haiti, iso3: HTI, pcode: HT0233, name: Thiotte}
+- {country: Haiti, iso3: HTI, pcode: HT0642, name: Thomassique}
+- {country: Haiti, iso3: HTI, pcode: HT0132, name: Thomazeau}
+- {country: Haiti, iso3: HTI, pcode: HT0613, name: Thomonde}
+- {country: Haiti, iso3: HTI, pcode: HT0753, name: Tiburon}
+- {country: Haiti, iso3: HTI, pcode: HT0712, name: Torbeck}
+- {country: Haiti, iso3: HTI, pcode: HT0431, name: Trou du Nord}
+- {country: Haiti, iso3: HTI, pcode: HT0441, name: Vallieres}
+- {country: Haiti, iso3: HTI, pcode: HT0532, name: Verrettes}
 - {country: Somalia, iso3: SOM, pcode: SO2102, name: Adan Yabaal}
 - {country: Somalia, iso3: SOM, pcode: SO2302, name: Afgooye}
 - {country: Somalia, iso3: SOM, pcode: SO2802, name: Afmadow}
