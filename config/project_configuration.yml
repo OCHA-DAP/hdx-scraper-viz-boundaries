@@ -46,7 +46,7 @@ mapbox:
     polbndl_subnatl:
       mapid: "humdata.afes2yub"
       name: "ukr_polbndl_adm1_uncs-9oa22d"
-    polbndp_adm1:
+    polbndp_subnatl:
       mapid: "humdata.b2dsq510"
       name: "ukr_centroid_adm1_uncs-9bv7sv"
     polbnda_int:

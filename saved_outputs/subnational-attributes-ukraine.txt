@@ -1,4 +1,5 @@
-- {country: Ukraine, iso3: UKR, pcode: UA01, name: Avtonomna Respublika Krym}
+adm1
+- {country: Ukraine, iso3: UKR, pcode: UA01, name: Autonomous Republic of Crimea}
 - {country: Ukraine, iso3: UKR, pcode: UA71, name: Cherkaska}
 - {country: Ukraine, iso3: UKR, pcode: UA74, name: Chernihivska}
 - {country: Ukraine, iso3: UKR, pcode: UA73, name: Chernivetska}
@@ -9,15 +10,15 @@
 - {country: Ukraine, iso3: UKR, pcode: UA65, name: Khersonska}
 - {country: Ukraine, iso3: UKR, pcode: UA68, name: Khmelnytska}
 - {country: Ukraine, iso3: UKR, pcode: UA35, name: Kirovohradska}
+- {country: Ukraine, iso3: UKR, pcode: UA80, name: Kyiv}
 - {country: Ukraine, iso3: UKR, pcode: UA32, name: Kyivska}
-- {country: Ukraine, iso3: UKR, pcode: UA80, name: Kyivska}
 - {country: Ukraine, iso3: UKR, pcode: UA44, name: Luhanska}
 - {country: Ukraine, iso3: UKR, pcode: UA46, name: Lvivska}
 - {country: Ukraine, iso3: UKR, pcode: UA48, name: Mykolaivska}
 - {country: Ukraine, iso3: UKR, pcode: UA51, name: Odeska}
 - {country: Ukraine, iso3: UKR, pcode: UA53, name: Poltavska}
 - {country: Ukraine, iso3: UKR, pcode: UA56, name: Rivnenska}
-- {country: Ukraine, iso3: UKR, pcode: UA85, name: Sevastopilska}
+- {country: Ukraine, iso3: UKR, pcode: UA85, name: Sevastopol}
 - {country: Ukraine, iso3: UKR, pcode: UA59, name: Sumska}
 - {country: Ukraine, iso3: UKR, pcode: UA61, name: Ternopilska}
 - {country: Ukraine, iso3: UKR, pcode: UA05, name: Vinnytska}
