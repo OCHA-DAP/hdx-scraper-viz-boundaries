@@ -44,7 +44,7 @@ def update_config(visualization):
     yaml = YAML()
     yaml.indent(mapping=2, sequence=2, offset=2)
     yaml.preserve_quotes = True
-    with open(join("config", "project_configuration.yml"), encoding="utf-8") as f:
+    with open(join("config", "project_configuration.yaml"), encoding="utf-8") as f:
         yamlobj = yaml.load(f.read())
     last_elem = list(yamlobj["mapbox"].keys())[-1]
     second_last_elem = list(yamlobj["mapbox"].keys())[-2]
@@ -59,7 +59,7 @@ def update_config(visualization):
         new_element[elem]["name"] = f"{visualization}_{elem}-{id6}"
     yamlobj["mapbox"][last_elem] = updated_last_element
     yamlobj["mapbox"][visualization] = new_element
-    yaml.dump(yamlobj, Path(join("config", "project_configuration.yml")))
+    yaml.dump(yamlobj, Path(join("config", "project_configuration.yaml")))
 
     return new_element
 
